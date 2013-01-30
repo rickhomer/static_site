@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie" lang="en"><!-- InstanceBegin template="/Templates/HOMER3.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="business portfolio site template" />
+<meta name="keywords" content="business, marketing, corporate, app, software, marketing"/>
+<meta name="author" content="Tansh" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>HOMER - Hybrid Renewable and Distributed Generation System Design Software</title>
+<!-- InstanceEndEditable -->
+<!--Fav and touch icons-->
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+<!--google web font-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+<!--style sheet-->
+<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
+<link rel="stylesheet" media="screen" href="css/bootstrap-responsive.css"/>
+<link rel="stylesheet" media="screen" href="css/style.css"/>
+
+<!--jquery libraries / others are at the bottom-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<!--elastislide carousel script starts-->
+<link rel="stylesheet" media="screen" href="css/elastislide.css"/>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#carousel').elastislide({
+		imageW 		: 300,
+		margin		: 20,
+		border		: 0,
+		easing		: 'easeInBack'
+});
+});
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="Marketing" type="boolean" value="false" -->
+<!-- InstanceParam name="Subheader" type="boolean" value="true" -->
+
+<!--elastislide carousel script ends-->
+
+<!--prettyphoto scripts starts-->
+<link rel="stylesheet" media="screen" href="css/prettyPhoto.css"/>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+		$('a[data-rel]').each(function() {
+		$(this).attr('rel', $(this).data('rel'));
+		});
+		$("a[rel^='prettyPhoto[gallery1]']").prettyPhoto({
+		animation_speed: 'fast',
+		slideshow: 5000,
+		autoplay_slideshow: false,
+		opacity: 0.80,
+		show_title: false,
+		theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+		overlay_gallery: false,
+		social_tools: false,
+		changepicturecallback: function(){
+		var $pp = $('.pp_default');
+		if( parseInt( $pp.css('left') ) < 0 ){
+		$pp.css('left', 0 );
+		}
+		}
+		});	
+});
+</script>
+<!--prettyphoto scripts ends-->
+
+<!--flexslider scripts starts-->
+<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+// Slider with thumbnail
+$(document).ready(function() {
+if($(window).width() < 959)
+{
+		$('#slider').flexslider({
+		directionNav: true,
+		controlNav: false,
+		});
+}
+else
+{
+		$('#thumb-slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: true,
+		directionNav: false,
+		controlNav: false,
+		itemWidth: 180,
+		itemMargin: 0,
+		asNavFor: '#slider'
+		});
+		$('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		directionNav: false,
+		animationLoop: true,
+		slideshow: true,
+		sync: "#thumb-slider"
+        });
+}
+});
+</script>
+<!--flexslider scripts ends-->
+
+</head>
+<body>
+
+<!-- header starts
+================================================== -->
+<section id="header" class="clearfix">
+	<div class="container">
+    	<div class="row"> 
+      
+      <!--logo starts-->
+      		<div class="span4 logo"><a href="index.html"><img src="img/HOMERwttr300x90.png" alt="HOMER Energy Logo"></a></div>
+      <!--logo ends-->
+      
+      		<div class="span8 clearfix"> 
+        
+        <!--login section-->
+        		<span class="social login"><a href="login.html">Customer Login</a></span>
+
+        <!--login ends--> 
+        
+        <!--menu starts-->
+        			<div id="smoothmenu" class="ddsmoothmenu">
+        				<ul>
+            				<li><a href="index.html" class="selected">Home</a></li>
+             				<li><a href="#">Products</a>
+                                <ul>
+                                    <li><a href="HOMER_explorer.html">HOMER Explorer</a></li>
+                                    <li><a href="HOMER_professional.html">HOMER Professional</a></li>
+                                    <li><a href="compare.html">Compare all</a></li>
+                                    <li><a href="HOMER_legacy.html">Legacy Versions</a></li>
+                                </ul>
+            				</li>
+             				<li><a href="services.html">Services</a>
+              					<ul>
+                					<li><a href="HOMER_consulting.html">Consulting and Training</a>
+                                        <ul>
+                                            <li><a href="#">Microgrid Power System Design Services</a></li>
+                                            <li><a href="HOMER_training.html">HOMER Training</a></li>
+                                            <li><a href="microgrid_market_access.html">Market Access Services</a></li>
+                                        </ul>
+ 									</li>
+                					<li><a href="HOMER_customization.html">Custom HOMER versions</a> </li>
+								</ul>
+							</li>
+                			<li><a href="support.html">Support</a>
+                                <ul>
+                                    <li><a href="http://homerusersgroup.ning.com" target="_blank">Community Forum</a></li>
+                                    <li><a href="http://support.homerenergy.com/knowledgebase" target="_blank">Knowledgebase</a></li>
+                                    <li><a href="http://support.homerenergy.com" target="_blank">Enterprise Support Portal</a></li>
+                                </ul>
+                			</li>
+                            <li><a href="http://blog.homerenergy.com">Blog</a> </li>
+                            <li><a href="#">Learn More</a>
+                                <ul>
+                                    <li><a href="microgrids.html">Why microgrids?</a> </li>
+                                    <li><a href="#">White Papers</a></li>
+                                    <li><a href="#">Presentations</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Company</a>
+                                <ul>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="news_coverage.html">In the News</a></li>
+                                    <li><a href="news.html">Newsletters and Press Releases</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+        			</div>
+        <!--menu ends--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header ends
+================================================== --> 
+
+
+<!-- header-btm starts
+================================================== -->
+<!-- InstanceBeginEditable name="EditRegion5" -->
+<section id="header-btm" class="clearfix">
+  <div class="container">
+    <div class="row">
+    <div class="span10">
+      <p class="body-text">The  core team that developed the HOMER software at NREL migrated along with the  software code to HOMER Energy. In addition, the team adds new professionals  with experience in renewable energy, software development, management, marketing, and entrepreneurial  ventures. </p>
+      <table width="100%" border="0">
+        <tr>
+          <td class="Listnobullet"><strong>Leadership</strong>
+            <ul class="listsqbullet">
+              <li><a class="stafflink" href="#peter">Peter Lilienthal, CEO</a></li>
+              <li><a class="stafflink" href="#marilyn">Marilyn Walker, COO</a></li>
+              <li><a class="stafflink" href="#jack">Jack Sinclair, CTO</a></li>
+              <li><a class="stafflink" href="#ed">Ed Sanders, Interim CFO</a></li>
+            </ul></td>
+          <td class="Listnobullet"><strong>Staff</strong>
+            <ul class="Listnobullet">
+              <li>Software Development</li>
+              <ul class="listsqbullet">
+                <li><a class="stafflink" href="#tom">Tom Lambert</a></li>
+                <li><a class="stafflink" href="#woody">Michael &quot;Woody&quot; Woods</a></li>
+                <li><a class="stafflink" href="#kendall">Kendall Southwick</a></li>
+              </ul>
+              <li>Analysis</li>
+              <ul class="listsqbullet">
+                <li><a class="stafflink" href="#john">John Glassmire</a></li>
+                <li><a class="stafflink" href="#nathan">Nathan Johnson</a></li>
+                <li><a class="stafflink" href="#steve">Steve Frank</a></li>
+                <li><a class="stafflink" href="#kathryn">Kathryn Schumacher</a></li>
+              </ul>
+              <li>Operations</li>
+              <ul class="listsqbullet">
+                <li><a class="stafflink" href="#paul">Paul Gilman</a></li>
+                <li><a class="stafflink" href="#mike">Janet Hale</a></li>
+              </ul>
+            </ul></td>
+        </tr>
+      </table>
+      <hr class="h" />
+      <!--Peter Lilienthal first, all others alphabetical-->
+      <div class="staffdescrips"> <img class="staffimage" src="images/peter_lilienthal.jpg" width="90" height="120" alt="Peter Lilienthal" />
+        <h3><a name="peter" id="peter"></a>Peter Lilienthal, Ph.D., Chief Executive Officer</h3>
+        Dr. Peter Lilienthal is the original developer of the HOMER&reg; software and founded HOMER Energy in 2009 to enhance and commercialize the software. He has a Ph.D. in Management Science and Engineering from Stanford University.&nbsp;Peter has been active in the field of renewable and distributed energy and energy efficiency since 1978. Before founding HOMER Energy, he was president of Green Island Power, which provided  analytical services for renewable and distributed power projects. From 1990-2007 he was Senior Economist with the  International Programs Office at the National Renewable Energy Laboratory. His experience has included project development of distributed power projects, designing  and teaching courses at the university level, and consulting to industry and  regulators. His technical expertise is  in utility modeling and the economic and financial analysis of renewable and  distributed power projects. He was the  lead analyst and one of the creators of NREL&rsquo;s International and Village Power Programs. [<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Walker, Marilyn-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Marilyn.jpg" width="93" height="120" alt="Marilyn Walker" />
+        <h3><a name="marilyn" id="marilyn"></a>Marilyn Walker, Ph.D., Chief Operating Officer, Director of Academic Relations</h3>
+        Dr. Walker is a serial entrepreneur and experienced technologist. She started her career in academia, earning a Ph. D in Biology from the University of Colorado and publishing over 50 technical publications on modeling and environmental analysis. In the university setting, she raised over 12 million dollars to make her programs financially sustainable and gained valuable knowledge in the fields of software, databases, modeling, and analysis. After 20 years in academia, she became an entrepreneur by purchasing, managing, and selling a successful business, PlayFair Toys. She founded and built two e-commerce companies, and has led multiple international and multidisciplinary teams. Dr. Walker brings her unique, in-depth experience in environmental systems and business operations to her role as COO.   [<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Sinclair, Jack-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Jack.jpg" width="90" height="120" alt="Jack Sinclair" />
+        <h3><a name="jack" id="jack"></a>Jack Sinclair, MBA, Chief Technical Officer</h3>
+        Jack Sinclair brings over 30 years of experience in software product management and engineering, strategic planning, technology research and management, business intelligence, business/system analysis and financial management/analysis to being the head of the HOMER Energy development team. Jack has an MBA from the University of California Berkeley and BGS in Computer Science from the University of Michigan. He has completed certificate programs in green building/LEED construction management and courses in solar PV system design. Jack's broad background in analysis, project management and system architecture allow him to direct the development of new HOMER products and services toward the most specific and compelling customer needs. 
+        [<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Sanders, Ed-->
+      <div class="staffdescrips"><img class="staffimage" src="images/ed_sanders_sm.jpg" width="89" height="120" alt="Ed Sanders" />
+        <h3><a name="ed" id="ed"></a>Ed Sanders, Ph.D., Interim Chief Financial Officer and Consultant</h3>
+        Dr. Ed Sanders has over thirty years experience in economic and financial analysis in private companies and the U.S. Government. He has a Ph.D. in economics from Yale University and attended the Advanced Management Program at the Harvard Business School. His early career was in the President's Office of Management and Budget (OMB) where he rose from a Budget Examiner in the International Division to become the Associate Director for National Security and International Affairs, directing a staff of 65, which made funding recommendations to the President on all defense, intelligence and international programs. He then became Staff Director on the U.S. Senate Foreign Relations Committee.  After that he co-founded two international business consulting firms.  While serving as President of Sanders International, he arranged most of the financing for a $60 million, 50 megawatt integrated gasification combined cycle (IGCC) power plant in India and has prepared business plans and investment proposals and recruited investors for numerous other smaller environmental and alternative energy projects.  He is a founding partner in a 20-square-mile private nature preserve and ecotourism project in Belize and has taught the environmental finance course to Masters Degree students at the University of Denver.  [<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Lambert, Tom-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Tom_new.jpg" width="90" height="120" alt="Tom Lambert" />
+        <h3><a name="tom" id="tom"></a>Tom Lambert, Software Development</h3>
+        Tom Lambert has contributed to the design, programming, documentation, and technical support of HOMER for 13 years, having written the original source code.  He worked for the National Renewable Energy Laboratory before joining HOMER Energy, and is also the CEO of Mistaya Engineering.  He has a B.Sc. in Mechanical Engineering from the University of Alberta and an M.Sc. in Mechanical Engineering from Colorado State University.  Tom is certified as a professional engineer in the province of Alberta, Canada. [<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Woods, Michael-->
+      <div class="staffdescrips"><img class="staffimage" src="images/woodyHead.jpg" width="90" height="100" alt="Woody Woods" />
+        <h3><a name="woody" id="woody"></a>Woody (Michael) Woods, Interface Developer</h3>
+        Woody Woods is responsible for the design and coding of HOMER Energy's software and website interfaces. Woody combines a background in art and design with decades of experience coding interactive, rich user interfaces. Woody's background includs web development and design, Flash programming, graphic design, multimedia, software test engineer, and hardware test technician. He has a B.S. in Fine Art from Bradley University and an A.A.S. in Electronics Engineering Technology from Illinois Central College.
+        [<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Southwick, Kendall-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Kendall.jpg" width="90" height="120" alt="Kendall Southwick" />
+        <h3><a name="kendall" id="kendall"></a>Kendall Southwick, IT Manager, JAVA and C++ Programmer</h3>
+        Kendall Southwick brings decades of programming and general IT experience to the HOMER Energy team. His background includes JAVA, C++, FORTRAN, HTML, and more.  He has a B.S. in Computer Science and Mathematics from Metropolitan State College and a B.A. in Computer Applications in Molecular, Cellular, and Developmental Biology from the University of Colorado Boulder. Kendall is a member of the Assocation for Computing Machinery and the Institute for Electrical and Electronics Engineers.[<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Glassmire, John-->
+      <div class="staffdescrips"><img class="staffimage" src="images/john.jpg" width="91" height="120" alt="John Glassmire" />
+        <h3><a name="john" id="john"></a>John Glassmire, Analysis and Consulting</h3>
+        John Glassmire is a globally-minded engineer who has worked across a wide-range of infrastructure projects. He has interests in sustainable design, renewable energy, project management, and international development. John's undergraduate background is in mechanical engineering. After earning his BS from Rice University and his Masters from Northwestern University, he worked for 2 years at Sargent & Lundy, a major energy design and consulting firm in the US. Subsequently, John worked as a consultant in energy and water infrastructure at the Institute for Sustainable Futures in Sydney, Australia.[<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Johnson, Nathan-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Nathan_Johnson.jpg" width="90" height="120" alt="Nathan Johnson" />
+        <h3><a name="nathan" id="nathan"></a>Nathan Johnson, Ph.D., ASEE/NSF Postdoctoral Fellow</h3>
+        Dr. Nathan Johnson is currently serving in a one-year position as an ASEE/NSF postdoctoral fellow, exploring and developing new micro-grid optimization algorithms for HOMER. Nathan's work involves integrated energy systems analysis to explain the social, technical, and environmental factors that drive energy demand in society. This has included field research, laboratory research, and computational models to explain complex energy systems dynamics. He has seven years of experience working in academic, corporate, and non-governmental environments, including two years of research and business development in eight foreign countries. Nathan has a Ph.D. and Masters degree in Mechanical Engineering and a Masters in International Development, all from Iowa State University.[<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Frank, Steve-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Steve.jpg" width="90" height="122" alt="Steve Frank" />
+        <h3><a name="steve" id="steve"></a>Steve Frank, NSF/ASEE Engineering Innovation Graduate Fellow</h3>
+        Steve Frank is PhD student at Colorado School of Mines who is spending the summer at HOMER Energy through the NSF Engineering Innovation Fellows Program. His dissertation research is a collaborative effort with the National Renewable Energy Laboratory to evaluate and improve the electrical efficiency of commercial buildings through the use of mixed AC-DC building electrical distribution systems. Prior to pursuing his PhD, Steve spent eight years as a volunteer at Messiah College's Collaboratory for Strategic Partnerships and Applied Research developing renewable energy solutions for international development organizations. Steve has a B.S. in Engineering from Messiah College and M.S. in Engineering with Electrical Specialty from Colorado School of Mines.[<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Schumacher, Kathryn-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Kathryn.jpg" width="93" height="120" alt="Kathryn Schumacher" />
+        <h3><a name="kathryn" id="kathryn"></a>Kathryn Schumacher, NSF/ASEE Engineering Innovation Graduate Fellow</h3>
+        Kathryn Schumacher will be joining HOMER Energy for summer 2012 as part of the NSF/ASEE Engineering Innovation Fellowship Program. She is currently a PhD candidate at the University of Michigan in the Industrial and Operations Engineering department. Her research is on developing optimization algorithms that can be used solve difficult problems that arise in energy planning. She received her B.S. in Chemical Engineering from MIT in 2009.[<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Gilman, Paul-->
+      <div class="staffdescrips"><img class="staffimage" src="images/Paul.jpg" width="85" height="120" alt="Paul Gilman" />
+        <h3><a name="paul" id="paul"></a>Paul Gilman, Training and Technical Writing</h3>
+        Paul Gilman has been working in the renewable energy field since 2002 after returning from serving three years as a Peace Corps Volunteer in Mali. Before then, he worked as a technical writer in Seattle. He has degrees in music performance from Oberlin College and in electrical engineering from the University of Washington. He started working as a freelance consultant in 2006 after leaving the National Renewable Energy Laboratory, where he worked with the International Programs group on projects in Asia, Latin America, and Africa.[<a href="#top">top</a>]</div>
+      <hr class="h" />
+      <!--Hale, Janet-->
+      <div class="staffdescrips"><img class="staffimage" src="images/janet.jpg" width="86" height="120" alt=Janet Hale" />
+        <h3><a name="mike" id="mike"></a>Janet Hale, Accounting and Office Management</h3>
+        Janet Hale serves as full service bookkeeper and office manager for HOMER  Energy, as well as handling first-line customer support.  Janet has worked in corporate accounting  in a variety of industries.&nbsp; She&nbsp;earned a B.S. in Accounting from the University of  Colorado at Denver. [<a href="#top">top</a>]</div>
+      <h4 class="heading-icon">&nbsp;</h4>
+    </div>
+    
+    </div>
+  </div>
+</section>
+<!-- InstanceEndEditable -->
+<!-- header-btm ends
+================================================== --> 
+
+<!-- content starts
+================================================== -->
+<section id="content" class="clearfix"> 
+<!--slider-bg starts-->
+
+<!--slider-bg ends-->
+  <div class="container">
+    <!--features starts-->
+    <!-- InstanceBeginEditable name="Main" -->
+ Replace with page content  
+ 
+    <!-- InstanceEndEditable -->
+    <!--box ends-->
+  </div>
+</section>
+<!-- content ends
+================================================== --> 
+
+<!-- footer starts
+================================================== -->
+<footer id="footer" class="clearfix">
+  <div class="container"> 
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one / social icon list starts-->
+      <div class="span2">
+        <ul class="social clearfix">
+          <li><a href="http://linkedin.com/company/homer-energy" target="_blank"><img src="img/icons/social-icon-linkedin.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="http://facebook.com/homerenergy" target="_blank"><img src="img/icons/social-icon-facebook.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="http://twitter.com/homerenergy" target="_blank"><img src="img/icons/social-icon-twitter.png" width="28" height="28" alt="icon"></a></li>
+        </ul>
+      </div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span2 text-center"> Follow on Twitter
+        <h5><a href="http://twitter.com/homerenergy" target="_blank">@homerenergy</a></h5>
+      </div>
+      <!--column two ends--> 
+      
+      <!--column three / twitter feed starts-->
+      <div class="span8">
+        <div id="twitter"></div>
+      </div>
+      <!--column three / twitter feed ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+    <!--spacer here-->
+    <div class="spacer-30px"></div>
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one starts-->
+      <div class="span4">
+        <h5>About HOMER Energy</h5>
+        <p>HOMER  Energy (Hybrid Optimization of Multiple Energy Resources) is the world&rsquo;s  leading microgrid modeling software company. Microgrids, or independent energy  systems providing grid backup or off-grid power, are in increasing demand  because of the rising cost of diesel fuel, decreasing cost of renewables, and  the need for more reliable power. HOMER navigates the complexities of building  cost effective and reliable microgrids that combine traditionally generated and  renewable power, storage, and load management. </p>
+        <img src="img/HOMERwttr300x90.png" alt="HOMER Energy logo"></div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span4">
+        <h5>Sitemap goes here</h5>
+        <ul class="list-unstyled">
+          <li><img src="img/preview/thumb-1.jpg" width="70" height="70" alt="image">
+            <h6>Claritas est etiam processus dynam</h6>
+            <span>12 Oct 2012 | <a href="#">by Admin</a></span> </li>
+          <li><img src="img/preview/thumb-2.jpg" width="70" height="70" alt="image">
+            <h6>Duis autem vel eum iriure dolor</h6>
+            <span>03 Oct 2012 | <a href="#">by John</a></span> </li>
+          <li><img src="img/preview/thumb-3.jpg" width="70" height="70" alt="image">
+            <h6>Ut wisi enim ad minim etiam veniam</h6>
+            <span>28 Sept 2012 | <a href="#">by Admin</a></span> </li>
+        </ul>
+      </div>
+      <!--column two ends--> 
+      
+      <!--column three starts-->
+      <div class="span4">
+        <h5>Get in touch</h5>
+        <ul class="list-info">
+          <li><img src="img/icons/icon-18-address.png" alt="icon" style="margin-bottom:30px;">HOMER Energy<br/>
+            2334 Broadway, Suite B<br/>
+            Boulder, CO 80304 USA </li>
+          <li><img src="img/icons/icon-18-phone.png" alt="icon">+(1) 720-565-4046</li>
+          <li><img src="img/icons/icon-18-mail.png" alt="icon"><a href="#">info@homerenergy.com</a></li>
+         <!-- <li><img src="img/icons/icon-18-skype.png" alt="icon" class="mar-btm"><a href="#">http://skype.com/skypename</a></li>-->
+        </ul>
+      </div>
+      <!--column three ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+  </div>
+</footer>
+<!-- footer ends
+================================================== --> 
+
+<!-- copyright starts
+================================================== -->
+<section id="copyright" class="clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p> © Copyright 2013 HOMER Energy LLC</p>
+        
+        <!--copyright menu starts-->
+        <ul class="copyright-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="http://support.homerenergy.com" target="_blank">Support</a></li>
+          <li><a href="http://blog.homerenergy.com" target="_blank">Blog</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--copyright menu ends--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- copyright ends
+================================================== --> 
+
+<!--other jqueries required--> 
+<script src="js/bootstrap.js" type="text/javascript" ></script> 
+<script src="js/ddsmoothmenu.js" type="text/javascript" ></script> 
+<script src="js/twitter.js" type="text/javascript" ></script> 
+<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script> 
+<script src="js/custom.js" type="text/javascript" ></script>
+<script src="js/comparetable.js" type="text/javascript"></script>
+</body>
+<!-- InstanceEnd --></html>
