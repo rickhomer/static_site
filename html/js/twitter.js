@@ -103,9 +103,9 @@
 	// Define plugin defaults
 	$.fn.tweetable.options = {
 		limit: 5,                       // Number of tweets to show
-		username: 'philipbeel',         // @username tweets to display
+		username: 'homerenergy',        // @username tweets to display
 		time: false,                    // Display date
-		rotate: false,                  // Rotate tweets
+		rotate: true,                   // Rotate tweets
 		speed: 5000,                    // Speed of rotation
 		replies: false,                 // Filter out @replys
 		position: 'append',             // Append position
@@ -122,9 +122,9 @@ $(function(){
 		$('#twitter').tweetable({
 		username: 'homerenergy', 
 		time: true,
-		rotate: false,
-		speed: 4000, 
-		limit: 1,
+		rotate: true,
+		speed: 6000, 
+		limit: 10,
 		replies: false,
 		position: 'append',
 		failed: "Sorry, twitter is currently unavailable for this user.",
