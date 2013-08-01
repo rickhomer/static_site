@@ -1208,6 +1208,6 @@ left: 0;
 	font-size: 2em;
 	line-height: 2;
 }
-ul .big-blue {
+.big-blue ul{
 	list-style-type:disc;
 }
