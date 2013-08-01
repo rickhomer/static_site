@@ -96,6 +96,7 @@ h1 {
 	margin-bottom: 25px;
 	text-align: center;
 	line-height: 1em;
+	margin-top:20px;
 }
 h2 {
 	font-size: 24px;
@@ -1207,6 +1208,6 @@ left: 0;
 .big-blue {
 	font-size: 2em;
 	line-height: 2;
-	list-style-type:disc;
+	list-style-type: disc;
 }
 
