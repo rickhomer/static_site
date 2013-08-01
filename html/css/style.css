@@ -1203,3 +1203,11 @@ left: 0;
 .HOMERred {
 	color:#eb3c3e;
 }
+
+.big-blue {
+	font-size: 2em;
+	line-height: 2;
+}
+ul .big-blue {
+	list-style-type:disc;
+}
