@@ -778,7 +778,7 @@ textarea:focus, input[type="text"]:focus, select:focus {
 }
 
 input:required, textarea:required {
-    background: #fff url(img/red_asterisk.gif) no-repeat 98% center;
+    background: #fff url(http://54.241.207.82/img/red_asterisk.gif) no-repeat 98% center;
 }
 
 #result {
