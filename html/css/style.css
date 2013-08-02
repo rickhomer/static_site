@@ -1262,3 +1262,8 @@ tr.d1 td {
     background-color: #fff; 
 	color: #000;
 }
+tr.label-row td {
+    background-color: #000; 
+	color: #fff;
+	font-weight:bold;
+}
