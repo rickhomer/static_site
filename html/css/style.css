@@ -1219,3 +1219,8 @@ left: 0;
 table.padded-table td {
 	padding:8px;
 }
+#download-image {
+    background-image:url(http://54.241.207.82/img/download-image.png);
+    display:block;
+
+}
