@@ -1219,7 +1219,7 @@ left: 0;
 table.padded-table td {
 	padding:8px;
 }
-.download-now {
+#download-now {
     background-image:url(http://54.241.207.82/img/download-image.png);
 	display:block;
 	height:29px;
@@ -1228,6 +1228,6 @@ table.padded-table td {
     text-indent:100%;
     white-space:nowrap;
 }
-.download-now:hover {
+#download-now:hover {
     background-image:url(http://54.241.207.82/img/download-mouse-over.png);
 }
