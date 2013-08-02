@@ -776,6 +776,11 @@ textarea:focus, input[type="text"]:focus, select:focus {
 .submit:hover {
 	background: #44b1d9;
 }
+
+input:required, textarea:required {
+    background: #fff url(img/red_asterisk.gif) no-repeat 98% center;
+}
+
 #result {
 	padding-left: 31%; /*width of label + 1% (padding-right of label) */
 }
