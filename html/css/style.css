@@ -1254,3 +1254,11 @@ table.padded-table td {
 	font-weight:bold;
 	font-size:1.2em;
 }
+tr.d0 td {
+    background-color:#A9C9D6;
+	color:#000;
+}
+tr.d1 td {
+    background-color: #fff; 
+	color: #000;
+}
