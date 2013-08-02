@@ -1244,3 +1244,8 @@ table.padded-table td {
 #buy-now:hover {
     background-image:url(http://54.241.207.82/img/buy-now-mouse-over.png);
 }
+
+.footnote {
+	color:#C03;
+	font-size:0.9em;
+}
