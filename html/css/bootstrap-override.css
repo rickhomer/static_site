@@ -2,6 +2,7 @@
   This file contains few overrides of 
   - media queries (overwrites .container class [for @media (min-width: 1200px)] with 960px )
   - some others like headings, ul, ol
+	checking version
 */
 
 h1, h2, h3, h4, h5, h6 {
