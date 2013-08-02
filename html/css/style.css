@@ -1216,3 +1216,6 @@ left: 0;
 	list-style-type: disc;
 }
 
+table.padded-table td {
+	padding:4px;
+}
