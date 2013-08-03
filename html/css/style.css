@@ -1248,6 +1248,7 @@ table.padded-table td {
 .footnote {
 	color:#C03;
 	font-size:0.8em;
+	line-height:normal;
 }
 
 .footnote-marker {
