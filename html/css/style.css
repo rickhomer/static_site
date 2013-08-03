@@ -1274,3 +1274,12 @@ tr.label-row td {
 .table-center {
 	text-align:center;
 }
+.product-container {
+	width:700px;
+	float:left;
+}
+.discount-container {
+	width:200px;
+	float:left;
+	margin-left:20px;
+}
