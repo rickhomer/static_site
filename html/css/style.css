@@ -1215,6 +1215,9 @@ left: 0;
 	line-height: 2;
 	list-style-type: disc;
 }
+.padded-table {
+	margin:0 auto;
+}
 
 table.padded-table td {
 	padding:8px;
