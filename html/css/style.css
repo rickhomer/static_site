@@ -1281,7 +1281,9 @@ tr.label-row td {
 .discount-container {
 	width:200px;
 	float:left;
-	margin:0px 0px 10px 20px;
+}
+.discounts-academics {
+		margin:0px 0px 10px 20px;
 	border-width:3px;
 	border-style:solid;
 	border-radius:15px;
@@ -1291,7 +1293,4 @@ tr.label-row td {
 .savings {
 	font-weight:900;
 }
-.new-line {
-	clear:both;
-	padding-top:20px;
-}
+
