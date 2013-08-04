@@ -1285,6 +1285,7 @@ div.product-container h2 {
 .discount-container {
 	width:200px;
 	float:left;
+	margin-left:10px;
 }
 .discounts-academics {
 	margin:0px 0px 10px 10px;
