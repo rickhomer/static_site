@@ -1218,8 +1218,9 @@ left: 0;
 .padded-table {
 	width:700px;
 }
-.center {
-	margin:auto 0;
+table.center {
+	margin-left:auto;
+	margin-right:auto;
 }
 
 table.padded-table td {
