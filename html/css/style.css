@@ -1217,7 +1217,8 @@ left: 0;
 }
 .padded-table {
 	margin:0 auto;
-	width:650px;
+	
+	border:thin;
 }
 
 table.padded-table td {
