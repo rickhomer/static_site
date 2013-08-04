@@ -1279,6 +1279,9 @@ tr.label-row td {
 	width:650px;
 	float:left;
 }
+h2.product-container {
+	margin-top:50px;
+}
 .discount-container {
 	width:200px;
 	float:left;
