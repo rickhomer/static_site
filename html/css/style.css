@@ -1216,14 +1216,10 @@ left: 0;
 	list-style-type: disc;
 }
 .padded-table {
-	margin:0 auto;
-}
-.padded-table-left {
-	float:left;
 	width:600px;
 }
 
-table.padded-table table.padded-table-left td {
+table.padded-table td {
 	padding:8px;
 }
 
@@ -1240,7 +1236,7 @@ table.padded-table table.padded-table-left td {
     background-image:url(http://54.241.207.82/img/download-mouse-over.png);
 }
 
-#buy-now #buy-now1 #buy-now2 #buy-now3 #buy-now4 {
+.buy-now {
     background-image:url(http://54.241.207.82/img/buy-now.png);
 	display:block;
 	height:29px;
@@ -1249,7 +1245,7 @@ table.padded-table table.padded-table-left td {
     text-indent:100%;
     white-space:nowrap;
 }
-#buy-now:hover #buy-now1:hover #buy-now2:hover #buy-now3:hover #buy-now4:hover {
+.buy-now:hover {
     background-image:url(http://54.241.207.82/img/buy-now-mouse-over.png);
 }
 
