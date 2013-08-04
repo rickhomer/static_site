@@ -1276,6 +1276,7 @@ tr.label-row td {
 	text-align:center;
 }
 .product-container {
+	width:650px;
 	float:left;
 }
 .discount-container {
@@ -1283,7 +1284,7 @@ tr.label-row td {
 	float:left;
 }
 .discounts-academics {
-		margin:0px 0px 10px 20px;
+	margin:0px 0px 10px 10px;
 	border-width:3px;
 	border-style:solid;
 	border-radius:15px;
