@@ -1236,7 +1236,7 @@ table.padded-table td {
     background-image:url(http://54.241.207.82/img/download-mouse-over.png);
 }
 
-#buy-now {
+#buy-now #buy-now1 #buy-now2 #buy-now3 #buy-now4 {
     background-image:url(http://54.241.207.82/img/buy-now.png);
 	display:block;
 	height:29px;
@@ -1245,7 +1245,7 @@ table.padded-table td {
     text-indent:100%;
     white-space:nowrap;
 }
-#buy-now:hover {
+#buy-now:hover #buy-now1:hover #buy-now2:hover #buy-now3:hover #buy-now4:hover {
     background-image:url(http://54.241.207.82/img/buy-now-mouse-over.png);
 }
 
