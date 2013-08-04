@@ -1217,12 +1217,16 @@ left: 0;
 }
 .padded-table {
 	margin:0 auto;
-	width:70%;
+}
+.padded-table-left {
+	float:left;
+	width:600px;
 }
 
-table.padded-table td {
+table.padded-table table.padded-table-left td {
 	padding:8px;
 }
+
 #download-now {
     background-image:url(http://54.241.207.82/img/download-image.png);
 	display:block;
