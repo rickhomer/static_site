@@ -1290,3 +1290,7 @@ tr.label-row td {
 .savings {
 	font-weight:900;
 }
+.new-line {
+	clear:both;
+	padding-top:20px;
+}
