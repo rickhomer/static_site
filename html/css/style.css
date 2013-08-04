@@ -1218,6 +1218,9 @@ left: 0;
 .padded-table {
 	width:700px;
 }
+.center {
+	margin:auto 0;
+}
 
 table.padded-table td {
 	padding:8px;
