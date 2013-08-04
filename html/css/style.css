@@ -1282,4 +1282,7 @@ tr.label-row td {
 	width:200px;
 	float:left;
 	margin-left:20px;
+	border-left:3px;
+	background-color:#000;
+
 }
