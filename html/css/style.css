@@ -1277,3 +1277,11 @@ tr.label-row td {
 .product-container {
 	float:left;
 }
+.discount-container {
+	width:200px;
+	float:left;
+	margin:0px 0px 10px 20px;
+	border-width:0px 0px 0px 3px;
+	border-style:solid;
+	padding:10px;
+}
