@@ -1311,3 +1311,176 @@ div.product-container h2 {
 	font-size:0.7em;
 	vertical-align:super;
 }
+
+/* Custom stylesheet */
+
+/*.span6 {
+    margin-left: 15px;
+}*/
+
+.login_acc {
+    border-right: 8px solid lightgrey;
+    padding-right: 100px;
+    border-radius: 2px;
+}
+
+.create_acc {
+    float: right;
+}
+
+form.form-horizontal legend {
+    padding-top: 20px;
+    font-size: 27px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+form.form-horizontal label {
+    line-height: 23px;
+}
+
+.form-horizontal .control-group {
+    margin-bottom: 30px;
+}
+
+.first_field {
+    padding-top: 10px;
+}
+
+p.forgot_pass {
+    text-align: center;
+    margin-left: 30px;
+    margin-top: -25px;
+}
+
+.signin_submit {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.signin_submit button {
+    margin-right: 40px;
+}
+
+.signup_submit {
+    text-align: center;
+    margin-top: 3px;
+}
+
+.form-horizontal label.checkbox {
+    margin-left: 12px;
+    margin-top: -12px;
+    width: 35%;
+}
+
+.signup_pass {
+    position: relative;
+}
+
+.hint {
+    position: absolute;
+    left: 6px;
+    top: 30px;
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 979px) {
+        
+    p.forgot_pass {
+        margin-right: 0;
+        margin-left: 99px;
+    }
+    
+    .form-horizontal label.checkbox {
+        width: 45%;
+    }
+    
+    .create_acc {
+        margin-right: 30px;        
+    }
+    
+    .login_acc {
+        padding-right: 72px;
+    }
+    
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+    
+    .login_acc {
+        border-right: 5px solid lightgrey;
+        padding-right: 72px;
+        border-radius: 1px;
+        margin-left: 0;
+    }
+    
+    .create_acc {
+        margin-left: 0;
+        margin-right: 30px;        
+    }   
+    
+    p.forgot_pass {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    
+    .form-horizontal label.checkbox {
+        width: 55%;
+    }
+    
+    form.form-horizontal .controls {
+        margin-left: 100px;
+    }
+    
+    /*form.form-horizontal legend {
+        width: auto;
+    }*/
+    
+    .form-horizontal .control-label {
+        width: 80px;
+    }
+    
+    .form-horizontal label.confirm_pass {
+        width: 120px;
+        margin-left: -38px;
+        font-size: 13px;
+    }
+    
+    /*.container {
+        width: 96%;
+    }*/
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+    .login_acc {
+        border-right: none;
+        padding-right: 0;
+    }
+    
+    p.forgot_pass {
+        margin-right: 0;
+        margin-left: 180px;
+        text-align: left;
+    }
+    
+    form.form-horizontal label.checkbox {
+        width: 55%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+        
+    p.forgot_pass {
+        margin-left: 0px;
+    }
+    
+}
