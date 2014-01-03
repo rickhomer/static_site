@@ -196,6 +196,11 @@ a:hover {
 	list-style-type: none;
 	display: block;
 }
+
+/*Standard list*/
+.list-standard li {
+	list-style-type: circle;
+	}
 /*list with vertical separator*/
 .list-separator {
 	margin-bottom: 10px;
