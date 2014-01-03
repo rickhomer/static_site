@@ -710,6 +710,11 @@ form input.error, form textarea.error {
 	border-color: #b94a48 !important;
 	box-shadow: none;
 }
+.tightform  fieldset {
+border-style:solid;
+border: 4px;
+border-radius: 4px;
+}
 label, input, button, select, textarea, input[type="text"] {
 	font-size: 14px;
 	color: #767676;
@@ -1490,3 +1495,4 @@ p.forgot_pass {
     }
     
 }
+
