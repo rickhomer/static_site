@@ -200,6 +200,7 @@ a:hover {
 /*Standard list*/
 .list-standard li {
 	list-style-type: circle;
+	padding-left:20px;
 	}
 /*list with vertical separator*/
 .list-separator {
