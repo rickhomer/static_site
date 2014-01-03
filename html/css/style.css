@@ -710,11 +710,7 @@ form input.error, form textarea.error {
 	border-color: #b94a48 !important;
 	box-shadow: none;
 }
-.tightform  fieldset {
-border-style:solid;
-border: 4px;
-border-radius: 4px;
-}
+
 label, input, button, select, textarea, input[type="text"] {
 	font-size: 14px;
 	color: #767676;
@@ -1420,6 +1416,13 @@ p.forgot_pass {
         padding-right: 72px;
     }
     
+}
+/* Marilyn added these for small forms, etc */
+
+.small-group {
+border: solid 4px #000000;
+border-radius: 20px;
+padding: 20px;
 }
 
 @media screen and (max-width: 979px) and (min-width: 768px) {
