@@ -723,6 +723,11 @@ input[type="text"], textarea, select {
 	-o-transition: border linear 0.2s;
 	transition: border linear 0.2s;
 }
+
+input-lg {
+	width: 300px;
+}
+
 textarea:focus, input[type="text"]:focus, select:focus {
 	box-shadow: none;
 }
