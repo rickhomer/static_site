@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+	  <!-- for google charts to load  -->
+	<script src='http://www.google.com/jsapi'></script> 
 	<meta charset="utf-8">
 	<meta name="description" content="business portfolio site template" />
 	<meta name="keywords" content="business, marketing, corporate, app, software, marketing"/>
@@ -8,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>HOMER - Hybrid Renewable and Distributed Generation System Design Software</title>
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="5WyS22LKMx4uMsY6g0/fmzL5ZhpOzlXd45oEpanE44U=" name="csrf-token" />
+<meta content="VKfashColb51bWljOOyFKNtAlCU4/bQsq2xc8tCmJGk=" name="csrf-token" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -19,8 +21,7 @@
 	<link href="http://54.241.207.82/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="http://54.241.207.82/css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="http://54.241.207.82/css/style.css" media="screen" rel="stylesheet" type="text/css" />
-	
-	<script src="/assets/application-5e037738926f2e94b51871ce97c2297a.js" type="text/javascript"></script>
+	<script src="/assets/application-6d39d9c576a7e4ec7b611731f46c9fe7.js" type="text/javascript"></script>	
 	
     <link href="/assets/favicon-7645d3b3cebb013317c7c9b3062b7485.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -31,6 +32,73 @@
 
 	<!-- header starts
 	================================================== -->
+	<section id="header" class="clearfix">
+		<div class="container" >
+    		<div class="row"> 
+	      	<!--logo starts-->
+	      		<div class="span4 logo">
+					<a href="/"><img alt="Homer Energy Logo" src="/assets/HOMERwttr300x90-af746d08cc80ee09bb4e638090c42868.png" /></a>
+				</div>
+	      	<!--logo ends-->
+	
+  		<div class="span8 clearfix"> 
+
+        <!--login section-->
+				<span class="social login"><a href="/admins/sign_out" data-method="delete" rel="nofollow">log Out</a></span>
+        <!--login ends--> 
+
+        <!--menu starts-->
+			
+				<div id="smoothmenu" class="ddsmoothmenu">
+						
+<ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="/users">Users</a>
+		<ul>
+			<li><a href="/users">Users Email and Password</a></li>
+			<li><a href="/personal_profiles">Personal Profiles</a></li>
+			<li><a href="/organization_profiles">Organization Profiles</a></li>
+			<li><a href="/homer_usages">Homer Usage Profiles</a></li>
+		</ul>
+	</li>
+	<li><a href="/purchases">Purchases</a>
+		<ul>
+			<li><a href="/purchases?type=unpaid">Unpaid Purchases</a></li>
+			<li><a href="/purchases?type=paid">Paid Purchases</a></li>
+			<li><a href="/purchases">All Purchases</a></li>
+		</ul>
+	</li>
+	<li><a href="/products">Products</a>
+		<ul>
+			<li><a href="/products?type=explorer">Homer Explorer</a></li>
+			<li><a href="/products?type=homer_2">Homer 2</a></li>
+			<li><a href="/products?type=legacy">Homer Legacy</a></li>
+		</ul>
+	</li>
+	<li><a href="/hs_surveys">Surveys</a>
+		<ul>
+			<li><a href="/hs_surveys">Old HOMER surveys</a></li>
+		</ul>
+	</li>
+	<li><a href="/report/summary">Reports</a>
+		<ul>
+			<li><a href="/report/historical_purchases_by_month">Sales by Month</a></li>
+		</ul>
+	</li>
+			
+</ul>
+
+
+				</div><!--/smoothmenu -->
+					
+	
+		<!--menu ends--> 
+
+		      </div>
+		    </div>
+		  </div>
+		</section>
+
 	<!-- header ends
 	================================================== -->
 	<!-- content starts
@@ -39,27 +107,18 @@
 		<div class="container">
 			<p class="HOMERred">Please sign in or sign up before continuing.</p>	
             
-            <style type="text/css">
-
-            </style>
-            
             <div class="span5 login_acc">
             
-			    <!--<h1><span class="HOMERred">Login</span> to Existing Account</h1>-->
-
-                <form accept-charset="UTF-8" action="/account/sign_in" class="form-horizontal" method="post">
+                <form accept-charset="UTF-8" action="/account/sign_in" class="form-horizontal" method="post" id="new_user"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="VKfashColb51bWljOOyFKNtAlCU4/bQsq2xc8tCmJGk=" /></div>
                     
                     <fieldset>
                     
                         <!-- Form Name -->
                         <legend><span class="HOMERred">Login</span> to Existing Account</legend>
-                        <div style="margin:0;padding:0;display:inline">
-                            <input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5WyS22LKMx4uMsY6g0/fmzL5ZhpOzlXd45oEpanE44U=" />
-                        </div>
                         <!-- Text input-->
                         <div class="control-group first_field">
                             
-                            <label class="control-label" for="textinput">Email</label>
+                            <label class="control-label" for="user_email">Email</label>
                             <div class="controls">
                                 <input autofocus id="user_email" name="user[email]" placeholder="name@domain.com" type="email">
                             </div>
