@@ -9,7 +9,8 @@ Version: 1.0
 /*============================================================*/
 /*---------- Import Bootstrap override ----------*/
 /*============================================================*/
-@import url('bootstrap-override.css');
+/* We (HOMER Energy) removed this line so that we could deal with all files properly. */
+/*@import url('bootstrap-override.css');*/
 /*============================================================*/
 /*---------- Searching for particular element? ----------*/
 /*============================================================*/
@@ -1498,4 +1499,12 @@ padding: 20px;
     }
     
 }
+/* HOMER Energy styles */
+/* Color2 is the "cyan" variant of class "color" that does not force inline */
 
+.color2 {
+	color: #44b1d9 !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	text-transform: inherit !important;
+}
