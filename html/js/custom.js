@@ -196,15 +196,11 @@ var imgSizer = {
     $(document).ready(function () {
     //twitter feed
     $(".twitter").tweet({
+    join_text: "auto",
+    auto_join_text_reply: "",
+    modpath:'http://test.homerenergy.com/twitter/',
     username: "homerenergy",
     count: 1,
-    loading_text: "loading tweet...",
-    join_text: "auto",
-    auto_join_text_default: "",
-    auto_join_text_ed: "",
-    auto_join_text_ing: "",
-    auto_join_text_reply: "",
-    auto_join_text_url: "",
-    modpath:'http://http://54.241.207.82/twitter/'
+    loading_text: "loading tweet..."
     });
     }); 
