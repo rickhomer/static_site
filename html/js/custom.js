@@ -205,6 +205,6 @@ var imgSizer = {
     auto_join_text_ing: "",
     auto_join_text_reply: "",
     auto_join_text_url: "",
-    modpath:'twitter/'
+    modpath:'http://http://54.241.207.82/twitter/'
     });
     }); 
