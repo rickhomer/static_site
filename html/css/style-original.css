@@ -695,7 +695,6 @@ form {
 	z-index: 0;
 }
 form p {
-	margin-left: 40px;
 	margin-bottom: 20px;
 	padding-bottom: 0px;
 	background: none;
@@ -741,17 +740,6 @@ select {
 	width: 100% !important;
 	height: 40px;
 }
-select#country_select,
-select#state_select,
-select#org_type,
-select#org_size,
-select#org_role,
-select#org_experience,
-select#security_q{
-	width: 67% !important;
-	height: 40px;
-}
-
 input[type="text"], textarea, select {
 	background-color: #fff;
 	border: 1px solid #dadee1;
@@ -816,24 +804,27 @@ input:required, textarea:required {
 	color: #44b1d9;
 }
 /*twitter feed*/
-#twitter {
-	background: #282828;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.7);
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-	-webkit-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-	box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-	display: block;
+.twitter {
+background: #282828;
+padding: 20px;
+border: 1px solid rgba(0, 0, 0, 0);
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0) inset;
+-webkit-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0) inset;
+box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0) inset;
+display: block;
 }
-#twitter li, #twitter p {
-	background: none;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+.twitter li, .twitter p {
+background: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
+.tweet_time {
+display: none;
+} 
 /*list-info*/
 .list-info li {
 	background: url(../img/footer-item-divider.png) repeat-x bottom;
@@ -1232,13 +1223,7 @@ left: 0;
 
 .big-blue {
 	font-size: 2em;
-	line-height: 2em;
-	list-style-type: disc;
-}
-fieldset .med-blue {
-	font-size: 1em;
-	line-height: 2em;
-	padding-left: 30px;
+	line-height: 2;
 	list-style-type: disc;
 }
 .padded-table {
@@ -1309,10 +1294,6 @@ tr.label-row td {
 	width:700px;
 	float:left;
 }
-.profile-container {
-	width:600px;
-	float:left;
-}
 div.product-container h2 {
 	margin-top:15px;
 }
@@ -1349,7 +1330,7 @@ div.product-container h2 {
 }*/
 
 .login_acc {
-    /*border-right: 3px solid lightgrey;*/
+    border-right: 3px solid lightgrey;
     padding-right: 100px;
     border-radius: 2px;
 }
@@ -1359,21 +1340,15 @@ div.product-container h2 {
 }
 
 form.form-horizontal legend {
+    padding-top: 20px;
     font-size: 27px;
-    line-height: 24px;
     font-weight: 400;
-    padding-top: 0; /*20px;*/
-    padding-bottom: 0; /*8px;*/
+    padding-bottom: 8px;
 }
 
 form.form-horizontal label {
     line-height: 23px;
 }
-
-/* temporary; won't handle long email addrs */
-/*form.form-horizontal#account_settings .control-label { 
-    width: 300px;
-}*/
 
 .form-horizontal .control-group {
     margin-bottom: 30px;
@@ -1384,8 +1359,8 @@ form.form-horizontal label {
 }
 
 p.forgot_pass {
-    text-align: left; /*center;*/
-    margin-left: 180px; /*30px;*/
+    text-align: center;
+    margin-left: 30px;
     margin-top: -25px;
 }
 
@@ -1406,7 +1381,7 @@ p.forgot_pass {
 .form-horizontal label.checkbox {
     margin-left: 12px;
     margin-top: -12px;
-    width: 50%; /*35%;*/
+    width: 35%;
 }
 
 .signup_pass {
@@ -1424,79 +1399,6 @@ p.forgot_pass {
 
 .clear {
     clear: both;
-}
-
-.btn-left-margin {
-	margin-left: 180px;
-}
-
-fieldset {
-    margin: 20px 0px 50px;
-	padding: 20px 20px 10px 20px;
-	border: 1px solid #44b1d9;
-	border-radius: 10px;
-}
-fieldset.homer-usage{
-	padding: 30px 20px 20px 60px;
-}
-.login_block{
-	height: 300px;
-}
-fieldset p, fieldset li {
-	font-size: 18px;
-}
-legend {
-	display: block;
-	width: 320px; /*100%;*/
-	margin: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	font-size: 27px;
-	line-height: 24px;
-	color: #333333;
-	border: 0;
-	/*border-bottom: 1px solid #e5e5e5;*/
-}
-legend.very-large-width{
-	width: 450px;
-}
-legend.large-width{
-	width: 350px;
-}
-legend.medium-width{
-	width: 300px;
-}
-legend.small-width{
-	width: 250px;
-}
-legend.very-small-width{
-	width: 200px;
-}
-legend .small {
-	font-size: 15px;
-	color: #999999;
-}
-
-.homer-usage ul {
-	margin-top: -10px;
-	margin-left: 40px;
-}
-
-.homer-usage-other label{
-	width: 150px;
-	margin-left: 40px;
-}
-
-.homer-usage-other input{
-	width: 300px !important;
-	height: 26px !important;
-}
-
-#error_explanation ul{
-	font-size: 18px;
-	color: #eb3c3e; /* HOMER red */
-	margin-left: 30px;
-	margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 979px) {
@@ -1519,14 +1421,6 @@ legend .small {
     }
     
 }
-
-.floatright {
-	float: right;
-}
-.indent{
-	margin-left: 40px;
-}
-
 /* Marilyn added these for small forms, etc */
 
 .small-group {
@@ -1538,7 +1432,7 @@ padding: 20px;
 @media screen and (max-width: 979px) and (min-width: 768px) {
     
     .login_acc {
-        /*border-right: 5px solid lightgrey;*/
+        border-right: 5px solid lightgrey;
         padding-right: 72px;
         border-radius: 1px;
         margin-left: 0;
