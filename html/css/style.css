@@ -804,24 +804,27 @@ input:required, textarea:required {
 	color: #44b1d9;
 }
 /*twitter feed*/
-#twitter {
-	background: #282828;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.7);
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-	-webkit-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-	box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0.1) inset;
-	display: block;
+.twitter {
+background: #282828;
+padding: 20px;
+border: 1px solid rgba(0, 0, 0, 0);
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0) inset;
+-webkit-box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0) inset;
+box-shadow: 0 -1px 0px 0px rgba(255, 255, 255, 0) inset;
+display: block;
 }
-#twitter li, #twitter p {
-	background: none;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+.twitter li, .twitter p {
+background: none;
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
+.tweet_time {
+display: none;
+} 
 /*list-info*/
 .list-info li {
 	background: url(../img/footer-item-divider.png) repeat-x bottom;

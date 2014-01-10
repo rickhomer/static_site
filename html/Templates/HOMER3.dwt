@@ -368,7 +368,8 @@ else
       
       <!--column three / twitter feed starts-->
       <div class="span8">
-        <div id="twitter"></div>
+        <div class="twitter"></div>
+       
       </div>
       <!--column three / twitter feed ends--> 
       
@@ -383,9 +384,9 @@ else
       
       <!--column one starts-->
       <div class="span4">
-        <h5>About HOMER Energy</h5>
-        <p>HOMER Energy (Hybrid Optimization of Multiple Energy Resources) is the world’s leading microgrid modeling software company. HOMER navigates the complexities of building cost effective and reliable microgrids that combine traditionally generated and renewable power, storage, and load management. With over 85,000 users in 193 countries, HOMER Energy is the established global leader for microgrid design optimization, feasibility and market analysis.</p>
-        <img src="../img/HOMERwttr300x90.png" alt="HOMER Energy logo"></div>
+        <p> <img src="../img/HOMERwttr200x60.png" alt="HOMER Energy logo"></p>
+        <p>HOMER Energy (Hybrid Optimization of Multiple Energy Resources) is the world’s leading microgrid modeling software company. HOMER navigates the complexities of building cost effective and reliable microgrids that combine traditionally generated and renewable power, storage, and load management. With over 100,000 users in 193 countries, HOMER Energy is the established global leader for microgrid design optimization, feasibility and market analysis.</p>
+       </div>
       <!--column one ends--> 
       
       <!--column two starts-->
@@ -410,8 +411,8 @@ else
         <h5>Get in touch</h5>
         <ul class="list-info">
           <li><img src="../img/icons/icon-18-address.png" alt="icon" style="margin-bottom:30px;">HOMER Energy<br/>
-            2334 Broadway, Suite B<br/>
-            Boulder, CO 80304 USA </li>
+            1790 30th St, Suite 100<br/>
+            Boulder, CO 80301 USA </li>
           <li><img src="../img/icons/icon-18-phone.png" alt="icon">+(1) 720-565-4046</li>
           <li><img src="../img/icons/icon-18-mail.png" alt="icon"><a href="#">info@homerenergy.com</a></li>
          <!-- <li><img src="img/icons/icon-18-skype.png" alt="icon" class="mar-btm"><a href="#">http://skype.com/skypename</a></li>-->
@@ -433,7 +434,7 @@ else
   <div class="container">
     <div class="row">
       <div class="span12">
-        <p> © Copyright 2013 HOMER Energy LLC</p>
+        <p> © Copyright 2014 HOMER Energy LLC</p>
         
         <!--copyright menu starts-->
         <ul class="copyright-menu">
@@ -455,7 +456,7 @@ else
 <!--other jqueries required--> 
 <script src="../js/bootstrap.js" type="text/javascript" ></script> 
 <script src="../js/ddsmoothmenu.js" type="text/javascript" ></script> 
-<script src="../js/twitter.js" type="text/javascript" ></script> 
+<script src="../twitter/twitter.js" type="text/javascript" ></script> 
 <script src="../js/jquery.easing.1.3.js" type="text/javascript" ></script> 
 <script src="../js/custom.js" type="text/javascript" ></script>
 <script src="../js/comparetable.js" type="text/javascript"></script>

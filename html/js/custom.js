@@ -191,3 +191,20 @@ var imgSizer = {
 	}
 }
 
+//New Twitter feed downloaded from Themeforest January 2014
+
+    $(document).ready(function () {
+    //twitter feed
+    $(".twitter").tweet({
+    username: "homerenergy",
+    count: 1,
+    loading_text: "loading tweet...",
+    join_text: "auto",
+    auto_join_text_default: "",
+    auto_join_text_ed: "",
+    auto_join_text_ing: "",
+    auto_join_text_reply: "",
+    auto_join_text_url: "",
+    modpath:'twitter/'
+    });
+    }); 
