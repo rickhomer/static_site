@@ -741,16 +741,7 @@ select {
 	width: 100% !important;
 	height: 40px;
 }
-select#country_select,
-select#state_select,
-select#org_type,
-select#org_size,
-select#org_role,
-select#org_experience,
-select#security_q{
-	width: 67% !important;
-	height: 40px;
-}
+
 
 input[type="text"], textarea, select {
 	background-color: #fff;
@@ -1233,10 +1224,6 @@ left: 0;
 	color:#eb3c3e;
 }
 
-.big-blue {
-	font-size: 2em;
-	line-height: 2em;
-	list-style-type: disc;
 }
 fieldset .med-blue {
 	font-size: 1em;
@@ -1316,26 +1303,6 @@ tr.label-row td {
 	width:600px;
 	float:left;
 }
-div.product-container h2 {
-	margin-top:15px;
-}
-.discount-container {
-	width:200px;
-	float:left;
-	margin-left:10px;
-}
-.discounts-academics {
-	margin:0px 0px 10px 10px;
-	border-width:3px;
-	border-style:solid;
-	border-radius:15px;
-	background-color:#fff;
-	padding:10px;
-}
-.savings {
-	font-weight:900;
-}
-
 .fine-print {
 	font-size:0.9em;
 	font-style:italic;
@@ -1351,23 +1318,6 @@ div.product-container h2 {
     margin-left: 15px;
 }*/
 
-.login_acc {
-    /*border-right: 3px solid lightgrey;*/
-    padding-right: 100px;
-    border-radius: 2px;
-}
-
-.create_acc {
-    float: right;
-}
-
-form.form-horizontal legend {
-    font-size: 27px;
-    line-height: 24px;
-    font-weight: 400;
-    padding-top: 0; /*20px;*/
-    padding-bottom: 0; /*8px;*/
-}
 
 form.form-horizontal label {
     line-height: 23px;
@@ -1386,25 +1336,6 @@ form.form-horizontal label {
     padding-top: 10px;
 }
 
-p.forgot_pass {
-    text-align: left; /*center;*/
-    margin-left: 180px; /*30px;*/
-    margin-top: -25px;
-}
-
-.signin_submit {
-    text-align: center;
-    margin-top: 25px;
-}
-
-.signin_submit button {
-    margin-right: 40px;
-}
-
-.signup_submit {
-    text-align: center;
-    margin-top: 3px;
-}
 
 .form-horizontal label.checkbox {
     margin-left: 12px;
@@ -1439,15 +1370,9 @@ fieldset {
 	border: 1px solid #44b1d9;
 	border-radius: 10px;
 }
-fieldset.homer-usage{
-	padding: 30px 20px 20px 60px;
-}
-.login_block{
-	height: 300px;
-}
-fieldset p, fieldset li {
-	font-size: 18px;
-}
+
+
+
 legend {
 	display: block;
 	width: 320px; /*100%;*/
@@ -1480,34 +1405,9 @@ legend .small {
 	color: #999999;
 }
 
-.homer-usage ul {
-	margin-top: -10px;
-	margin-left: 40px;
-}
-
-.homer-usage-other label{
-	width: 150px;
-	margin-left: 40px;
-}
-
-.homer-usage-other input{
-	width: 300px !important;
-	height: 26px !important;
-}
-
-#error_explanation ul{
-	font-size: 18px;
-	color: #eb3c3e; /* HOMER red */
-	margin-left: 30px;
-	margin-bottom: 10px;
-}
-
 @media screen and (max-width: 1200px) and (min-width: 979px) {
         
-    p.forgot_pass {
-        margin-right: 0;
-        margin-left: 99px;
-    }
+
     
     .form-horizontal label.checkbox {
         width: 45%;
@@ -1540,23 +1440,7 @@ padding: 20px;
 
 @media screen and (max-width: 979px) and (min-width: 768px) {
     
-    .login_acc {
-        /*border-right: 5px solid lightgrey;*/
-        padding-right: 72px;
-        border-radius: 1px;
-        margin-left: 0;
-    }
-    
-    .create_acc {
-        margin-left: 0;
-        margin-right: 30px;        
-    }   
-    
-    p.forgot_pass {
-        margin-right: 0;
-        margin-left: 20px;
-    }
-    
+     
     .form-horizontal label.checkbox {
         width: 55%;
     }
@@ -1587,16 +1471,6 @@ padding: 20px;
 
 @media screen and (max-width: 767px) {
     
-    .login_acc {
-        border-right: none;
-        padding-right: 0;
-    }
-    
-    p.forgot_pass {
-        margin-right: 0;
-        margin-left: 180px;
-        text-align: left;
-    }
     
     form.form-horizontal label.checkbox {
         width: 55%;
@@ -1606,9 +1480,7 @@ padding: 20px;
 
 @media screen and (max-width: 480px) {
         
-    p.forgot_pass {
-        margin-left: 0px;
-    }
+
     
 }
 /* HOMER Energy styles */
