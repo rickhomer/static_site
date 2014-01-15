@@ -313,7 +313,7 @@ window.setTimeout(function() { $(widget).trigger("tweet:load"); }, 1000 * s.refr
 //twitter function
 $(document).ready(function () {
 $(".twitter").tweet({
-	username: "envato",
+	username: "homerenergy",
 	count: 1,
 	loading_text: "loading tweet...",
 	join_text: "auto",
