@@ -1,4 +1,4 @@
-/*
+Fit/*
 Theme Name: Grepfrut
 Theme URI: http://tanshcreative.com/grepfrut-st-demo/index.html
 Description: Grepfrut site template is designed and developed by Tansh.
@@ -1491,4 +1491,7 @@ padding: 20px;
 	font-size: inherit !important;
 	font-weight: inherit !important;
 	text-transform: inherit !important;
+}
+.light_emphasis {
+font-style: italic;
 }
