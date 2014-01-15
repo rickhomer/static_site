@@ -301,4 +301,7 @@ padding: 20px;
 .light_emphasis {
 font-style: italic;
 }
-
+.footer-text {
+	font-size: 0.88em;
+	line-height: 1.2em;
+}
