@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+/* Custom styles for the HOMER website                                           */
+/* Edit here - do not edit styles.css in order to make upgrades go more smoothly */
+
+h1 {
+	margin-top: 20px;
+}
+form p {
+	margin-left: 40px;
+}
+
