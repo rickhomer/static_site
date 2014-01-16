@@ -305,3 +305,7 @@ font-style: italic;
 	font-size: 0.88em;
 	line-height: 1.2em;
 }
+/* add rounded corners to anything */
+.medium-rounded {
+	border-radius:30px;
+}
