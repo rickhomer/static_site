@@ -213,6 +213,22 @@ a:hover {
 	list-style-type: none;
 	display: block;
 }
+p.staff-subheader {
+	margin-bottom: 0px;
+}
+
+.listsqbullet {
+	list-style-type: square;
+	list-style-position: inside;
+	margin-left: 20px;
+}
+.staff-table {
+	vertical-align: top;
+}
+
+
+
+
 /*list with vertical separator*/
 .list-separator {
 	margin-bottom: 10px;
@@ -1246,4 +1262,3 @@ left: 0;
 
 
 /* Custom stylesheet */
-
