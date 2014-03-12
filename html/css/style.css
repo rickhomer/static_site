@@ -213,18 +213,7 @@ a:hover {
 	list-style-type: none;
 	display: block;
 }
-p.staff-subheader {
-	margin-bottom: 0px;
-}
 
-.listsqbullet {
-	list-style-type: square;
-	list-style-position: inside;
-	margin-left: 20px;
-}
-.staff-table {
-	vertical-align: top;
-}
 
 
 
@@ -1253,12 +1242,3 @@ left: 0;
 .portfolio_4column img {
 	max-width: 220px;
 }
-
-
-
-
-/* HOMER Energy Specific CSS */
-
-
-
-/* Custom stylesheet */
