@@ -1,0 +1,18 @@
+.staff-table {
+	vertical-align: top;
+	margin-left: 50px;
+}
+.staff-table p {
+	margin-bottom: 0px:
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+}
+.listsqbullet {
+	margin-left: 20px;
+	list-style-position: inside;
+	list-style-type: square;
+}
+#newsletter-list {
+	list-style-image: url(../images/arrow_black.png);
+	list-style-position: inside;
+}
