@@ -11,7 +11,7 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <meta name="description" content="HOMER software for microgrid and distributed generation power system design and optimization" />
 <meta name="keywords" content="renewable energy, microgrid, distributed generation, off-grid power systems"/>
-<title>HOMER - Hybrid Renewable and Distributed Generation System Design Software</title>
+<title>HOMER - Hybrid Renewable Microgrid System Design Software</title>
 <!-- TemplateEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="../img/icons/favicon.ico">
@@ -181,6 +181,7 @@ else
                                 <ul>
                                     <li><a href="../microgrids.html">Why microgrids?</a> </li>
                                     <li><a href="http://blog.homerenergy.com" target="_blank">Blog</a> </li>
+                                    <li><a href="../HOMER_bibliography.html">HOMER Bibliography</a> </li>
                                     <li><a href="#">White Papers</a></li>
                                     <li><a href="#">Presentations</a></li>
                                     <li><a href="#">Testimonials</a></li>
