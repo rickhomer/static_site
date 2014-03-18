@@ -16,3 +16,73 @@
 	list-style-image: url(../images/arrow_black.png);
 	list-style-position: inside;
 }
+.h {
+	clear: both;
+}
+.partner-list-block {
+	width: 450px;
+	padding: 10px;
+	height: 95px;
+	border: 2px solid #666;
+	border-radius: 10px;
+	margin-left: 50px;
+}
+.partner-list {
+	list-style-position: inside;
+	list-style-type: disc;
+	margin-left: 10px;
+	display: block;
+	float: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+div.partner-block {
+	width: 80%;
+	font-size: 13px;
+	line-height: 17px;
+	margin-left: 50px;
+	clear: both;
+}
+div.partner-logo {
+	float: left;
+	width: 200px;
+	background-color: #fff;
+	border: 1px solid #44B1D9;
+	margin-right: 20px;
+	margin-bottom: 4px;
+	padding: 8px;
+}
+div.partner-logo a img{
+}
+div.partner-header-logo {
+	border: 1px solid #44B1D9;
+	width: 240px;
+	padding: 20px;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	margin-left: 80px;
+}
+.partner-feature-list {
+	margin-left: 20px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+.partner-page {
+}
+.partner-page h4 {
+	margin: 20px 0px 0px;
+}
+.big-quote {
+	width: 80%;
+}
+.green {
+	color: #009531;
+}
+.shipstone-diagram {
+	background-color: #fff;
+	margin-left: 200px;
+	padding-top: 20px;
+	border: 1px solid #44B1D9;
+}
