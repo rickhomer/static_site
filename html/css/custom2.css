@@ -33,10 +33,7 @@
 	margin-left: 10px;
 	display: block;
 	float: left;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
+	padding: 0px 0px 0px 20px;
 }
 div.partner-block {
 	width: 80%;
@@ -92,4 +89,19 @@ div.partner-header-logo {
 	margin-left: 200px;
 	padding-top: 20px;
 	border: 1px solid #44B1D9;
+}
+.training-table {
+	border-collapse: collapse;
+	margin-left: 80px;
+}
+.training-table th, .training-table td {
+	border: 1px solid #777;
+	padding: 4px 14px 4px 14px;
+}
+.indent-std {
+	margin-left: 50px;
+}
+
+.training-table th {
+	background-color: #E3E3E3;
 }
