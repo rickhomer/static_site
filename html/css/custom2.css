@@ -46,7 +46,6 @@ div.partner-logo {
 	float: left;
 	width: 200px;
 	background-color: #fff;
-	border: 1px solid #44B1D9;
 	margin-right: 20px;
 	margin-bottom: 4px;
 	padding: 12px;
@@ -54,7 +53,6 @@ div.partner-logo {
 div.partner-logo a img{
 }
 div.partner-header-logo {
-	border: 1px solid #44B1D9;
 	width: 240px;
 	padding: 24px;
 	background-color: #FFF;
