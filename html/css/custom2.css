@@ -23,7 +23,7 @@
 	width: 450px;
 	padding: 10px;
 	height: 95px;
-	border: 2px solid #666;
+	border: 2px solid #44B1D9;
 	border-radius: 10px;
 	margin-left: 160px;
 }
@@ -59,12 +59,12 @@ div.partner-logo a img{
 div.partner-header-logo {
 	border: 1px solid #44B1D9;
 	width: 240px;
-	padding: 18px;
+	padding: 24px;
 	background-color: #FFF;
 	margin-bottom: 20px;
 	margin-left: 80px;
 }
-.partner-feature-list {
+.feature-list {
 	margin-left: 20px;
 	list-style-position: inside;
 	list-style-type: disc;
@@ -74,6 +74,13 @@ div.partner-header-logo {
 .partner-page h4 {
 	margin: 20px 0px 0px;
 }
+.header-margins {
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
 .big-quote {
 	width: 80%;
 }
