@@ -16,7 +16,7 @@
 	list-style-image: url(../images/arrow_black.png);
 	list-style-position: inside;
 }
-.h {
+hr, .h {
 	clear: both;
 }
 .partner-list-block {
@@ -103,3 +103,47 @@ div.partner-header-logo {
 .training-table th {
 	background-color: #E3E3E3;
 }
+.news-title {
+	font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+.news-header img, .news-title {
+	margin-bottom: 10px;
+}
+
+.bcbr-logo {
+	background-color: #FFF;
+	height: 50px;
+	width: 100px;
+	padding: 4px;
+}
+.camera-logo {
+	width: 200px;
+	margin-bottom: -10px;
+}
+.examiner-logo {
+	width: 220px;
+	height: 42px;
+	border: 8px solid #000;
+}
+.venture-logo {
+	background-color: #FFF;
+	height: 30px;
+	width: 130px;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
