@@ -64,6 +64,12 @@ div.partner-header-logo {
 	list-style-position: inside;
 	list-style-type: disc;
 }
+.feature-list-secondary {
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-left: 20px;
+}
+
 .partner-page {
 }
 .partner-page h4 {
@@ -134,16 +140,3 @@ div.partner-header-logo {
 	text-align: center;
 	padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
