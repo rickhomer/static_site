@@ -7,8 +7,6 @@
 }
 .staff-table p {
 	margin-bottom: 0px:
-	margin-bottom: 0px;
-	margin-bottom: 0px;
 }
 .staffimage {
 	float: left;
@@ -86,7 +84,7 @@ div.partner-header-logo {
 .header-margins {
 	margin-top: 20px;
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 4px;
 	margin-left: 0px;
 }
 
@@ -122,7 +120,7 @@ div.partner-header-logo {
 	font-size: 20px;
 	font-weight: bold;
 }
-.news-header img, .news-title {
+.news-header img, .news-title,  {
 	margin-bottom: 10px;
 }
 
