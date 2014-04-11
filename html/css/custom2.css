@@ -150,3 +150,9 @@ div.partner-header-logo {
 	font-size: 18px;
 	color: #0CF;
 }
+.contact h3 {
+	margin: 0px;
+}
+.contact p {
+	margin-bottom: 20px;
+}
