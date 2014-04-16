@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <!-- for google charts to load  -->
+	<script src='https://www.google.com/jsapi'></script> 
+	<meta charset="utf-8">
+	<meta name="description" content="HOMER Energy software download" />
+	<meta name="keywords" content="distributed generation, renewable energy software, HOMER software, microgrid software"/>
+	<meta name="author" content="HOMER Energy LLC" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>HOMER - Hybrid Renewable and Distributed Generation System Design Software</title>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="iqg7dSkzuSFeGDeRFvcCXszQi/zzOG0p1V/Egb70NCs=" name="csrf-token" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" media="screen" rel="stylesheet" type="text/css" />
+
+	<link href="https://users.homerenergy.com/assets/application-all.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/bootstrap-override.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/bootstrap-responsive.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/bootstrap.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/bootstrap_and_overrides.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/custom.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/style.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/all/style2.css?body=1" media="all" rel="stylesheet" type="text/css" /><!-- needed for css files in assets/stylesheets/all, ie, local style.css -->
+	<link href="https://users.homerenergy.com/assets/application-print.css?body=1" media="print" rel="stylesheet" type="text/css" />
+<link href="https://users.homerenergy.com/assets/print/print.css?body=1" media="print" rel="stylesheet" type="text/css" /><!-- needed for css files in assets/stylesheets/print, ie, local style.css --> 
+	<script src="https://users.homerenergy.com/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-transition.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-alert.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-modal.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-tab.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-popover.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-button.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-affix.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/ddsmoothmenu.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/eula_agreement.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/organization_profiles.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/personal_profile.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/application.js?body=1" type="text/javascript"></script>
+ 	
+    <link href="https://users.homerenergy.com/assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+  <body>
+
+	<!-- header starts -->
+	<section id="header" class="clearfix">
+		<div class="container" >
+    		<div class="row"> 
+	      		<!--logo starts-->
+	      		<div class="span4 logo">
+					<a href="/"><img alt="Homer Energy Logo" src="https://users.homerenergy.com/assets/HOMERwttr300x90.png" /></a>
+				</div>
+		      	<!--logo ends-->
+
+	  			<div class="span8 clearfix"> 
+
+			        <!--login section-->
+						<a href="/account/sign_out" class="btn btn-primary btn-small floatright" data-method="delete" rel="nofollow">Logout</a>
+			        <!--login ends--> 
+
+			        <!--menu starts-->
+					<div id="smoothmenu" class="ddsmoothmenu">
+							<ul>
+	<li><a href="/" class="selected">Home</a></li>
+	<li><a href="/">Profile</a>
+		<ul>
+					<li><a href="/personal_profiles/1/edit">Personal Information</a></li>
+			<li><a href="/users/1/account_settings">Account Settings</a></li>
+					<li><a href="/organization_profiles/1/edit">Organization</a></li>
+					<li><a href="/homer_usages/3">HOMER Usage</a></li>
+		</ul>
+	</li>	
+	<li><a href="/products">Download/Purchase</a>
+		<ul>
+			<!--li></li-->
+			<li><a href="/pages/homer_2">HOMER 2</a></li>
+			<li><a href="/">Legacy Software</a>
+				<ul>
+					<li><a href="/pages/homer_legacy">HOMER Legacy</a></li>
+				</ul>
+			</li>
+			<li><a href="/">Free Downloads</a>
+				<ul>
+					<li><a href="/pages/file_download">Sample Files</a></li>
+					<li><a href="/pages/vipor_download">ViPOR</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="/">Support</a>
+		<ul>
+			<li><a href="/pages/customer_service">Customer Service</a></li>
+			<li><a href="/pages/contact_us">Contact Us</a></li>
+			<li><a href="http://support.homerenergy.com/" target="_blank">Support Center</a> 
+		</ul>
+	</li>
+	<li><a href="/">History</a>
+		<ul>
+			<li><a href="/purchases">Orders</a></li>
+			<li><a href="/downloads/user_index">Downloads</a></li>
+			<li><a href="/users/1/show_licenses">Manage Licenses</a></li>
+		</ul>
+	</li>
+	<li><a href="http://www.homerenergy.com" target="_blank">HOMER Energy</a></li>
+</ul>
+
+					</div><!--/smoothmenu -->
+					<!--menu ends--> 
+	    		</div>
+	    	</div>
+		</div>
+	</section>
+	<!-- header ends -->
+
+	<!-- content starts -->
+	<br />
+	<section id="content" class="clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="span10 offset1 clearfix">
+						<p></p>
+ 
+						<h2><img alt="HOMER Pro logo" class="" src="https://users.homerenergy.com/assets/Probltr200x63.png" /> "First Look" Beta Release</h2>
+						<p>HOMER&reg; Professional is HOMER Energy's newest &quot;power user&quot; product, scheduled for release in summer 2014. HOMER Professional is destined to do all that HOMER 2 can, and much more. New features include:</p>
+						<div class="span8" style="background-color:#44b1d9; border-radius:15px; color:#FFF; padding:10px; text-shadow:none;"><ul>
+						  <li>Redesigned modern user interface</li>
+						  <li>More sophisticated load handling, and more options for load creation, including building from measured equipment data</li>
+						  <li>Component library for improved management of your preferred equipment</li>
+						  <li>Microgrid builder - create and save sets of equipment</li>
+						  <li>Maintenance scheduling for wind turbines and generators</li>
+						  <li>Multiple PV arrays (not in the First Look version but coming soon!)</li>
+						  <li>Wind turbine losses</li>
+						  <li>Model less than one year (for expeditions)</li>
+						  <li>Fuel usage data in results</li>
+						  <li>Component size and weight in results</li>
+				  </ul>
+                  </div>
+                  <div class="clear">
+                  <br />
+						<p>We are not yet calling this a full beta release as the product is not yet feature complete. The following HOMER 2 features are missing from this release:</p>
+						<ul>
+						  <li>Help documents and context-sensitive help</li>
+						  <li>Hydrogen</li>
+						  <li>Compare simulations</li>
+						  <li>File compare</li>
+						  <li>Certain graphs</li>
+				  </ul>
+						<p>HOMER Professional First Look will not read .hmr files. </p>
+                        </div>
+						
+						<div class="span8" style="background-color:#44b1d9; border-radius:15px; color:#FFF; padding:10px; text-shadow:none;"><p><strong>Important notice for beta participants!</p> <p>This beta is intended solely for customer feedback and identification of defects. </strong></p><p>When you start the program, you will be requested to enter your email and password for our website.</p><p><em>When you hit the &quot;Calculate&quot; button, your HOMER file will be sent to a repository and stored in a warehouse that identifies the file as having been created by you. The ultimate product will have an option to keep your data private, but this option is not available for the beta. We will not share your files or data with anyone, and our only plans for these data at this time is to test our data warehousing ability and possibly to examine the types of problems our beta testers are looking at. </em></p>
+						
+                        </div>
+                        <div class="clear"><br /><p>We sincerely hope you'll agree to take a look and provide us with honest feedback regarding the product. You will be asked to accept a special edition of the HOMER End User License Agreement before you install the First Look product. You can preview the license text here.</p>
+
+				  <p><a href="/" class="btn btn-primary btn-margin">Download Now</a></p>
+		</div>
+
+			  </div>
+			</div>
+		</div>
+	</section>
+	<!-- content ends --> 
+
+	<!-- footer starts -->
+	<footer id="footer" class="clearfix">
+  <div class="container"> 
+
+    <!--row starts-->
+    <div class="row"> 
+  
+        <!--column one / social icon list starts-->
+        <div class="span2">
+            <ul class="social clearfix">
+                <li><a href="http://linkedin.com/company/homer-energy" target="_blank"><img alt="icon" height="28" src="https://users.homerenergy.com/assets/img/icons/social-icon-linkedin.png" width="28" /></a></li>
+
+                <li><a href="http://facebook.com/homerenergy" target="_blank"><img alt="icon" height="28" src="https://users.homerenergy.com/assets/img/icons/social-icon-facebook.png" width="28" /></a></li>
+
+                <li><a href="http://twitter.com/homerenergy" target="_blank"><img alt="icon" height="28" src="https://users.homerenergy.com/assets/img/icons/social-icon-twitter.png" width="28" /></a></li>
+            </ul>
+        </div>
+        <!--column one ends--> 
+  
+        <!--column two starts-->
+        <div class="span2 text-center"> Follow on Twitter
+            <h5><a href="http://twitter.com/homerenergy" target="_blank">@homerenergy</a></h5>
+        </div>
+        <!--column two ends--> 
+
+        <!--column three / twitter feed starts-->
+        <!--div class="span8">
+            <div class="twitter"></div>
+        </div-->
+        <!--column three / twitter feed ends--> 
+  
+    </div>
+    <!--row ends--> 
+
+    <!--spacer here-->
+    <div class="spacer-30px"></div>
+
+    <!--row starts-->
+    <div class="row"> 
+  
+        <!--column one starts-->
+        <div class="span4">
+            <p><img alt="HOMER Energy logo" src="https://users.homerenergy.com/assets/img/HOMERwttr200x60.png" /></p>
+            <p class="footer-text">HOMER Energy LLC is the world’s leading microgrid modeling software company. The HOMER (Hybrid Optimization of Multiple Energy Resources) software navigates the complexities of building cost effective and reliable microgrids that combine traditionally generated and renewable power, storage, and load management. With over 100,000 users in 193 countries, HOMER is the established global leader for microgrid design optimization and feasibility, and HOMER Energy is a nexus for the microgrid market.</p>
+        </div>
+        <!--column one ends--> 
+  
+        <!--column two starts-->
+        <div class="span4">
+            <h5>Top Content</h5>
+            <ul class="list-unstyled">
+                <li><a href="http://blog.homerenergy.com/microgrid-value-propositions/" target="_blank"><img alt="Microgrid Market Growth" src="https://users.homerenergy.com/assets/img/microgrid-market-growth.jpg" width="50" /></a></li>
+                    <h6>Microgrid Value Propositions</h6>
+                    <span>123 Jan 2012 | <a href="http://blog.homerenergy.com/microgrid-value-propositions/" target="_blank">by Peter Lilienthal</a></span></li>
+
+                <li><a href="http://blog.homerenergy.com/how-to-classify-microgrids-setting-the-stage-for-a-distributed-generation-energy-future/" target="_blank"><img alt="Scaling Microgrids" src="https://users.homerenergy.com/assets/img/scaling_microgrids.png" /></a>
+                    <h6>Classifying Microgrids</h6>
+                    <span>2 Apr 2013 | <a href="http://blog.homerenergy.com/how-to-classify-microgrids-setting-the-stage-for-a-distributed-generation-energy-future/" target="_blank">by Peter Lilienthal</a></span></li>
+
+                <li><a href="http://blog.homerenergy.com/the-problem-with-100-renewable-energy/" target="_blank"><img alt="Solar PV cells with sunrise" src="https://users.homerenergy.com/assets/img/solar-photovoltaics-sunrise.jpg" width="70" /></a>
+                    <h6>100% Renewable Energy Challenges</h6>
+                    <span>24 Apr 2013 | <a href="http://blog.homerenergy.com/the-problem-with-100-renewable-energy/" target="_blank">by Peter Lilienthal</a></span></li>
+            </ul>
+        </div>
+        <!--column two ends--> 
+  
+        <!--column three starts-->
+        <div class="span4">
+            <h5>Get in touch</h5>
+            <ul class="list-info">
+                <li><img alt="icon" src="https://users.homerenergy.com/assets/img/icons/icon-18-address.png" style="margin-bottom:30px;" />HOMER Energy<br/>
+                    1790 30th St, Suite 100<br/>
+                    Boulder, CO 80301 USA </li>
+                <li><img alt="icon" src="https://users.homerenergy.com/assets/img/icons/icon-18-phone.png" />+(1) 720-565-4046</li>
+                <li><img alt="icon" src="https://users.homerenergy.com/assets/img/icons/icon-18-mail.png" />
+                    <a href="mailto:info@homerenergy.com">info@homerenergy.com</a>
+                <!-- <li><img src="img/icons/icon-18-skype.png" alt="icon" class="mar-btm"><a href="#">http://skype.com/skypename</a></li>-->
+            </ul>
+        </div>
+        <!--column three ends--> 
+  
+    </div>
+    <!--row ends--> 
+
+  </div>
+</footer>
+	<!-- footer ends --> 
+
+	<!--other jqueries required-->
+
+	<!-- copyright starts -->
+	<section id="copyright" class="clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<p> © Copyright 2014 HOMER Energy LLC</p>
+
+				<!--copyright menu starts-->
+				<ul class="copyright-menu">
+					<li><a href="http://www.homerenergy.com/index.html">Home</a></li>
+					<li><a href="http://support.homerenergy.com" target="_blank">Support</a></li>
+					<li><a href="http://blog.homerenergy.com" target="_blank">Blog</a></li>
+					<li><a href="http://www.homerenergy.com/sitemap.html">Site Map</a></li>
+					<li><a href="http://users.homerenergy.com/contact_us.html">Contact</a></li>
+				</ul>
+				<!--copyright menu ends-->  
+
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- copyright ends  -->
+
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://users.homerenergy.com/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-transition.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-alert.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-modal.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-tab.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-popover.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-button.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap/bootstrap-affix.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/twitter/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/bootstrap.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/ddsmoothmenu.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/eula_agreement.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/organization_profiles.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/personal_profile.js?body=1" type="text/javascript"></script>
+<script src="https://users.homerenergy.com/assets/application.js?body=1" type="text/javascript"></script>
+
+  </body>
+</html>
+
