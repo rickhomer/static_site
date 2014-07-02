@@ -160,3 +160,12 @@ div.partner-header-logo {
 	text-indent: -20px;
 	padding-left: 20px;
 }
+ul.privacy {
+	list-style-position: inside;
+}
+span.under {
+	text-decoration: underline;
+}
+p.marg-top {
+	margin-top: 20px;
+}
