@@ -81,6 +81,10 @@ div.partner-header-logo {
 .partner-page h4 {
 	margin: 20px 0px 0px;
 }
+.partner-page .partner-photo img {
+	border: 1px solid #444;
+}
+
 .header-margins {
 	margin-top: 20px;
 	margin-right: 0px;
