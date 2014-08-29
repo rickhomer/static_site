@@ -1,3 +1,16 @@
+/* Overrides the original theme rules to sharpen the text/background contrast */
+body {
+	background: #f9f9f9; /*#f2f2f2; ORIG*/
+	color: #606060; /*#767676; ORIG*/
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #5a5a5a; /*#646464; ORIG*/
+}
+a {
+	color: #3b9cbf; /*#44b1d9; ORIG*/
+}
+/* End theme overrides */
+
 .staffmember hr {
 	margin-top: 20px;
 }
@@ -55,6 +68,7 @@ div.partner-logo {
 	margin-right: 20px;
 	margin-bottom: 4px;
 	padding: 12px;
+	border: 1px solid #bbb;
 }
 div.partner-logo a img{
 }
