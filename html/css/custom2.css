@@ -39,26 +39,69 @@ hr, .h {
 	clear: both;
 }
 .partner-list-block {
-	width: 450px;
-	padding: 10px;
-	height: 130px;
+	width: 490px;
+	padding: 0px;
+	height: 350px;
 	border: 2px solid #44B1D9;
 	border-radius: 10px;
-	margin-left: 160px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .partner-list {
 	list-style-position: inside;
 	list-style-type: disc;
-	margin-left: 10px;
 	display: block;
 	float: left;
-	padding: 0px 0px 0px 20px;
+	width: 200px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 15px;
 }
+.partner-list-wrap {
+	padding-left: 16px;
+}
+.partner-list-heading {
+	font-size: 14px;
+	text-align: center;
+	clear: both;
+	margin-top: 20px;
+	font-weight: 600;
+	text-transform: none;
+	background-color: #666;
+	color: #FFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-variant: small-caps;
+}
+.partner-heading {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	background-color: #666;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+	padding-left: 40px;
+	clear: none;
+	color: #fff;
+	font-variant: small-caps;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+
 div.partner-block {
-	width: 80%;
+	width: 90%;
 	font-size: 13px;
 	line-height: 17px;
-	margin-left: 50px;
+	margin-left: 60px;
 	clear: both;
 }
 div.partner-logo {
@@ -78,6 +121,7 @@ div.partner-header-logo {
 	background-color: #FFF;
 	margin-bottom: 20px;
 	margin-left: 80px;
+	border: 1px solid #bbb;
 }
 .feature-list {
 	margin-left: 20px;
