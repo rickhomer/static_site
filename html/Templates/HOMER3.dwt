@@ -150,12 +150,12 @@ else
                                     <!--<li><a href="../compare.html">Compare all</a></li>-->
                                     
                                     <li><a href="../HOMER_customization.html">Custom HOMER versions</a></li>
-                                    <li><a href="#">Retired products</a>
+                                    <!--<li><a href="#">Retired products</a>
                                    			<ul>
                                     			<li><a href="../HOMER_2.html">HOMER 2</a></li>
                                    				<li><a href="../HOMER_legacy.html">HOMER Legacy</a></li>
                                      		</ul>
-                                     </li>
+                                     </li>-->
                                 </ul>
             				</li>
              				<li><a href="../services.html">Services</a>
@@ -168,6 +168,7 @@ else
 							</li>
                 			<li><a href="../support.html">Support</a>
                                 <ul>
+                                    <li><a href="pro-faq.html">Frequently asked Questions</a></li>
                                     <li><a href="http://support.homerenergy.com" target="_blank">Support Portal</a></li>
                                     <li><a href="http://support.homerenergy.com/index.php?/Knowledgebase/List" target="_blank">Knowledgebase</a></li>
                                     <li><a href="http://homerusersgroup.ning.com" target="_blank">Community Forum</a></li>
