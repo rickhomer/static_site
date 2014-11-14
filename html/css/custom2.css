@@ -360,7 +360,12 @@ p.marg-top {
 .alt {
 	/*background-color: #fdfdfd;*/
 	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	/*border-right: 1px solid #eee;*/
+}
+.alt2 {
+	/*background-color: #fdfdfd;*/
+	border-left: 1px solid #eee;
+	/*border-right: 1px solid #eee;*/
 }
 
 /* section header columns - alternating */
