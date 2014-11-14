@@ -255,20 +255,38 @@ p.marg-top {
 	margin:0px 10px 0px 10px;
 }
 
+
+/* pro features table */
 .features-table {
 	width:auto;
 	margin-left: auto;
 	margin-right: auto;
+	/*empty-cells: show;*/
 }
-.features-table tr.section-header {
+/* section header rules */
+.features-table tr.section-header,
+.features-table tr.section-header-mods {
 	font-weight: bold;
 	background-color: #FFF;
 }
-.features-table tr.section-header td {
+.features-table tr.section-header td,
+.features-table tr.section-header-mods td {
 	text-align: center;
 	line-height: 14px;
-	color:  #44b1d9;
+	color:  #44b1d9; /* blue text */
 }
+.features-table tr.section-header td:first-child {
+	font-size: 20px;
+	line-height: 20px;
+}
+.features-table tr.section-header {
+	margin-top: 20px;
+}
+.features-table .header-mods {
+	background-color: #e1ffe1; /*light green*/
+}
+
+/* section sub-header and item rules */
 .features-table tr.section-sub-header td {
 	text-align: center;
 	line-height: 14px;
@@ -292,9 +310,11 @@ p.marg-top {
 .features-table tr.section-item td:first-child {
 	text-align: left;
 }
+
 .features-table tr.section-item td span {
 	padding: 6px 10px 6px 10px;
 }
+
 /* all text on the chart, cols 2-6*/
 .features-table tr.section-item td:nth-child(2),
 .features-table tr.section-item td:nth-child(3),
@@ -308,29 +328,61 @@ p.marg-top {
 .features-table tr.section-sub-header td:nth-child(6) {
 	width: 80px;
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 12px;
+	font-weight: 600;
+	color:  #555;
+}
+.features-table .small-font {
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	line-height: 11px;
 	font-weight: 600;
 	color:  #555;
 }
 
-.features-table tr.section-header td:nth-child(1),
+/* space between last item row and next header */
+.features-table tr.spacer {
+	height: 20px;
+}
+
+/* rows */
+.odd {
+	background-color: #f5f5f5;
+	/*border-bottom: 1px solid #eee;*/
+}
+.even {
+	/*background-color: #f0f0f0;*/
+	/*border-bottom: 1px solid #eee;*/
+}
+
+/* columns */
+.alt {
+	/*background-color: #fdfdfd;*/
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+/* section header columns - alternating */
+/*.features-table tr.section-header td:nth-child(1),
 .features-table tr.section-header td:nth-child(3),
 .features-table tr.section-header td:nth-child(5) {
-	background-color: #fefefe;
+	background-color: #fff;
 }
-.features-table tr.section-sub-header td:nth-child(1),
+.features-table tr.section-header td:nth-child(2),
+.features-table tr.section-header td:nth-child(4),
+.features-table tr.section-header td:nth-child(6) {
+	background-color: #fff; 
+} */ /*#f5f9ff;*/   
+
+/* sub header and body cell columns - alternating */
+/*.features-table tr.section-sub-header td:nth-child(1),
 .features-table tr.section-sub-header td:nth-child(3),
 .features-table tr.section-sub-header td:nth-child(5),
 .features-table tr.section-item td:nth-child(1),
 .features-table tr.section-item td:nth-child(3),
 .features-table tr.section-item td:nth-child(5) {
-	background-color: #f7f7f7;
-}
-.features-table tr.section-header td:nth-child(2),
-.features-table tr.section-header td:nth-child(4),
-.features-table tr.section-header td:nth-child(6) {
-	background-color: #f3f3f3; /*#f5f9ff;*/
+	background-color: #eee;
 }
 .features-table tr.section-sub-header td:nth-child(2),
 .features-table tr.section-sub-header td:nth-child(4),
@@ -338,8 +390,8 @@ p.marg-top {
 .features-table tr.section-item td:nth-child(2),
 .features-table tr.section-item td:nth-child(4),
 .features-table tr.section-item td:nth-child(6) {
-	background-color: #e8e8e8; /*#f5f9ff;*/
-}
+	background-color: #ddd; 
+}*/  /*#e8e8e8;*/ /*#f5f9ff;*/
 
 
 

@@ -257,19 +257,42 @@ else
     <!--columns start-->
     <div class="span12">
 
-<table class="features-table">
-  <tbody>
-<!-- section 1 -->
+<table class="features-table" style="text-shadow:none;">
+	<colgroup>
+        <col>
+        <col class="alt">
+        <col>
+        <col class="alt">
+        <col>
+        <col class="alt">
+        <col>
+    </colgroup>
+    
+	<tbody>
+<!-- section 1: Info & Setup -->
+
     <tr class="section-header">
+        <td rowspan="2">Project information and setup</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
+    <!--tr class="section-header">
         <td>Project information and setup</td>
         <td>HOMER Pro<br />(Main)</td>
         <td>Advanced<br />Load</td>
         <td>Biomass</td>
         <td>Hydro</td>
         <td>Combined<br />Heat and<br />Power</td>
-    </tr>
+    </tr-->
     
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Locate project on map</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -277,7 +300,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>View system schematic</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -285,15 +308,15 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td style="text-align: left;">Set time step size</td>
+    <tr class="section-item odd">
+        <td style="text-align: left;">Time step size</td>
         <td>1 to 60 minutes</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td style="text-align: left;">Fuel minimization option</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -301,7 +324,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td style="text-align: left;">Dispatch strategies</td>
         <td>2</td>
         <td></td>
@@ -309,7 +332,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>AC and DC buses</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -318,15 +341,29 @@ else
         <td></td>
     </tr>
     
-<!-- section 2 -->
-    <tr class="section-header">
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    
+<!-- section 2: Components  -->
+	<tr class="section-header">
+        <td rowspan="2">Components</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
+    <!--tr class="section-header">
         <td>Components</td>
         <td>HOMER Pro<br />(Main)</td>
         <td>Advanced<br />Load</td>
         <td>Biomass</td>
         <td>Hydro</td>
         <td>Combined<br />Heat and<br />Power</td>
-    </tr>
+    </tr-->
     
     <!-- sub header -->
     <tr class="section-sub-header">
@@ -338,23 +375,23 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model operations and maintenance cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Operations and maintenance cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td><span>Maintenance scheduling</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -362,7 +399,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Operational scheduling</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -370,9 +407,9 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
-        <td>Hours</td>
+    <tr class="section-item odd">
+        <td><span>Lifetime</span></td>
+        <td>S (hours)</td>
         <td></td>
         <td></td>
         <td></td>
@@ -389,15 +426,15 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Type</span></td>
         <td>Flat plate or<br />concentrating</td>
         <td></td>
@@ -405,23 +442,23 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
-        <td>Years</td>
+    <tr class="section-item odd">
+        <td><span>Lifetime</span></td>
+        <td>S (years)</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set derating factor</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Derating factor</span></td>
+        <td>V</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td><span>Dedicated converter</span></td>
         <td>Inverter or<br />maximum<br />powerpoint<br />tracker</td>
         <td></td>
@@ -429,33 +466,23 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model temperature effects</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Temperature effects</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model tracking, slope, azimuth</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Tracking, slope, azimuth</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    
-<!-- section header -->
-    <tr class="section-header">
-        <td>Components</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
-    </tr>
-    
+     
     <!-- sub header -->
     <tr class="section-sub-header">
         <td>Wind Turbine</td>
@@ -466,39 +493,39 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
-        <td>Years</td>
+    <tr class="section-item even">
+        <td><span>Lifetime</span></td>
+        <td>S (years)</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model hub height</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Hub height</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set losses</span></td>
-        <td>7 types</td>
+    <tr class="section-item even">
+        <td><span>Losses</span></td>
+        <td>V (7 types)</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td><span>Scheduled turbine maintenance</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -517,15 +544,15 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Types</span></td>
         <td>Lead acid,<br />lithium ion,<br />flow</td>
         <td></td>
@@ -533,31 +560,31 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model initial state of charge</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Initial state of charge</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model minimum state of charge</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Minimum state of charge</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime throughput</td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Lifetime throughput</td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Enforce or model minimum life</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -576,17 +603,17 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Lifetime</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
@@ -603,39 +630,29 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
-        <td>Years</td>
+    <tr class="section-item even">
+        <td><span>Lifetime</span></td>
+        <td>S (years)</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model efficiency</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Efficiency</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-    </tr>
-    
-<!-- section header -->
-    <tr class="section-header">
-        <td>Components</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
     </tr>
     
     <!-- sub header -->
@@ -648,31 +665,31 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Set grid power price</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Grid power price</span></td>
+        <td>V</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set grid sellback price</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Grid sellback price</span></td>
+        <td>V</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set sale capacity</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Sale capacity</span></td>
+        <td>V</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Net metering</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -691,76 +708,76 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model operations and maintenance cost</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
+    <tr class="section-item even">
+        <td><span>Operations and maintenance cost</span></td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Years</td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model available turbine head</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model design flow rate</span></td>
+    <tr class="section-item odd">
+        <td><span>Lifetime</span></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model minimum flow rate</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S (years)</td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model maximum flow rate</span></td>
+    <tr class="section-item even">
+        <td><span>Available turbine head</span></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model efficiency</span></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model pipe head loss</span></td>
+    <tr class="section-item odd">
+        <td><span>Design flow rate</span></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
+        <td></td>
+    </tr>
+    <tr class="section-item even">
+        <td><span>Minimum flow rate</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
+        <td></td>
+    </tr>
+    <tr class="section-item odd">
+        <td><span>Maximum flow rate</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
+        <td></td>
+    </tr>
+    <tr class="section-item even">
+        <td><span>Efficiency</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
+        <td></td>
+    </tr>
+    <tr class="section-item odd">
+        <td><span>Pipe head loss</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
         <td></td>
     </tr>
     
@@ -774,7 +791,7 @@ else
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
     </tr>
     
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td><span>Fuel types</span></td>
         <td></td>
         <td></td>
@@ -782,21 +799,21 @@ else
         <td></td>
         <td>8</td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model fuel price</span></td>
+    <tr class="section-item even">
+        <td><span>Fuel price</span></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set emissions</span></td>
+    <tr class="section-item odd">
+        <td><span>Emissions</span></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>V</td>
     </tr>
     
     <!-- sub header -->
@@ -809,33 +826,38 @@ else
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model capital and replacement cost</span></td>
+    <tr class="section-item odd">
+        <td><span>Capital and replacement cost</span></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lifetime</span></td>
+    <tr class="section-item even">
+        <td><span>Lifetime</span></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td>Years</td>
-    </tr>
-    
-<!--  section header -->
-    <tr class="section-header">
-        <td>Loads</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
+        <td>S (years)</td>
     </tr>
     
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    
+<!--  section header: Loads -->
+	<tr class="section-header">
+        <td rowspan="2">Loads</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
     <!-- sub header -->
     <tr class="section-sub-header">
         <td>Electrical Load</td>
@@ -846,17 +868,17 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set variability</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item even">
+        <td><span>Variability</span></td>
+        <td>V</td>
         <td></td>
         <td></td>
         <td></td>
@@ -873,34 +895,34 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model storage capacity</span></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model peak</span></td>
+    <tr class="section-item even">
+        <td><span>Storage capacity</span></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model minimum load ratio</span></td>
+    <tr class="section-item odd">
+        <td><span>Peak</span></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="section-item even">
+        <td><span>Minimum load ratio</span></td>
+        <td></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
@@ -916,21 +938,21 @@ else
         <td>2</td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
     </tr>
-    <tr class="section-item">
-        <td><span>Set variability</span></td>
+    <tr class="section-item even">
+        <td><span>Variability</span></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>V</td>
     </tr>
     
     <!-- sub header -->
@@ -943,7 +965,7 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td><span>Quick simulation based on usage type</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -951,7 +973,7 @@ else
         <td></td>
         <td>Thermal</td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Import data</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -959,7 +981,7 @@ else
         <td></td>
         <td>Thermal</td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td><span>Read from library</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -967,7 +989,7 @@ else
         <td></td>
         <td>Thermal</td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td><span>Build from measured data</span></td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -976,16 +998,21 @@ else
         <td>Thermal</td>
     </tr>
     
-<!-- section header -->
-    <tr class="section-header">
-        <td>Resources</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
-    </tr>
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
     
+<!-- section header: Resources -->
+	<tr class="section-header">
+        <td rowspan="2">Resources</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
     <!-- sub header -->
     <tr class="section-sub-header">
         <td>Liquid fuels</td>
@@ -996,9 +1023,9 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model fuel price</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Fuel price</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
 
@@ -1007,7 +1034,7 @@ else
     </tr>
     
     <!-- sub header -->
-    <tr class="section-sub-header">
+    <tr class="section-sub-header even">
         <td>Solar GHI</td>
         <td>Download from<br />Internet<br />or import</td>
         <td></td>
@@ -1016,9 +1043,9 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1035,9 +1062,9 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1054,17 +1081,17 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model surface roughness</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></span></td>
+    <tr class="section-item even">
+        <td><span>Surface roughness</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1082,9 +1109,9 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
+        <td>S</td>
         <td></td>
         <td></td>
         <td></td>
@@ -1101,43 +1128,43 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model average price</span></td>
-        <td></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model carbon content</span></td>
+    <tr class="section-item even">
+        <td><span>Average price</span></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr class="section-item">
-        <td><span>Model gasification ratio</span></td>
-        <td></td>
-        <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
-        <td><span>Model lower heating value</span></td>
+    <tr class="section-item odd">
+        <td><span>Carbon content</span></td>
         <td></td>
         <td></td>
+        <td>S</td>
         <td></td>
+        <td></td>
+    </tr>
+    <tr class="section-item even">
+        <td><span>Gasification ratio</span></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="section-item odd">
+        <td><span>Lower heating value</span></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
         <td></td>
         <td></td>
     </tr>
@@ -1152,26 +1179,31 @@ else
         <td></td>
     </tr>
     
-    <tr class="section-item">
-        <td><span>Model scaled annual average</span></td>
+    <tr class="section-item odd">
+        <td><span>Scaled annual average</span></td>
         <td></td>
         <td></td>
         <td></td>
-        <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
+        <td>S</td>
         <td></td>
     </tr>
     
-<!-- section header -->
-    <tr class="section-header">
-        <td>Results</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
-    </tr>
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
     
-    <tr class="section-item">
+<!-- section header: Results -->
+	<tr class="section-header">
+        <td rowspan="2">Results</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
+    <tr class="section-item odd">
         <td>Sort results on any metric</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1179,7 +1211,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Filter results on any metric</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1187,7 +1219,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Detailed simulation results</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1195,7 +1227,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Graphical displays</td>
         <td>Details for<br />every variable</td>
         <td></td>
@@ -1204,17 +1236,22 @@ else
         <td></td>
     </tr>
     
-<!-- section header -->
-    <tr class="section-header">
-        <td>Economics sensitivity variables</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    
+<!-- section header: Sensitivity vars -->
+	<tr class="section-header">
+        <td rowspan="2">Economics sensitivity variables</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
     </tr>
     
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Annual nominal interest rate</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1222,7 +1259,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Expected inflation rate</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1230,7 +1267,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Project lifetime</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1238,7 +1275,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>System fixed capital costs</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1246,7 +1283,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>System fixed O&M costs</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1254,7 +1291,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Capacity shortage penalty</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1262,18 +1299,23 @@ else
         <td></td>
         <td></td>
     </tr>
-        
-<!-- section header -->
-    <tr class="section-header">
-        <td>Emissions penalties and<br />limits sensitivity variables</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
-    </tr>
     
-    <tr class="section-item">
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    
+<!-- section header: Emission penalties etc -->
+	<tr class="section-header">
+        <td rowspan="2">Emissions penalties and<br />limits sensitivity variables</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
+    <tr class="section-item odd">
         <td>Carbon dioxide</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1281,7 +1323,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Carbon monoxide</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1289,7 +1331,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Unburned hydrocarbons</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1297,7 +1339,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Particulate matter</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1305,7 +1347,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Sulfur dioxide</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1313,7 +1355,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Nitrogen oxides</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1322,17 +1364,22 @@ else
         <td></td>
     </tr>
     
-<!-- section header -->
-    <tr class="section-header">
-        <td>Constraints</td>
-        <td>HOMER Pro<br />(Main)</td>
-        <td>Advanced<br />Load</td>
-        <td>Biomass</td>
-        <td>Hydro</td>
-        <td>Combined<br />Heat and<br />Power</td>
-    </tr>
+    <tr class="spacer" ><td></td><td></td><td></td><td></td><td></td><td></td></tr>
     
-    <tr class="section-item">
+<!-- section header: Constraints -->
+	<tr class="section-header">
+        <td rowspan="2">Constraints</td>
+        <td rowspan="2" style="border-left:1px solid #f7f7f7;border-right:1px solid #f7f7f7;">HOMER Pro<br />(main)</td>
+        <td class="header-mods" colspan="4">Add-on Modules</td>
+    </tr>
+    <tr class="section-header-mods">
+        <td style="text-align:center;">Advanced<br />Load</td>
+        <td style="text-align:center;">Biomass</td>
+        <td style="text-align:center;">Hydro</td>
+        <td style="text-align:center;">Combined<br />Heat and<br />Power</td>
+    </tr>
+
+    <tr class="section-item odd">
         <td>Maximum annual capacity shortage (%)</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1340,7 +1387,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td>Minimum renewable fraction (%)</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1348,7 +1395,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item odd">
         <td>Operating reserve (as % of: current load,<br />peak, solar, wind)</td>
         <td><img src="img/check-mark-7-16.png" alt="Yes"/></td>
         <td></td>
@@ -1356,7 +1403,7 @@ else
         <td></td>
         <td></td>
     </tr>
-    <tr class="section-item">
+    <tr class="section-item even">
         <td></td>
         <td></td>
         <td></td>
@@ -1367,18 +1414,15 @@ else
   </tbody>
 </table>
 </div>
-    <!--columns end--> 
+    <!--table ends--> 
     
-    <!--spacer here-->
-    <div class="spacer-30px"></div>
-    
-    <!--box starts-->
+    <!--lower box starts-->
     <div class="row">
         <div class="span12">
             <a href="https://users.homerenergy.com/pages/homer_pro" target="_blank">
-                <div class="dark-box">
-                    <h1 style="color:#777;">You are just <span class="color">3</span> steps away</h1>
-                    <ul class="list-inline" style="color:#777;">
+                <div class="dark-box" style="margin-top:30px;">
+                    <h1 style="color:#888;">You are just <span class="color">3</span> steps away</h1>
+                    <ul class="list-inline" style="color:#888;">
                         <li>1. Install HOMER Pro</li>
                         <li>2. Get a Trial License</li>
                         <li>3. Use right away</li>
