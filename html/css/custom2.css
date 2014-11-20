@@ -283,7 +283,7 @@ p.marg-top {
 	margin-top: 20px;
 }
 .features-table .header-mods {
-	background-color: #e1ffe1; /*light green*/
+	background-color: #d9f7d9; /*#e1ffe1; light green*/
 }
 
 /* section sub-header and item rules */
@@ -348,7 +348,7 @@ p.marg-top {
 
 /* rows */
 .odd {
-	background-color: #f5f5f5;
+	background-color: #f1f1f1;
 	/*border-bottom: 1px solid #eee;*/
 }
 .even {
@@ -359,12 +359,12 @@ p.marg-top {
 /* columns */
 .alt {
 	/*background-color: #fdfdfd;*/
-	border-left: 1px solid #e2e2e2;
+	border-left: 1px solid #d9d9d9;
 	/*border-right: 1px solid #eee;*/
 }
 .alt2 {
 	/*background-color: #fdfdfd;*/
-	border-left: 1px solid #e2e2e2;
+	border-left: 1px solid #d9d9d9;
 	/*border-right: 1px solid #eee;*/
 }
 
