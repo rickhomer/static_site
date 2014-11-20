@@ -11,7 +11,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <meta name="description" content="HOMER software for microgrid and distributed generation power system design and optimization" />
 <meta name="keywords" content="renewable energy, microgrid, distributed generation, off-grid power systems"/>
-<title>HOMER Pro - Microgrid and Hybrid Renewable Distributed Generation System Design Software</title>
+<title>HOMER - Hybrid Renewable Microgrid System Design Software</title>
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -226,10 +226,7 @@ else
   <div class="container">
     <div class="row">
     <div class="span12">
-      <h4 class="heading-icon">
-      <img src="img/icons/heading-icon-1.png" width="40" height="40" alt="icon" class="icon-small-bg" />
-      <p style="float:left;">Introducing... HOMER Pro</p>
-      <img src="img/Pro_blk_200x76_new.png" style="margin-left:20px;" alt="HOMER Pro Logo" /></h4>
+      <h4 class="heading-icon"> <img src="img/icons/heading-icon-1.png" width="40" height="40" alt="icon" class="icon-small-bg"> HOMER Pro - Differences from HOMER 2</h4>
     </div>
     
     </div>
@@ -248,83 +245,53 @@ else
   <div class="container">
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
-
-<p><strong>HOMER Energy announces a completely redesigned and updated version of HOMER<sup>&reg;</sup></strong>, the Hybrid Optimization Model for Multiple Energy Resources. Originally developed at the National Renewable Energy Laboratory and enhanced and distributed by HOMER Energy, HOMER is the global standard for optimizing microgrid design in <em>all</em> sectors, from village power and island utilities to grid-connected campuses and military bases. HOMER nests three powerful tools in one product, so that engineering and  economics work side by side:</p>
-
-<ol>
-    <li><strong>Simulation:</strong> HOMER simulates the operation of a  hybrid microgrid for an entire year, in time steps from one minute to one hour.</li>
-    <li><strong>Optimization:</strong> HOMER examines all possible combinations of system types in a single run, and then sorts the systems  according to the optimization variable of choice.</li>
-    <li><strong>Sensitivity analysis:</strong> HOMER lets you ask as many  &ldquo;What if?&rdquo; questions as you&rsquo;d like, because you cannot control all aspects of a system, and you cannot know the importance of a particular variable or option without running hundreds or thousands of simulations and comparing the results. </li>
-</ol>
-
-<p>This completely redesigned product has a new look and many new features, including:</p>
-<ul class="feature-list">
-    <li>New design and architecture:
-        <ul class="feature-list-secondary">
-          <li>Crisp new design and navigation system</li>
-          <li>New library options for managing components,  loads, and resources</li>
-          <li>Modular licensing &mdash; use only what you need</li>
-          <li>Faster parallel processing architecture</li>
-        </ul>
-    </li>
-    <li>Improvements to solar systems:
-        <ul class="feature-list-secondary">
-          <li>Up to 10 solar arrays</li>
-          <li>Dedicated converters</li>
-          <li>Expanded maximum power point tracker  capabilities</li>
-          <li>Concentrating PV and DNI resource</li>
-          <li>Map-based solar data download</li>
-        </ul>
-    </li>
-    <li>Improvements to wind:
-        <ul class="feature-list-secondary">
-          <li>Temperature effect on wind resource</li>
-          <li>Data gap filling in wind; Windographer file import</li>
-          <li>Maintenance scheduling</li>
-        </ul>
-    </li>
-    <li>Generator maintenance scheduling</li>
-    <li>Faster and easier ways to simulate common load types</li>
-    <li>Battery minimum state of charge sensitivity</li>
-    <li>Sort and filter results on any column</li>
-</ul>
-<br />
-
-<p>The core product includes wind, solar (up to 10 arrays), batteries, generators (up to 20), and a single electric load. There are literally hundreds of features &mdash; the above list focuses on the changes to HOMER 2.</p>
-
-<p>One of the most significant changes from the user experience perspective is the addition of add-on modules. This feature accomplishes two  important goals: (1) It allowed us to keep the price affordable and similar to HOMER 2, while greatly enhancing the product, and (2) it simplifies the interface &mdash; customers will not see features that they do not require. The initial modules include: </p>
-
-<p><strong>Hydro:</strong> Model run-of river hydro systems. Allows for season stream flow variation, calculates pipe head loss, considers constraints on stream diversion, and many other  features.</p>
-
-<p><strong>Biomass</strong>: Allows seasonal availability of a biomass resource and gasification ratio and other parameters that describe a gasifier. It also allows a generator that can be co-fired with biogas and another fuel.</p>
-
-<p><strong>Advanced Load: </strong>Allows two primary electric loads, so you can perform separate sensitivities on them. They can be on separate buses; one of them can be a critical load and the other can be curtailable. The Advanced Load Module also allows a deferrable load. Unlike a curtailable load, deferrable loads must be met, but HOMER has flexibility around  the timing of meeting that load.</p>
-
-<p><strong>Combined Heat and Power</strong>: Allows specification of thermal loads that can be met in a number of  different ways. The user can specify a percentage of waste heat from the generator that is recoverable, or the user can specify the cost and optimize the capacity  of a thermal load controller (also called dump load controller or secondary  load controller). The thermal load controller uses energy that would otherwise be dumped or curtailed to meet the thermal load. HOMER also adds a boiler as a  default component, so there is never any unserved thermal load.</p>
-
-<p>New add-on modules for hydrogen and unreliable grids are coming January 2015.</p>
-<p>We encourage everyone to take advantage of the full-featured 2-week trial version in order to fully explore HOMER Pro&rsquo;s capabilities, and then take advantage of special pricing during our launch period. </p>
-<p><strong>Current or Previous HOMER 2 licensees: </strong><a href="homer-pro-homer-2-compare.html" style="font-weight:bold; font-style:italic">Please read this important message for HOMER 2 users before you download HOMER Pro.</a></p>
-<p>HOMER Pro runs on all Windows Operating Systems that are currently supported by Microsoft (Vista, 7, 8, and 8.1).</p>
-
+    
+    <p>HOMER Energy is very proud to have finally released HOMER Pro. The marketplace pressure to get this new architecture, improved look and feel, modularization, and greatly improved performance was great. <strong>The current version, 3.0.X, however, is missing certain features and components found in HOMER 2. With some very minor exceptions, these features will be available in HOMER Pro 3.1.0, due for release on January 15, 2015.</strong>&nbsp;</p>
+    <p>HOMER 2 features missing in HOMER Pro: </p>
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+      <tbody>
+        <tr>
+          <td width="25%">Advanced Grid Options</td>
+          <td>Full grid capability of HOMER 2 plus new grid features including scheduling and rolling blackouts will be available in 3.1 as an add-on module.</td>
+        </tr>
+        <tr>
+          <td>Hydrogen</td>
+          <td>Full hydrogen capability of HOMER 2 will be available in 3.1 as an add-on module.</td>
+        </tr>
+        <tr>
+          <td>Linked Sensitivities</td>
+          <td>Link cost sensitivities will be available in 3.1.</td>
+        </tr>
+        <tr>
+          <td>Battery Designer</td>
+          <td>Batteries can only be defined manually in the library in 3.0, i.e. For kinetic model, specify: rate constant, capacity ratio, maximum capacity. HOMER 3.1 will have full battery design capability, as in HOMER 2.</td>
+        </tr>
+        <tr>
+          <td>Wind Turbine Designer</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Copy component from model to library</td>
+          <td>When opening a file, HOMER 2 prompts the user to import new components from the model into the library. HOMER Pro will have a "copy to library" button available in all component menus.</td>
+        </tr>
+        <tr>
+          <td>Vanadium redox batteries</td>
+          <td>Full vanadium redox capability of HOMER 2 will be available in 3.1.</td>
+        </tr>
+        <tr>
+          <td>Results recycling</td>
+          <td>This is primarily a performance feature - HOMER 2 will only recalculate results for new sensitivity and optimization values, making it easy to gradually change your search space as you learn more. HOMER Pro is considerably faster than HOMER 2. This feature will be implemented in HOMER Pro 3.1, resulting in even greater performance for modelers who like to use this iterative approach.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Because of these missing features, we are (1) offering HOMER Pro as a free upgrade to HOMER 2 users, until January, 15, 2015, and (2) we are selling HOMER Pro at a special launch price through January 15, 2015.This way you can choose which product works best for you, at no additional cost. To get your free matching HOMER Pro license, first download HOMER Pro and install a trial license, which gives you full access to all features. When you return to the website before January 15, 2015, and select to purchase HOMER Pro, you will be offered a free license that will match your HOMER 2 license (it will expire at the same time).</p>
+    <p><strong><em>You can run HOMER 2 and HOMER Pro on the same machine at the same time without conflicts. We encourage you to take a look at HOMER Pro, but please review the differences between the products so that you understand the impacts, if any, on your work. </em></strong>Once HOMER Pro 3.1.0 is released, you can import your HOMER 2 files, if you have decided to continue using HOMER 2.</p>
 <div style="margin:30px 0px 30px 60px;">
     <form action="https://users.homerenergy.com/pages/homer_pro/" target="_blank">
         <input type="submit" value="Download HOMER Pro Now" class="btn btn-success" />
     </form> 
 </div>
 
-<h3>Use these links to learn more about HOMER Pro:</h3>
-    <ul class="feature-list">
-      <li><a href="HOMER-Pro-features.html">Complete features list</a></li>
-      <li><a href="http://users.homerenergy.com" target="_blank">Download a free trial or purchase a license</a></li>
-      <li><a href="pro-faq.html">Frequently asked questions about buying and using HOMER Pro</a></li>
-      <li><a href="pro-pricing.html">HOMER Pro pricing explained</a></li>
-<!--      <li><a href="software.html">Overview and features</a></li> -->
-      <li><a href="version_history.html">HOMER Version History</a></li>
-<!--      <li><a href="HOMER-getting-started-guide.html">HOMER Getting Started Guide</a> (self-guided training)</li> -->
-      <li><a href="http://support.homerenergy.com/index.php?/Knowledgebase/List" target="_blank">Searchable Knowledgebase</a></li>
-      <li><a href="HOMER-licensing.html">End User License Agreement</a></li>
-    </ul>
     <!-- InstanceEndEditable -->
     <!--box ends-->
   </div>
