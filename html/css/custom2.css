@@ -398,9 +398,21 @@ p.marg-top {
 	background-color: #ddd; 
 }*/  /*#e8e8e8;*/ /*#f5f9ff;*/
 
+/* end pro features table */
 
-
-
-
-
-
+.diffs-table {
+	border-collapse: collapse;
+	margin-left: 80px;
+	color: #111;
+	text-shadow: none;
+}
+.diffs-table th, .diffs-table td {
+	border: none; /*border: 1px solid #777;*/
+	padding: 4px 14px 4px 14px;
+}
+.diffs-table tr.odd {
+	background-color: #e8e8e8;
+}
+.diffs-table tr.even {
+	background-color: #f3f3f3;
+}
