@@ -321,12 +321,16 @@ p.marg-top {
 .features-table tr.section-item td:nth-child(4),
 .features-table tr.section-item td:nth-child(5),
 .features-table tr.section-item td:nth-child(6),
+.features-table tr.section-item td:nth-child(7),
+.features-table tr.section-item td:nth-child(8),
 .features-table tr.section-sub-header td:nth-child(2),
 .features-table tr.section-sub-header td:nth-child(3),
 .features-table tr.section-sub-header td:nth-child(4),
 .features-table tr.section-sub-header td:nth-child(5),
-.features-table tr.section-sub-header td:nth-child(6) {
-	width: 80px;
+.features-table tr.section-sub-header td:nth-child(6),
+.features-table tr.section-sub-header td:nth-child(7),
+.features-table tr.section-sub-header td:nth-child(8) {
+	width: 70px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 12px;
