@@ -309,3 +309,8 @@ font-style: italic;
 .medium-rounded {
 	border-radius:30px;
 }
+.supertext {
+    vertical-align: text-top;
+    font-size: 60%;
+    line-height: 2px;
+}
