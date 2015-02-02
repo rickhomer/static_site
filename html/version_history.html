@@ -264,8 +264,25 @@ else
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
 <div class="span10">
-	<p><strong>HOMER Pro Version 3.1.0 (January 2015)</strong><br />
+	<p><strong>HOMER Pro Version 3.1.1 (February 2, 2015)</strong>
 	<ul class="feature-list">
+	  <li>Thermal load controller/generator heat recovery</li>
+	  <li>Fixed bug importing .hmr fuel curve only partially populated</li>
+	  <li>Fixed bug geocoding and timezone services don't work in localels with &quot;,&quot; as a decimal separator</li>
+	  <li>Fixed crash when inputting data that can't be formatted as a number</li>
+	  <li>Fixed bug handing certain input data for battery library</li>
+	  <li>Fixed crash on saving a .csv file already open in another program</li>
+	  <li>Fixed crash when downloaded solar resource data has problems</li>
+	  <li>Fixed crash when user tries to plot an uninitialized resource</li>
+	  <li>Fixed licensing bug for certain proxy environments</li>
+	  <li>Fixed issue with generator scheduling in certain multiple generator cases</li>
+	  <li>Fixed bug time series results graph y-axis labels may be cut off for numbers greater than 999</li>
+	  <li>Fixed bug "Vanadium" type batteries, which allow seperate optimization spaces for   cell stack size (kW) and electrolyte (kWh), can not be added to models   with other types of batteries. The warning "Battery 'xyz' must allow for   zero quantity" persists even if the search spaces include zeros.</li>
+	  <li>Fixed bug copying/pasting load data from an external spreadsheet program into the hourly load profile table does not work.</li>
+	  </ul>
+	<p>&nbsp;</p>
+	<p><strong>HOMER Pro Version 3.1.0 (January 2015)</strong><br />
+	  <ul class="feature-list">
     	<li>New features:
         	<ul class="feature-list-secondary">
             	<li>Linked sensitivities</li>
