@@ -29,6 +29,7 @@ a {
 	margin-right: 20px;
 	margin-bottom: 4px;
 }
+
 .listsqbullet {
 	margin-left: 20px;
 	list-style-position: inside;
@@ -433,4 +434,37 @@ p.marg-top {
 }
 .diffs-table tr.even {
 	background-color: #f3f3f3;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.table-content, .p {
+	color:#767676;
+}
+
+.table-content, .focused {
+
+}
+
+.modal {
+	width: 800px;
+	margin: -250px -400px;
+}
+
+.no-bottom {
+	border-bottom:0px;
+}
+
+.light {
+	color: #f4f4f4;
+}
+
+.nav-tabs > li > a {
+	font-size: 18px;
+}
+
+.z-tabs.vertical > ul.z-tabs-nav.z-tabs-desktop {
+	width: 10%;
 }

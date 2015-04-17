@@ -1163,6 +1163,11 @@ margin-bottom: 20px;
 .price-column.focused {
 margin-top: 0px;
 }
+
+.price-column.focused.p {
+	color: #f4f4f4;
+}
+
 /*portfolio*/
 .portfolio_3column, .portfolio_4column, .portfolio_5column {
  margin-left: 0px;
