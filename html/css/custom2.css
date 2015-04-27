@@ -468,3 +468,8 @@ p.marg-top {
 .z-tabs.vertical > ul.z-tabs-nav.z-tabs-desktop {
 	width: 10%;
 }
+
+.sub-tab {
+	font-size:14px;
+	font-style:italic;
+}
