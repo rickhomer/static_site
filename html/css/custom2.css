@@ -473,3 +473,15 @@ p.marg-top {
 	font-size:14px;
 	font-style:italic;
 }
+
+.button-subtext {
+	font-size:12px; 
+}
+
+.modal {
+	z-index:9000;
+}
+
+..modal-open {
+	z-index:9000;
+}
