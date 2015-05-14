@@ -277,11 +277,7 @@ else
     
 
 <!-- zozu tabs begin -->
-    <div class="row">
-    	<div class="span12">
-    	<p>Please select from the Standard, Academic, or Student license terms below:</p>
-        </div>
-   </div>
+
 <div id="tabbed-nav" class="tabbed-nav z-tabs-loading" data-role="z-tabs" data-options='{"orientation": "vertical", "theme": "silver", "animation": {"duration": 800, "effects": "slideH"}}'>
   <ul>
   	<li><a>30-Day Trial License</a></li>
@@ -327,6 +323,12 @@ else
              
             <div class="tab-content">
               <div class="tab-pane active" id="single-user">
+              		<p>
+                    	<a href="#standard-single-annual-modal" role="button" class="mybtn text-center" data-toggle="modal">Annual<br>$500-1000/yr</a>
+                    	<a href="#standard-single-permanent-modal" role="button" class="mybtn text-center" data-toggle="modal">Permanent<br>$1500-3000</a>
+                    	<a href="#standard-single-monthly-modal" role="button" class="mybtn text-center" data-toggle="modal">Monthly<br>$63-125/mo</a>
+               		</p>
+                    
               <h4 class="color">Who should buy?</h4>
               <p>Select this license option if you are an end user and you want to operate, install, and administer the software yourself, or if you are purchasing a group of licenses for your organization that will be installed as node-locked licenses for individual users. </p>
               <h4 class="color">System requirements:</h4>
@@ -337,53 +339,20 @@ else
                    <br>
                 <h4 class="color">License terms:</h4>
               	<p>Single-user licenses can be purchased with monthly, annual, or permanent terms.</p><br>
-              	
-                <div class="tabbable">
-                  <ul class="nav nav-tabs" id="standard-single-nav" style="font-size:16px;">
-            
-                 	<li class="text-center"><a href="#single-annual" data-toggle="tab"><i class="icon-th"></i> Annual<br><br><span class="sub-tab">$500-1000/yr.</span></a></li>
-                    <li class="text-center"><a href="#single-permanent" data-toggle="tab"><i class="icon-repeat"></i> Permanent<br><br><span class="sub-tab">$1500-3000</span></a></li>
-                    <li class="text-center"><a href="#single-monthly" data-toggle="tab"><i class="icon-calendar"></i> Monthly<br><br><span class="sub-tab">$63-125/mo.</span></a></li>
-                 </ul>
-                 
-                 <div class="tab-content">
-                 	<div class="tab-pane" id="single-monthly">
-                    	
-                        <div class="row">
+                
+                <!-- Standard Single-User Modals begin -->
+                
+                 <!-- Standard Single-User Annual modal content -->
+                
+                 <div id="standard-single-annual-modal" class="modal hide fade" data-backdrop="false">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Standard Single-User Annual License</h3>
+                  </div>
+                  <div class="modal-body">
+                          <div class="row">
                         	<div class="span5">
-                            <h4>Single-user Monthly License</h4>
-                            	<ul class="list-checkmark">
-                                	<li>Perfect for project-based use, for limited budgets, or when you only use HOMER Pro occasionally</li>
-                                    <li>No subscription required: just purchase another month when you need it</li>
-                                     <li>Purchase as many months as you like at one time. Use the licenses when you need them.</li>
-                                      <li>Includes <a href="#" data-toggle="tooltip" data-animation="false" data-trigger="hover focus click" title="Basic support includes assistance with installation and questions about basic product functionality. Requests to review files, assist with projects, or requests for product training require purchase of training or support packages.">basic support</a> and any updates while your license is active</li>
-                                      <li>Can be activated one time on a single machine</li>
-                                      <li>Activated licenses cannot be transferred</li>
-                                </ul>
-                            </div>
-                            <div class="span3 text-center">
-                            	<h2 align="center">Price:</h2>
-                                <h1 style="margin-bottom:5px;"><span class="color">$63/month</span></h1>
-                                <p>for base software product</p>
-                                <h1 style="margin-bottom:5px;"><span class="color">$125/month</span></h1>
-                                <p>includes all add-on modules*</p>
-                                <a href="https://users.homerenergy.com/licenses/build_license?user_type=standard&license_type=single_user&term=monthly&product_type=complete"><button class="mybtn"><p>Buy Now</p> <p>or Get a Quote</p></button></a>                               
-                            </div>
-         
-                        </div>
-                        <hr>
-                            <div class="row">
-                            	<div class="span8">
-                                     <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
-                                     
-                                </div>
-                            </div>
-                    </div>
-                    
-                    <div class="tab-pane" id="single-annual">
-                    	<div class="row">
-                        	<div class="span5">
-                            <h4>Single-user Annual License</h4>
+                            
                             	<ul class="list-checkmark">
                                     <li>Customizable: pay only for the modules you need</li>
                                     <li>Flexible: modules may be added after purchase at a pro-rated price</li>
@@ -394,7 +363,7 @@ else
                                 </ul>
                             </div>
                             
-                            <div class="span3 text-center">
+                            <div class="span4 text-center">
                                 <div class="row" style="margin-left:auto;margin-right:auto;">
                                     <h2 align="center">Price:</h2>
                                     <h1 style="margin-bottom:5px;"><span class="color">$500-1000/year</span></h1>
@@ -420,11 +389,19 @@ else
                                     
                                 </div>
                            </div>
-                    </div>
-                    
-                    
-                    <div class="tab-pane" id="single-permanent">
-                    	<h4>Single-user Permanent License</h4>
+                  </div>
+                    <div class="modal-footer">
+    					<a href="#" data-dismiss="modal" class="btn">Close</a>
+  					</div>
+                </div> 
+                
+               	<!-- Standard Single-User Permanent  modal content -->
+                <div id="standard-single-permanent-modal" class="modal hide fade">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Standard Single-User Permanent License</h3>
+                  </div>
+                  <div class="modal-body">
                         <div class="row">
                         	<div class="span5">
                             	<ul class="list-checkmark">
@@ -436,7 +413,7 @@ else
                                     <li>Can be transferred once per year if a user leaves your organization or changes positions. If you know you will need to share or transfer licenses, monthly or concurrent licenses will be a better choice.</li>
                                 </ul>
                             </div>
-                            <div class="span3 text-center" style="margin-top:-35px;">
+                            <div class="span4 text-center" style="margin-top:-35px;">
                             	<h2 align="center">Price:</h2>
                                 <h1 style="margin-bottom:5px;"><span class="color">$1,500-3,000</span></h1>
                                 <p>Add-on modules* <span class="color">$180-600</span> each.</p>
@@ -460,19 +437,64 @@ else
                                     
                              </div>
                         </div>
-                    </div>
-                    
-                 </div>
-                 
-              	</div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                  </div>
+                </div>
+              
+      
+    			<!-- Standard Single-user Monthly modal content -->
+             
+                <div id="standard-single-monthly-modal" class="modal hide fade">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Standard Single-user Monthly License</h3>
+                  </div>
+                  <div class="modal-body">
+                                           <div class="row">
+                        	<div class="span5">
+                         
+                            	<ul class="list-checkmark">
+                                	<li>Perfect for project-based use, for limited budgets, or when you only use HOMER Pro occasionally</li>
+                                    <li>No subscription required: just purchase another month when you need it</li>
+                                     <li>Purchase as many months as you like at one time. Use the licenses when you need them.</li>
+                                      <li>Includes <a href="#" data-toggle="tooltip" data-animation="false" data-trigger="hover focus click" title="Basic support includes assistance with installation and questions about basic product functionality. Requests to review files, assist with projects, or requests for product training require purchase of training or support packages.">basic support</a> and any updates while your license is active</li>
+                                      <li>Can be activated one time on a single machine</li>
+                                      <li>Activated licenses cannot be transferred</li>
+                                </ul>
+                            </div>
+                            <div class="span4 text-center">
+                            	<h2 align="center">Price:</h2>
+                                <h1 style="margin-bottom:5px;"><span class="color">$63/month</span></h1>
+                                <p>for base software product</p>
+                                <h1 style="margin-bottom:5px;"><span class="color">$125/month</span></h1>
+                                <p>includes all add-on modules*</p>
+                                <a href="https://users.homerenergy.com/licenses/build_license?user_type=standard&license_type=single_user&term=monthly&product_type=complete"><button class="mybtn"><p>Buy Now</p> <p>or Get a Quote</p></button></a>                               
+                            </div>
          
-             </div>
-         <!-- STANDARD SINGLE-USER LICENSE OPTION ENDS -->
+                        </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                  </div>
+                </div> 
+                
+            <!-- Standard Single-User Modals end -->
+              	
+			</div>
+            
+                    	
+       	<!-- STANDARD SINGLE-USER LICENSE OPTION ENDS -->
         
          
          <!-- STANDARD CONCURRENT LICENSE OPTION BEGINS -->
               
              <div class="tab-pane" id="concurrent-user">
+			        <p>
+                    	<a href="#standard-concurrent-annual-modal" role="button" class="mybtn text-center" style="width:100px; height:25px;" data-toggle="modal">Annual</a>
+                    	<a href="#standard-concurrent-permanent-modal" role="button" class="mybtn text-center"  style="width:100px; height:25px;" data-toggle="modal">Permanent</a>
+               		</p>
              	
              	<p>Concurrent licenses, also known as floating licenses, allow a single license to be shared among different users in your organization.</p>
                  <h4 class="color">Who should buy?</h4>
@@ -488,18 +510,15 @@ else
                  </p>
                  <p>Pricing is the same for both delivery methods.</p>
         
-                 <p>Available in both annual and permanent license terms:</p>
-                 <div class="tabbable">
-                     <ul class="nav nav-tabs" id="concurrent-nav" style="font-size:16px;">
-                        <li><a href="#concurrent-annual" data-toggle="tab" class="active"><i class="icon-th"></i> Annual </a></li>
-                        <li><a href="#concurrent-permanent" data-toggle="tab" ><i class="icon-repeat"></i> Permanent </a></li>
-                     </ul>
-                 
-                  <div class="tab-content" style="margin-left:10px;">
-                  
-                  <!-- Standard Concurrent annual section begins -->
-                    <div class="tab-pane" id="concurrent-annual">
-                    	<div class="row">
+                 <p>Available in both annual and permanent license terms</p>
+				 
+				 <div class="modal hide fade" id="standard-concurrent-annual-modal">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3>Standard Concurrent-User Annual License</h3>
+					  </div>
+					  <div class="modal-body">
+					     <div class="row">
                         	<div class="span5">
                     			<h4>Concurrent-user Annual License</h4>
                       				<ul class="list-checkmark">
@@ -508,15 +527,22 @@ else
                                        
                                    </ul>
                             </div>
-                            <div class="span3" style="margin-top:50px;">
+                            <div class="span4" style="margin-top:50px;">
                        			<p align="center"> <a href="http://www.homerenergy.com/enterprise_quote_request.html"><button class="mybtn" style="height:75px;">Contact us for a Quote</button></p></a>
                             </div>
 						</div>
-                    </div>
-				<!-- Standard Concurrent annual section ends -->
-                
-                <!-- Standard Concurrent permanent section begins -->
-                     <div class="tab-pane" id="concurrent-permanent">
+					  </div>
+            		<div class="modal-footer">
+						<a href="#" data-dismiss="modal" class="btn">Close</a>
+					  </div>
+					</div>
+					
+				<div class="modal hide fade" id="standard-concurrent-permanent-modal">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3>Standard Concurrent-User Permanent License</h3>
+					  </div>
+					  <div class="modal-body">
                     	<div class="row">
                         	<div class="span5">
                     			<h4>Concurrent-user Permanent License</h4>
@@ -527,17 +553,17 @@ else
                                        
                                    </ul>
                             </div>
-                            <div class="span3" style="margin-top:50px;">
+                            <div class="span4" style="margin-top:50px;">
                        			<p align="center"><a href="http://www.homerenergy.com/enterprise_quote_request.html"><button class="mybtn" style="height:75px;">Contact us for a Quote</button></a></p>
                             </div>
 						</div>
-                    </div>
-               <!-- Standard Concurrent permanent section ends -->
-               </div>
-			</div>
+					  </div>
+                      <div class="modal-footer">
+						<a href="#" data-dismiss="modal" class="btn">Close</a>
+					  </div>
+				</div>
  
             <!-- STANDARD CONCURRENT LICENSE DETAILS END -->
-
              </div>
           </div>         
 		</div>
@@ -560,7 +586,13 @@ else
            
             <!-- Academic Single-user license section begins -->
             <div class="tab-pane" id="academic-single">
-                <h3>Single-user Academic License</h3>
+                 <h3>Single-user Academic License</h3>
+                      <p>
+                    	<a href="#academic-single-annual-modal" role="button" class="mybtn text-center" data-toggle="modal">Annual<br>$250-500/yr</a>
+                    	<a href="#academic-single-permanent-modal" role="button" class="mybtn text-center" data-toggle="modal">Permanent<br>$750-1500</a>
+                    	<a href="#academic-single-monthly-modal" role="button" class="mybtn text-center" data-toggle="modal">Monthly<br>$32-63/mo</a>
+               		</p>
+
                 <h4 class="color">Who should buy?</h4>
                 <p>Select this option if:</p>
                     <ul class="list-checkmark">
@@ -573,18 +605,14 @@ else
                     <li>Requires a HOMER Energy user account</li>
                 </ul>
                 
-                <div class="tabbable">
-                    <ul class="nav nav-tabs text-center" id="academic-single-options">
-                        <li align="text-center"><a href="#academic-single-annual"  data-toggle="tab"><i class="icon-th"></i> Annual <br><br><span class="sub-tab">$250-500/yr</span></a></li>
-                        <li align="text-center"><a href="#academic-single-permanent"  data-toggle="tab"><i class="icon-repeat"></i> Permanent <br><br><span class="sub-tab">$750-1500</span></a></li>
-                        <li align="text-center"><a href="#academic-single-monthly"  data-toggle="tab"><i class="icon-calendar"></i> Monthly <br><br><span class="sub-tab">$32-63/mo</span></a></li>
-                    </ul>
-                    
-                    <div class="tab-content">
-                        <div class="tab-pane" id="academic-single-monthly">
-                        	<div class="row">
+                    <div class="modal hide fade" id="academic-single-monthly-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h3>Academic Single-user Monthly License</h3>
+                      </div>
+                      <div class="modal-body">
+						<div class="row">
                             	<div class="span5">
-                                <h3>Academic Single-user Monthly License</h3>
                                 <ul class="list-checkmark">
                                 	<li>Perfect for project-based use, limited budgets, or when you only use HOMER Pro occasionally</li>
                                     <li>No subscription required; buy only when you need it</li>
@@ -593,7 +621,7 @@ else
                                     <li>Activated monthly licenses cannot be transferred</li>
                                 </ul>
                                 </div>
-                                <div class="span3 text-center">
+                                <div class="span4 text-center">
                                     <h2 align="center">Price:</h2>
                                     <h1 style="margin-bottom:5px;"><span class="color">$32/month</span></h1>
                                     <p>for base software product</p>
@@ -608,52 +636,21 @@ else
                                 	 <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
                                      
                                 </div>
-                             </div>  
-                        </div>
-                        <div class="tab-pane" id="academic-single-annual">
-                        	<div class="row">
+                             </div>
+                      </div>
+                        <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
+                    </div>
+                    
+                     <div class="modal hide fade" id="academic-single-permanent-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Academic Single-user Permanent License</h3>
+                      </div>
+                      <div class="modal-body">
+							<div class="row">
                             	<div class="span5">
-                                <h3>Academic Single-user Annual License</h3>
-                                	<ul class="list-checkmark">
-                                    	<li><i>Our most popular option</i></li>
-                                        <li>Customizable: pay only for the modules you need</li>
-                                        <li>Flexible: add modules as you need them</li>
-                                        <li>Includes basic support and any updates while your license is active</li>
-                                        
-                                        <li>Can be activated on a second machine as long as only one copy is in use at a time (ie., home and work computer)</li>
-                                        <li>Can be transferred one time during the year if the user leaves your organization or changes positions. If you know you will need to share or transfer licenses, monthly or concurrent license options are a better choice.</li>
-                                        <li>If purchasing 10 or more licenses, please fill out an <a href="http://www.homerenergy.com/contact_us_academic.html">Enterprise Quote Request</a> and a sales representative will contact you</li>
-                                    </ul>
-                                </div>
-                                <div class="span3 text-center">
-                                	<h2 align="center">Price:</h2>
-                                    <h1 style="margin-bottom:5px;"><span class="color">$250-500/year</span></h1>
-                                    <p>Add-on modules* <span class="color">$30-100</span> each</p>
-                                    <a href="https://users.homerenergy.com/licenses/build_license?user_type=academic&license_type=single_user&term=annual&product_type=complete" ><button class="mybtn"><p>Buy Now</p> <p>or Get a Quote</p></button></a>
-                                  <fieldset>
-                                <div class="row" style="width:85%; margin-left:auto; margin-right:auto;" align="center">
-                                 	<h4 align="center">Quantity discounts:</h4>
-                                    <div class="pull-left text-center">2-4 licenses:</div><div class="pull-right"><b>5%</b></div><br>
-                                    <div class="pull-left text-center">5-9 licenses:</div><div class="pull-right"><b>10%</b></div>
-                                    
-                                    <div class="text-center" style="margin-top:25px;"><i>Need 10 or more?</i><br><a href="http://www.homerenergy.com/contact_us_academic.html">Click here to request an Enterprise Quote</a></div>
-                                 </div> 
-                                 </fieldset> 
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                            	<div class="span8">
-                                	 <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
-                                     
-                                </div>
-                             </div>  
-                        </div>
-                        
-                        <div class="tab-pane" id="academic-single-permanent">
-                        	<div class="row">
-                            	<div class="span5">
-                                    <h3>Academic Single-user Permanent License</h3>
                                     <ul class="list-checkmark">
                                         <li>May be purchased by tenured faculty or researchers with permanent positions</li>
                                         <li>Customizable: pay only for the modules you need</li>
@@ -665,7 +662,7 @@ else
                                     </ul>
                                 </div>
                                 
-                                <div class="span3 text-center">
+                                <div class="span4 text-center">
                                 	<h2 align="center">Price:</h2>
                                     <h1 style="margin-bottom:5px;"><span class="color">$750-1,500</span></h1>
                                     <p>Add-on modules* <span class="color"><b>$90-300</b></span> each</p>
@@ -688,17 +685,71 @@ else
                                          
                                     </div>
                             	</div> 
-                        </div>  
+                      </div>
+                        <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
                     </div>
-                </div>
-                
-                
+
+
+                    <div class="modal hide fade" id="academic-single-annual-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h3>Academic Single-user Annual License</h3>
+                      </div>
+                      <div class="modal-body">
+							<div class="row">
+                            	<div class="span5">
+
+                                	<ul class="list-checkmark">
+                                    	<li><i>Our most popular option</i></li>
+                                        <li>Customizable: pay only for the modules you need</li>
+                                        <li>Flexible: add modules as you need them</li>
+                                        <li>Includes basic support and any updates while your license is active</li>
+                                        
+                                        <li>Can be activated on a second machine as long as only one copy is in use at a time (ie., home and work computer)</li>
+                                        <li>Can be transferred one time during the year if the user leaves your organization or changes positions. If you know you will need to share or transfer licenses, monthly or concurrent license options are a better choice.</li>
+                                        <li>If purchasing 10 or more licenses, please fill out an <a href="http://www.homerenergy.com/contact_us_academic.html">Enterprise Quote Request</a> and a sales representative will contact you</li>
+                                    </ul>
+                                </div>
+                                <div class="span4 text-center">
+                                	<h2 align="center">Price:</h2>
+                                    <h1 style="margin-bottom:5px;"><span class="color">$250-500/year</span></h1>
+                                    <p>Add-on modules* <span class="color">$30-100</span> each</p>
+                                    <a href="https://users.homerenergy.com/licenses/build_license?user_type=academic&license_type=single_user&term=annual&product_type=complete" ><button class="mybtn"><p>Buy Now</p> <p>or Get a Quote</p></button></a>
+                                  <fieldset>
+                                <div class="row" style="width:85%; margin-left:auto; margin-right:auto;" align="center">
+                                 	<h4 align="center">Quantity discounts:</h4>
+                                    <div class="pull-left text-center">2-4 licenses:</div><div class="pull-right"><b>5%</b></div><br>
+                                    <div class="pull-left text-center">5-9 licenses:</div><div class="pull-right"><b>10%</b></div>
+                                    
+                                    <div class="text-center" style="margin-top:25px;"><i>Need 10 or more?</i><br><a href="http://www.homerenergy.com/contact_us_academic.html">Click here to request an Enterprise Quote</a></div>
+                                 </div> 
+                                 </fieldset> 
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                            	<div class="span8">
+                                	 <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
+                                     
+                                </div>
+                             </div>  
+                      </div>
+                        <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
+                    </div>
             </div>
             <!--  Academic Single-user license section ends -->
             
             <!--Academic Concurrent-user License section begins -->
               <div class="tab-pane" id="academic-concurrent">
               	<h3>Concurrent-user Academic License</h3>
+                    <p>
+                    	<a href="#academic-concurrent-annual-modal" role="button" class="mybtn text-center" style="width:100px; height:25px;" data-toggle="modal">Annual</a>
+                    	<a href="#academic-concurrent-permanent-modal" role="button" class="mybtn text-center" style="width:100px; height:25px;" data-toggle="modal">Permanent</a>
+               		</p>
                 <p>Concurrent licenses, also known as floating licenses, allow a degree-granting institution to purchase a group of licenses to share among faculty, staff, and researchers in the same institution. Select this option if you would like multiple users to access a group of licenses, or if you anticipate needing to transfer licenses. </p>
                 <p>Concurrent licenses can be delivered in one of two ways:
                 <ul class="list-checkmark">
@@ -706,20 +757,15 @@ else
                   	<li>Network licensing by installing the Reprise License Manager (RLM) on your Windows or Linus server. Perfect for larger organizations with IT support and servers <i>* Requires a minimum purchase</i></li>
                  </ul>
                  <p>Pricing is the same for both delivery methods.</p>
-                 <p>Available in both annual and permanent license terms:</p>
+                 <p>Available in both annual and permanent license terms.</p>
                  
-                 <div class="tabbable">
-                 	<ul class="nav nav-tabs">
-                    	<li><a href="#academic-concurrent-annual" data-toggle="tab"><i class="icon-th-large"></i> Annual</a></li>
-                        <li><a href="#academic-concurrent-permanent" data-toggle="tab"><i class="icon-repeat"></i> Permanent</a></li>
-                    </ul>
-                    
-                    <div class="tab-content">
-                    	<div class="tab-pane" id="academic-concurrent-annual">
-                        	<div class="row">
-                             	<div class="span8">
-                                	<h3>Academic Concurrent-user Annual License</h3>
-                                </div>
+                 <div class="modal hide fade" id="academic-concurrent-annual-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                       	<h3>Academic Concurrent-user Annual License</h3>
+                      </div>
+                      <div class="modal-body">
+							<div class="row">
                             	<div class="span5">
                                     <ul class="list-checkmark">
                                     	<li>Customizable: pay only for the modules you need</li>
@@ -727,21 +773,24 @@ else
                                         
                                     </ul>
                                 </div>
-                                <div class="span3" style="margin-top:20px;">
+                                <div class="span4" style="margin-top:20px;">
                                     <p align="center"><a href="http://www.homerenergy.com/contact_us_academic.html"><button class="mybtn" style="height:75px;">Contact us for a Quote</button></a></p>
                                 </div>
                             </div>
-                            <hr>
-                                <div class="row">
-                                    <div class="span8">
-                                         
-                                    </div>
-                            	</div> 
-                         </div>
-                    	<div class="tab-pane" id="academic-concurrent-permanent">
-                        	<div class="row">
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
+                    </div> 
+                    
+                    <div class="modal hide fade" id="academic-concurrent-permanent-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Academic Concurrent-user Permanent License</h3>
+                      </div>
+                      <div class="modal-body">
+						<div class="row">
                              	<div class="span8">
-                                	<h3>Academic Concurrent-user Permanent License</h3>
                                 </div>
                             	<div class="span5">
                                     <ul class="list-checkmark">
@@ -751,22 +800,16 @@ else
                                         
                                     </ul>
                                 </div>
-                                <div class="span3" style="margin-top:20px;">
+                                <div class="span4" style="margin-top:20px;">
                                     <p align="center"><a href="http://www.homerenergy.com/contact_us_academic.html"><button class="mybtn" style="height:75px;">Contact us for a Quote</button></a></p>
                                 </div>
                             </div>
-                            <hr>
-                                <div class="row">
-                                    <div class="span8">
-                                         
-                                    </div>
-                            	</div> 
-                         </div>
-                    </div>
-                 
-                 </div>
-               
-              </div>
+                      </div>
+                          <div class="modal-footer">
+                            <a href="#" data-dismiss="modal" class="btn">Close</a>
+                          </div>
+                     </div> 
+			</div>
             <!-- Academic Concurrent-user License section ends -->
             
             <!-- Academic Classroom license section begins -->
@@ -820,7 +863,6 @@ else
         
         <!--STUDENT LICENSE SECTION BEGINS -->
         <div>
-        
         	<h2>Student License</h2>
             <p>Student licenses are single-user licenses for students who wish to purchase and maintain their own licenses on their own equipment for educational use.</p>
             <ul class="list-checkmark">
@@ -830,79 +872,21 @@ else
                 <li>May not be transferred after activation</li>   
             </ul>
            
-            <div class="tabbable">
-         
-            	<ul class="nav nav-tabs text-center">
-                	 <li align="text-center"><a href="#student-annual" data-toggle="tab"><i class="icon-th"></i> Annual <br><br><span class="sub-tab">$125-250/yr</span></a></li>         
-                    <li align="text-center"><a href="#student-6month" data-toggle="tab"><i class="icon-calendar"></i><i class="icon-calendar"></i> 6-Month <br><br><span class="sub-tab">$70-140</span></a></li>
-                        <li align="text-center"><a href="#student-monthly" data-toggle="tab"><i class="icon-calendar"></i> Monthly <br><br><span class="sub-tab">$16-32/mo</span></a></li> 
-                   
-                </ul>
-         
-                
-                <div class="tab-content">
-                	<div id="student-monthly" class="tab-pane">
-                    <div class="row">
-                    	<div class="span5">
-                    	<h3>Student Monthly License</h3>
-                            <ul class="list-checkmark">
-                                <li>No subscription required; buy only when you need it</li>
-                                <li>Available as base product or with all current modules</li>
-                                <li>Purchase as many  monthly licenses as you want at one time and use them as needed</li>
-                                <li>Can be activated one time on a single computer</li>
-                                <li>Cannot be transferred </li>
-                            </ul>
-                         </div>
-                         <div class="span3 text-center">
-                                 <h2 align="center">Price:</h2>
-                                <h1 style="margin-bottom:5px;"><span class="color">$16/month</span></h1>
-                                <p>for base software product</p>
-                                <h1 style="margin-bottom:5px;"><span class="color">$32/month</span></h1>
-                                <p>includes all add-on modules*</p>
-                                <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=monthly&product_type=complete" ><button class="mybtn"><p>Buy Now</p></button></a>   
-                         </div>
-                     </div>
-                    <hr>
-                        <div class="row">
-                            <div class="span8">
-                                     <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
-                                    
-                             </div>
-                        </div>
 
-                    </div>
-                    <div id="student-6month" class="tab-pane">
-                       <div class="row">
-                    	 <div class="span5">
-                    		<h3>Student 6-Month License</h3>
-                            <ul class="list-checkmark">
-                            	<li>Convenient semester-length license</li>
-                                <li>Available as base product or will all current modules</li>
-                                <li>Can be activated one time on a single computer</li>
-                                <li>Cannot be transferred </li>
-                            </ul>
-                         </div>
-                         <div class="span3 text-center">
-                                 <h2 align="center">Price:</h2>
-                                <h1 style="margin-bottom:5px;"><span class="color">$70</span></h1>
-                                <p>for base software product</p>
-                                <h1 style="margin-bottom:5px;"><span class="color">$140</span></h1>
-                                <p>includes all add-on modules*</p>
-                                <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=six_month&product_type=complete"><button class="mybtn"><p>Buy Now<br>or Get Quote</p></button></a>   
-                         </div>
-                         </div>
-                       <hr>
-                        <div class="row">
-                            <div class="span8">
-                                     <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
-                                    
-                             </div>
-                        </div>
-                    </div>
-                    <div id="student-annual" class="tab-pane">
-                    	<div class="row">
+            <p>
+              <a href="#student-annual-modal" role="button" class="mybtn text-center" data-toggle="modal">Annual<br>$125-250/yr</a>
+                    	<a href="#student-6month-modal" role="button" class="mybtn text-center" data-toggle="modal">6-Month<br>$70-140</a>
+                        <a href="#student-monthly-modal" role="button" class="mybtn text-center" data-toggle="modal">Monthly<br>$16-32/mo</a>
+            </p>
+         
+                <div class="modal hide fade" id="student-annual-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               			<h3>Student Annual License</h3>
+                      </div>
+                      <div class="modal-body">
+						<div class="row">
                         	<div class="span5">
-                    			<h3>Student Annual License</h3>
                                 <ul class="list-checkmark">
                                 	<li>Customizable: pay only for the modules you need</li>
                                     <li>Flexible: add on modules as you need them</li>
@@ -921,13 +905,90 @@ else
                        <hr>
                         <div class="row">
                             <div class="span8">
-                                     <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
+                               <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
                                     
                              </div>
                         </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
+                    </div>
+                    
+                    <div class="modal hide fade" id="student-6month-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    	<h3>Student 6-Month License</h3>
+                      </div>
+                      <div class="modal-body">
+						<div class="row">
+                             <div class="span5">
+                                <ul class="list-checkmark">
+                                    <li>Convenient semester-length license</li>
+                                    <li>Available as base product or will all current modules</li>
+                                    <li>Can be activated one time on a single computer</li>
+                                    <li>Cannot be transferred </li>
+                                </ul>
+                             </div>
+                             <div class="span4 text-center">
+                                     <h2 align="center">Price:</h2>
+                                    <h1 style="margin-bottom:5px;"><span class="color">$70</span></h1>
+                                    <p>for base software product</p>
+                                    <h1 style="margin-bottom:5px;"><span class="color">$140</span></h1>
+                                    <p>includes all add-on modules*</p>
+                                    <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=six_month&product_type=complete"><button class="mybtn"><p>Buy Now<br>or Get Quote</p></button></a>   
+                             </div>
+                        </div>
+                       <hr>
+                        <div class="row">
+                            <div class="span8">
+                               <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p> 
+                             </div>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
+                    </div>
+                    
+                    <div class="modal hide fade" id="student-monthly-modal">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    	<h3>Student Monthly License</h3>
+                      </div>
+                      <div class="modal-body">
+						<div class="row">
+                    		<div class="span5">
+                                <ul class="list-checkmark">
+                                    <li>No subscription required; buy only when you need it</li>
+                                    <li>Available as base product or with all current modules</li>
+                                    <li>Purchase as many  monthly licenses as you want at one time and use them as needed</li>
+                                    <li>Can be activated one time on a single computer</li>
+                                    <li>Cannot be transferred </li>
+                                </ul>
+                         	</div>
+                         	<div class="span3 text-center">
+                                 <h2 align="center">Price:</h2>
+                                <h1 style="margin-bottom:5px;"><span class="color">$16/month</span></h1>
+                                <p>for base software product</p>
+                                <h1 style="margin-bottom:5px;"><span class="color">$32/month</span></h1>
+                                <p>includes all add-on modules*</p>
+                                <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=monthly&product_type=complete" ><button class="mybtn"><p>Buy Now</p></button></a>   
+                         	</div>
+                     	</div>
+                    <hr>
+                        <div class="row">
+                            <div class="span8">
+                                     <p><i>* Add-on modules include: advanced load, advanced grid, combined heat and power, run-of-river hydro, biomass, and hydrogen</i></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                      </div>
                     </div>
                 </div>
-            </div>
         </div>
         <!--STUDENT LICENSE SECTION ENDS -->
 	</div>
