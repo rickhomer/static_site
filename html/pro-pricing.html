@@ -298,12 +298,12 @@
             <!-- zozo tabs begin -->
             <p>Please select a licensing option below for details (Trial, Standard, Academic, or Student):</p>
 
-            <div id="tabbed-nav" class="tabbed-nav z-tabs-loading" data-role="z-tabs" data-options='{"defaultTab": "tab2", "orientation": "vertical", "theme": "silver", "animation": {"duration": 800, "effects": "slideH"}}'>
+            <div id="tabbed-nav" class="tabbed-nav z-tabs-loading" data-role="z-tabs" data-options='{"defaultTab": "trial", "orientation": "vertical", "theme": "silver", "animation": {"duration": 800, "effects": "slideH"}, "deeplinking": true}'>
                 <ul>
-                    <li><a>30-Day Trial License</a></li>
-                    <li><a>Standard License</a></li>
-                    <li><a>Academic License</a></li>
-                    <li><a>Student License</a></li>
+                    <li data-link="trial"><a>30-Day Trial License</a></li>
+                    <li data-link="standard"><a>Standard License</a></li>
+                    <li data-link="academic"><a>Academic License</a></li>
+                    <li data-link="student"><a>Student License</a></li>
                 </ul>
 
                 <!-- right pane begins -->
