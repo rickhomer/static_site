@@ -222,7 +222,7 @@ right: 0;
 /*slider thumbnails*/
 #thumb-slider .thumb-text {
 	padding: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #fff;
 	font-weight: 600;
 	line-height: 1.2em;
@@ -241,8 +241,8 @@ right: 0;
 	background:  rgba(0, 0, 0, 0.5);
 }
 #thumb-slider img {
-	width: 64px !important;
-	height: 64px !important;
+	width: 60px !important;
+	height: 60px !important;
 	margin-right: 5px;
 	float: left !important;
 	display: inline !important;
@@ -252,7 +252,7 @@ right: 0;
 	margin-top: 20px;
 }
 #thumb-slider li {
-	width: 180px;
+	width: 150px;
 	margin-left: 10px;
 	display: inline-block;
 	float: left;

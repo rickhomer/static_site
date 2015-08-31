@@ -95,44 +95,7 @@ $(document).ready(function() {
 </script>
 <!--prettyphoto scripts ends-->
 
-<!--flexslider scripts starts-->
-<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-<script type="text/javascript"> 
-// Slider with thumbnail
-$(document).ready(function() {
-if($(window).width() < 959)
-{
-		$('#slider').flexslider({
-		directionNav: true,
-		controlNav: false,
-		});
-}
-else
-{
-		$('#thumb-slider').flexslider({
-		animation: "slide",
-		controlNav: false,
-		animationLoop: false,
-		slideshow: true,
-		directionNav: false,
-		controlNav: false,
-		itemWidth: 180,
-		itemMargin: 0,
-		asNavFor: '#slider'
-		});
-		$('#slider').flexslider({
-		animation: "slide",
-		controlNav: false,
-		directionNav: false,
-		animationLoop: true,
-		slideshow: true,
-		sync: "#thumb-slider"
-        });
-}
-});
-</script>
-<!--flexslider scripts ends-->
+
 
 <!-- zozo tabs scripts -->
 <script src="js/jquery.min.js"></script>

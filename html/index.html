@@ -12,6 +12,12 @@
 <meta name="description" content="HOMER software for microgrid and distributed generation power system design and optimization" />
 <meta name="keywords" content="renewable energy, microgrid, distributed generation, off-grid power systems"/>
 <title>HOMER - Hybrid Renewable and Distributed Generation System Design Software</title>
+
+<!--flexslider scripts starts-->
+<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
+<!--flexslider scripts ends-->
+
+
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -94,44 +100,7 @@ $(document).ready(function() {
 </script>
 <!--prettyphoto scripts ends-->
 
-<!--flexslider scripts starts-->
-<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-<script type="text/javascript"> 
-// Slider with thumbnail
-$(document).ready(function() {
-if($(window).width() < 959)
-{
-		$('#slider').flexslider({
-		directionNav: true,
-		controlNav: false,
-		});
-}
-else
-{
-		$('#thumb-slider').flexslider({
-		animation: "slide",
-		controlNav: false,
-		animationLoop: false,
-		slideshow: true,
-		directionNav: false,
-		controlNav: false,
-		itemWidth: 180,
-		itemMargin: 0,
-		asNavFor: '#slider'
-		});
-		$('#slider').flexslider({
-		animation: "slide",
-		controlNav: false,
-		directionNav: false,
-		animationLoop: true,
-		slideshow: true,
-		sync: "#thumb-slider"
-        });
-}
-});
-</script>
-<!--flexslider scripts ends-->
+
 
 <!-- zozo tabs scripts -->
 <script src="js/jquery.min.js"></script>
@@ -260,6 +229,45 @@ else
 <!--slider-bg starts-->
 <!-- InstanceBeginEditable name="EditRegion4" -->
 
+<!--flexslider scripts starts-->
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+// Slider with thumbnail
+$(document).ready(function() {
+if($(window).width() < 959)
+{
+		$('#slider').flexslider({
+		directionNav: true,
+		controlNav: false,
+		});
+}
+else
+{
+		$('#thumb-slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: true,
+		directionNav: false,
+		controlNav: false,
+		itemWidth: 150,
+		itemMargin: 0,
+		asNavFor: '#slider'
+		});
+		$('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		directionNav: false,
+		animationLoop: true,
+		slideshow: true,
+		sync: "#thumb-slider"
+        });
+}
+});
+</script>
+<!--flexslider scripts ends-->
+
+
 <div id="slider-bg">
   <div class="container">
     <div class="row content-top">
@@ -267,13 +275,27 @@ else
       <div class="span12">
         <div id="slider" class="flexslider">
           <ul class="slides">
+          
+          	 <!-- Conference slide begins -->
+            <li>
+            	<div class="row">
+                	<div class="span6">
+                    	<h2>MICROGRID 2015</h2>
+                        <p><strong><a href="http://www.microgridconference.com" target="_blank">Microgrid 2015: Economically Integrating Storage and Renewables for Resilience, Grid Stability, and Remote Power</a></strong> is the place to be seen and heard by people who understand that microgrids are more than a nice theory. Microgrids have been in place for decades in many parts of the world, and their benefits are now being recognised by the grid-connected world as well. This year the focus is on storage, which has seen a global surge in interest and capability, and on the Australia, Asia, and Pacific markets, but as always we anticipate a truly international crowd.</p>
+ 					</div>
+                    <div class="span6"><a href="http://www.microgridconference.com" target="_blank"><img src="images/MGC_Cards_Front_Web.png" height="245"></a>
+                    </div>
+                </div>
+            </li>
+            <!-- Conference slide ends -->
+            
+            
             <!--slide one starts-->
             <li>
               <div class="row">
 
                 <div class="span6">
-                  <h2>The World's Leading<br/>
-                    Microgrid Modeling Software</h2>
+                  <h2>The World's Leading&nbsp;Microgrid Modeling&nbsp;Software</h2>
                   <p>With over 100,000 users in 193 countries, HOMER is the established global leader for microgrid design optimization</p>
 
                 </div>
@@ -281,20 +303,7 @@ else
               </div>
             </li>
             <!--slide one ends-->
-            
-                       <!-- Conference slide begins -->
-            <li>
-            	<div class="row">
-                	<div class="span6">
-                    	<h2>MICROGRID 2015</h2>
-                        <p><strong><a href="http://www.microgridconference.com" target="_blank">Microgrid 2015: Economically Integrating Storage and Renewables for Resilience, Grid Stability, and Remote Power</a></strong> is the place to be seen and heard by people who understand that microgrids are more than a nice theory. Microgrids have been in place for decades in many parts of the world, and their benefits are now being recognised by the grid-connected world as well. This year the focus is on storage, which has seen a global surge in interest and capability, and on the Australia, Asia, and Pacific markets, but as always we anticipate a truly international crowd.</p>
- 					</div>
-                    <div class="span6"><a href="http://www.microgridconference.com" target="_blank"><img src="images/microgrid_2015_ad.jpg" height="200"></a>
-                    </div>
-                </div>
-            </li>
-            <!-- Conference slide ends -->
-            
+                 
             
             <!--slide two starts-->
             <li>
@@ -312,7 +321,7 @@ else
             <li>
               <div class="row">
                 <div class="span6">
-                  <h2>Fuel Savings for Off-Grid Power</h2>
+                  <h2>Fuel Savings for Off&#8209;Grid&nbsp;Power</h2>
                   <p>HOMER combines multiple power sources to create one robust microgrid system that meets your electrical load while saving fuel. </p>
                 </div>
                 <div class="span6"> <img src="img/11261.png"/></div>
@@ -323,7 +332,7 @@ else
             <li>
               <div class="row">
                 <div class="span6">
-                  <h2>Carbon Emission Reductions for On-Grid Power</h2>
+                  <h2>Carbon Emission Reductions for On&#8209;Grid&nbsp;Power</h2>
                   <p>HOMER works on grid or off. HOMER shows you how to cost-effectively combine renewable systems with grid power for maximum reliability. </p>
                 </div>
                 <div class="span6"> <img src="img/grid_system.png" alt="Power grid, electric vehicle, rooftop solar, wind turbine"/></div>
@@ -334,7 +343,7 @@ else
             <li>
               <div class="row">
                 <div class="span6">
-                  <h2>Simulate Thousands of Systems in a Few Minutes</h2>
+                  <h2>Simulate Thousands of&nbsp;Systems in a Few&nbsp;Minutes</h2>
                   <p>From village power to telecomm to military applications, HOMER makes the complex simple. Find out how you can put the Power of HOMER to use for your application.</p>
                 </div>
                 <div class="span6"> <img src="img/Boot-Campus.png" alt="military, native headdress, agricultural rooftop PV"/></div>
@@ -351,10 +360,15 @@ else
         <div id="thumb-slider" class="flexslider">
           <ul class="slides">
             <li>
-              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon1.png" width="64" height="64" alt="Globe">
-                <p>Global standard</p>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon1.png" width="64" height="64" alt="Microgrid Conference">
+                <p>Microgrid 2015</p>
               </div>
             </li>
+            <li>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon6.png" width="64" height="64" alt="Globe">
+                <p>Global standard</p>
+              </div>
+            </li>            
             <li>
               <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon2.png" width="64" height="64" alt="Gears">
                 <p>Intuitive interface</p>
@@ -367,7 +381,7 @@ else
             </li>
             <li>
               <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon4.png" width="64" height="64" alt="Electrical plug">
-                <p>Reduce carbon emissions</p>
+                <p>Reduce CO<sub>2</sub> emissions</p>
               </div>
             </li>
             <li>
