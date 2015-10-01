@@ -215,7 +215,7 @@ $(document).ready(function() {
   <div class="container">
     <div class="row">
     <div class="span12">
-      <h4 class="heading-icon"> <img src="../img/icons/heading-icon-1.png" width="40" height="40" alt="icon" class="icon-small-bg"> HOMER Pro: Combined Heat and Power Module</h4>
+      <h4 class="heading-icon"> <img src="../img/icons/heading-icon-1.png" width="40" height="40" alt="icon" class="icon-small-bg"> HOMER Pro: Modules</h4>
     </div>
     
     </div>
@@ -234,24 +234,26 @@ $(document).ready(function() {
   <div class="container">
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
-<p>Users who model building heating, boilers, cogeneration and heat recovery, and any system that demands and/or supplies heat energy will need the Combined Heat and Power module.</p>
-<center><IMG src="shots/modules-CHP_ribbon.PNG"></center>
-<center><IMG src="shots/modules-CHP_boiler_ribbon.PNG"></center>
-<p>The Combined Heat and Power module adds two thermal loads, the thermal load controller, the boiler component, and the heat recovery ratio parameter in the generator menu. </p>
+    <h1>Combined Heat and Power Module</h1>
+<p>Users who model building heating systems will need the Combined Heat and Power module. Types of systems could include boilers, cogeneration, heat recovery, and any system that demands/supplies heat energy.</p>
+<p>The Combined Heat and Power module adds two thermal loads, the thermal load controller, the boiler component, and the heat recovery ratio parameter in the generator menu. </p><br>
+<IMG src="shots/CHP-Load-MenuBar.PNG"><br><br>
+<IMG src="shots/CHP-Components-MenuBar.PNG"><br><br><br>
+<h2>Thermal Loads</h2>
+<p>A thermal load can model a building, an industrial process, equipment such as a thermal absorption chiller, and any other system that consumes heat energy. The combined heat and power module adds the parameter "Heat Recovery Ratio" to the generator menu. To set up a combined heat and power system, set this parameter to a number greater than zero.</p><br>
 
-<center><IMG src="shots/modules-CHP_menu.PNG"></center>
 
-<p>A thermal load can model a building, an industrial process, equipment such as a thermal absorption chiller, and any other system that consumes heat energy. The combined heat and power module adds the parameter "Heat Recovery Ratio" to the generator menu. To set up a combined heat and power system, set this parameter to a number greater than zero.</p>
+<IMG src="shots/modules-CHP_menu.PNG"><br><br>
 
-<center><img src="shots/modules-CHP_generator_hrr.PNG"></center>
-
+<img src="shots/modules-CHP_generator_hrr.PNG"><br><br><br>
+<h2>Boiler Component</h2>
 <p>If you have a thermal load, you must add a boiler. HOMER does not account for capacity shortage of the thermal load, and so any portion not met will be supplied by the boiler. This is also why the capacity of the boiler is unlimited.</p>
-
-<center><IMG src="shots/modules-CHP_boiler_menu.PNG"></center>
-
-<p>The thermal load controller converts extra electricity into heat. The option "do not include thermal load controller in the optimization" will ignore the costs of the thermal load controller and will allow unlimited capacity.</p>
-
-<center><img src="shots/modules-CHP_tlc_menu.PNG"></center>
+<br>
+<IMG src="shots/modules-CHP_boiler_menu.PNG"><br><br><br>
+<h2>Thermal Load Controller</h2>
+<p>The thermal load controller converts extra electricity into heat. The option <em>'do not include thermal load controller in the optimization'</em> will ignore the costs of the thermal load controller and will allow unlimited capacity.</p>
+<br>
+<img src="shots/modules-CHP_tlc_menu.PNG">
 <!--spacer here-->
     <div class="spacer-30px"></div>
     <!--box starts-->
