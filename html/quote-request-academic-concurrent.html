@@ -25,45 +25,29 @@
 			margin-bottom: 15px !important;
 		}
 </style>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script language="javascript" type="text/javascript">  
 $(document).ready(function(){
-var $newDiv = jQuery("<div> </div>");
-var $scbtext = jQuery("<span>  Please check this box if you are human.</span>");
-var $newInput = jQuery("<input type='checkbox'>");
-	$newInput
-	.attr("name", "hvcscrib")
-	.attr("id", "hvcscrib")
-	.attr("value", "Yes")
-	.attr("class", "nowidth")
-	jQuery("#hvm").append($newInput);
-	jQuery("#hvm").append($scbtext);
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
 });
 
-var antiSpam = function() {
-	if (document.getElementById("total")) {
-			a = document.getElementById("total");
-			if (isNaN(a.value) == true) {
-					a.value = 0;
-			} else {
-					a.value = parseInt(a.value) + 1;
-			}
-	}
-	setTimeout("antiSpam()", 1000);
-}
-
-antiSpam();
-
-$(document).ready(function(){
-
-$('#MyForm').submit(function() {
-var captcha = $('#hvcscrib').is(":checked");
-
-if(!captcha){
-   alert('Please check this box if you are human..');$('#hvcscrib').focus();return false;
-}
-if(captcha){ return true;}
-	
-});
 </script>
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
@@ -340,10 +324,11 @@ Select modules that you wish to add to the base HOMER Pro product (use shift/ctr
             <label for="description">How will you use HOMER Pro?</label>
             <textarea name="description"></textarea>
             <br>
-            <label for="description">Verify Code to Prevent Spam:</label>
-            <br>
+            
              <!-- Captcha//-->
-					<div class="form-group" id="hvm"></div>
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
             <!-- Captcha //-->
             <br>
             <input type="submit" name="submit">

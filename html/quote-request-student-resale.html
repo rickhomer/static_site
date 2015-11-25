@@ -25,6 +25,30 @@
 			margin-bottom: 15px !important;
 		}
 </style>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+});
+
+</script>
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -260,13 +284,13 @@ $(document).ready(function() {
             <!--  ----------------------------------------------------------------------  -->
             
             <label for="first_name">First Name</label>
-            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
             <br>
             <label for="last_name">Last Name</label>
-            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
             <br>
             <label for="email">Email</label>
-            <input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
             <br>
             <label for="company">Educational Institution</label>
             <input  id="company" maxlength="40" name="company" size="20" type="text" />
@@ -278,7 +302,7 @@ $(document).ready(function() {
             <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             <br>
             <label>Number Of Licenses</label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required="true"/>
+            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
             <br>
             <br>
             License Length
@@ -298,6 +322,14 @@ Select modules that you wish to add to the base HOMER Pro product (use shift/ctr
               <option value="Hydro">Hydro</option>
               <option value="Hyrdrogen">Hyrdrogen</option>
             </select>
+            <br>
+            
+             <!-- Captcha//-->
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
+            <!-- Captcha //-->
+            <br>
             <input type="submit" name="submit">
           </form>
         </div>
