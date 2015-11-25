@@ -246,7 +246,7 @@ $(document).ready(function() {
         <h1>Request Quote</h1>
         </legend>
         <div class="span10">
-          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <form action="check-this-first.php" method="post"  name="emailForm" id="test" style="padding: 0px; margin: 0px;">
             <input type=hidden name="oid" value="00D61000000ZrBq">
             <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
             <input type=hidden name="lead_source" value="Website">
@@ -299,6 +299,16 @@ Select modules that you wish to add to the base HOMER Pro product (use shift/ctr
             <br>
             <label for="description">How will you use HOMER Pro?</label>
             <textarea name="description"></textarea>
+            <br>
+            <label for="description">Verify Code to Prevent Spam:</label>
+            <br>
+             <!-- Captcha//-->
+        <?php
+          require_once('recaptcha/recaptchalib.php');
+          $publickey = "6Lc9yRETAAAAAPpOkZqZWsK6R7os4ogRJvUvCeUJ"; // you got this from the signup page
+          echo recaptcha_get_html($publickey);
+        ?>
+        <!-- Captcha //-->
             <br>
             <input type="submit" name="submit">
           </form>
