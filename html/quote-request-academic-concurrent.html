@@ -25,6 +25,46 @@
 			margin-bottom: 15px !important;
 		}
 </style>
+<script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+var $newDiv = jQuery("<div> </div>");
+var $scbtext = jQuery("<span>  Please check this box if you are human.</span>");
+var $newInput = jQuery("<input type='checkbox'>");
+	$newInput
+	.attr("name", "hvcscrib")
+	.attr("id", "hvcscrib")
+	.attr("value", "Yes")
+	.attr("class", "nowidth")
+	jQuery("#hvm").append($newInput);
+	jQuery("#hvm").append($scbtext);
+});
+
+var antiSpam = function() {
+	if (document.getElementById("total")) {
+			a = document.getElementById("total");
+			if (isNaN(a.value) == true) {
+					a.value = 0;
+			} else {
+					a.value = parseInt(a.value) + 1;
+			}
+	}
+	setTimeout("antiSpam()", 1000);
+}
+
+antiSpam();
+
+$(document).ready(function(){
+
+$('#MyForm').submit(function() {
+var captcha = $('#hvcscrib').is(":checked");
+
+if(!captcha){
+   alert('Please check this box if you are human..');$('#hvcscrib').focus();return false;
+}
+if(captcha){ return true;}
+	
+});
+</script>
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -246,7 +286,7 @@ $(document).ready(function() {
         <h1>Request Quote</h1>
         </legend>
         <div class="span10">
-          <form action="check-this-first.php" method="post"  name="emailForm" id="test" style="padding: 0px; margin: 0px;">
+          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
             <input type=hidden name="oid" value="00D61000000ZrBq">
             <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
             <input type=hidden name="lead_source" value="Website">
@@ -260,13 +300,13 @@ $(document).ready(function() {
             <!--  ----------------------------------------------------------------------  -->
             
             <label for="first_name">First Name</label>
-            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
             <br>
             <label for="last_name">Last Name</label>
-            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
             <br>
             <label for="email">Email</label>
-            <input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
             <br>
             <label for="company">Educational Institution</label>
             <input  id="company" maxlength="40" name="company" size="20" type="text" />
@@ -278,7 +318,7 @@ $(document).ready(function() {
             <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             <br>
             <label>Number Of Simultaneous Users</label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required="true"/>
+            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
             <br>
 License Length
 <select  id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term">
@@ -303,12 +343,8 @@ Select modules that you wish to add to the base HOMER Pro product (use shift/ctr
             <label for="description">Verify Code to Prevent Spam:</label>
             <br>
              <!-- Captcha//-->
-        <?php
-          require_once('recaptcha/recaptchalib.php');
-          $publickey = "6Lc9yRETAAAAAPpOkZqZWsK6R7os4ogRJvUvCeUJ"; // you got this from the signup page
-          echo recaptcha_get_html($publickey);
-        ?>
-        <!-- Captcha //-->
+					<div class="form-group" id="hvm"></div>
+            <!-- Captcha //-->
             <br>
             <input type="submit" name="submit">
           </form>
