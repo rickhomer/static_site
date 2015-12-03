@@ -25,30 +25,7 @@
 			margin-bottom: 15px !important;
 		}
 </style>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script language="javascript" type="text/javascript">  
-$(document).ready(function(){
-    var $newDiv = jQuery("<div> </div>");
-    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
-        $newInput
-        .attr("name", "hvcscrib")
-        .attr("id", "hvcscrib")
-        .attr("value", "Yes")
-        .attr("class", "nowidth")
-        jQuery("#hvm").append($newInput);
-
-    $('#MyForm').submit(function() {
-    var captcha = $('#hvcscrib').is(":checked");
-
-    if(!captcha){
-       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
-    }
-    if(captcha){ return true;}
-
-    });
-});
-
-</script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -444,4 +421,30 @@ $(document).ready(function() {
 <script src="js/comparetable.js" type="text/javascript"></script>
 </body>
 <!-- InstanceEnd -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script type="text/javascript">  
+$(document).ready(function(){
+	$('.select2').select2();
+	
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+});
+
+</script>
 </html>
