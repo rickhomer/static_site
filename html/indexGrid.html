@@ -237,6 +237,8 @@ $(document).ready(function() {
 }
 h1.grid-header {
 	color: white;
+	font-size: 28px;
+	margin: 15px;
 }
 .grid {
   margin: 0 auto;
@@ -260,7 +262,7 @@ h1.grid-header {
   }
 .grid-item {
   width: 180px;
-  height: 160px;
+  height: 140px;
   float: left;
   margin-bottom: 10px;
   
@@ -273,9 +275,9 @@ h1.grid-header {
 .grid-item img {
   display: block;
   width: 180px;
-  height: 160px;
+  height: 140px;
   
-  -webkit-filter: blur(3px);
+  -webkit-filter: blur(1.5px);
   -webkit-transition: all .6s ease;
      -moz-transition: all .6s ease;
        -o-transition: all .6s ease;
@@ -291,6 +293,7 @@ h1.grid-header {
 
 .grid-item img:hover {
   -webkit-filter: blur(0px);
+  
 }
 
 @media (max-width: 480px) {
@@ -344,38 +347,92 @@ h1.grid-header {
 			}); 
 		  });
 		  
-		  $('#cat img').mouseover(function() {
-			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Cats' );
+		  $('#island img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Island Utilities' );
 		  }).mouseout(function() {
 			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
 		  });
 		  
-		  $('#cloud img').mouseover(function() {
-			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Clouds' );
+		  $('#hospital img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Hospitals' );
 		  }).mouseout(function() {
 			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
 		  });
 
-		  $('#tree img').mouseover(function() {
-			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Trees' );
+		  $('#emergency img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Emergency Services' );
 		  }).mouseout(function() {
 			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
 		  });
 		  
-		  $('#building img').mouseover(function() {
-			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Buildings' );
+		  $('#data-center img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Data Centers' );
 		  }).mouseout(function() {
 			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
 		  });
 
-		  $('#car img').mouseover(function() {
-			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Cars' );
+		  $('#campus img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Campuses' );
 		  }).mouseout(function() {
 			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
 		  });
 		  
-		  $('#peeps img').mouseover(function() {
-			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for People' );
+		  $('#grid-backup img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Grid Backup' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#grid-independence img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Grid Independence' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#military img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Military' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#telecom img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Telecommunications' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#resorts img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Resorts' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#rural img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Rural Communities' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#remote-clinic img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Remote Health Clinics' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#unreliable-grid img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Unreliable Grids' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#residence img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Residences' );
+		  }).mouseout(function() {
+			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
+		  });
+		  
+		  $('#remote-mine img').mouseover(function() {
+			  $( "h1.grid-header" ).html( '<span class="HOMERred">HOMER</span> for Remote Mines' );
 		  }).mouseout(function() {
 			  $( "h1.grid-header" ).html( 'What Type of <span class="HOMERred">HOMER</span> User are You?' );
 		  });
@@ -393,25 +450,25 @@ h1.grid-header {
       <div class="grid">
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
-        <div class="grid-item" id="tree">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /> </div>
-        <div class="grid-item" id="building">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /> </div>
-        <div class="grid-item" id="car">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" /> </div>
         
-        <div class="grid-item" id="cat"> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /> </div>
-        <div class="grid-item" id="cloud">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /> </div>
-        <div class="grid-item" id="peeps">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /> </div>
+        <div class="grid-item" id="island">  <img src="photo-grid/island.jpg" /> </div>
+        <div class="grid-item" id="hospital">  <img src="photo-grid/hospital.jpg" /> </div>
+        <div class="grid-item" id="emergency">  <img src="photo-grid/emergency.jpg" /> </div>
+        <div class="grid-item" id="data-center"> <img src="photo-grid/datacenter.jpg" /> </div>
+        <div class="grid-item" id="campus">  <img src="photo-grid/campus.jpg" /> </div>
         
-        <div class="grid-item" id="tree">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" /> </div>
-        <div class="grid-item" id="building">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" /> </div>
-        <div class="grid-item" id="car">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" /> </div>
+        <div class="grid-item" id="grid-backup">  <img src="photo-grid/grid-backup.jpg" /> </div>
+        <div class="grid-item" id="telecom">  <img src="photo-grid/telecom.jpg" /> </div>
+        <div class="grid-item" id="unreliable-grid">  <img src="photo-grid/unreliable-grid.jpg" /> </div>
+        <div class="grid-item" id="grid-independence">  <img src="photo-grid/grid-independence.jpg" /> </div>
+        <div class="grid-item" id="resorts">  <img src="photo-grid/resort.jpg" /> </div>
         
-        <div class="grid-item" id="cat">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /> </div>
-        <div class="grid-item" id="cloud">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /> </div>
-        <div class="grid-item" id="peeps">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /> </div>
+        <div class="grid-item" id="remote-mine">  <img src="photo-grid/remote-mines.jpg" /> </div>
+        <div class="grid-item" id="remote-clinic">  <img src="photo-grid/remote-clinic.jpg" /> </div>
+        <div class="grid-item" id="military">  <img src="photo-grid/military.jpg" /> </div>
+        <div class="grid-item" id="residence">  <img src="photo-grid/residence.jpg" /> </div>
+        <div class="grid-item" id="rural">  <img src="photo-grid/rural-community.jpg" /> </div>
         
-        <div class="grid-item" id="cat">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" /> </div>
-        <div class="grid-item" id="cloud">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" /> </div>
-        <div class="grid-item" id="peeps">  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" /> </div>
         
     </div>
     </div>
