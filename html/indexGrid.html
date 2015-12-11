@@ -260,41 +260,48 @@ h1.grid-header {
   .gutter-sizer {
   	width: 10px;
   }
+  
 .grid-item {
   width: 180px;
   height: 140px;
   float: left;
   margin-bottom: 10px;
-  
+  border:none;
   overflow: hidden;
-  -webkit-box-shadow: 4px 4px 4px #111;
-          box-shadow: 4px 4px 4px #111;
+  -webkit-box-shadow: 4px 4px 4px #000;
+          box-shadow: 4px 4px 4px #000;
+		  -webkit-transition: all .3s ease-in;
+       -o-transition: all .2s ease-in;
+      -ms-transition: all .2s ease-in;
+          transition: all .2s ease-in;
 		  
 }
+
+.grid-item:hover {
+  -webkit-box-shadow: 3px 3px 5px #111;
+          box-shadow: 3px 3px 5px #111;
+		  cursor: pointer;
+		  border:2px #eb3c3e solid;
+}
+
 
 .grid-item img {
   display: block;
   width: 180px;
   height: 140px;
-  
-  -webkit-filter: blur(1.5px);
-  -webkit-transition: all .6s ease;
-     -moz-transition: all .6s ease;
-       -o-transition: all .6s ease;
-      -ms-transition: all .6s ease;
-          transition: all .6s ease;
-}
-
-.grid-item:hover {
-  -webkit-box-shadow: 4px 4px 8px #000;
-          box-shadow: 4px 4px 8px #000;
-  cursor: pointer;
+  -webkit-filter: blur(1px);
+		  -webkit-transition: all .3s ease-in;
+       -o-transition: all .2s ease-in;
+      -ms-transition: all .2s ease-in;
+          transition: all .2s ease-in;
+		  
 }
 
 .grid-item img:hover {
   -webkit-filter: blur(0px);
-  
 }
+
+
 
 @media (max-width: 480px) {
 	h1.grid-header {
@@ -332,7 +339,7 @@ h1.grid-header {
 
 }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script> 
   <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script> 
   <script type="text/javascript">
   	$(document).ready( function() {
@@ -443,38 +450,32 @@ h1.grid-header {
 	});
   </script>
   <div id="grid-bg">
-  <div class="container">
-    <div class="row">
-    <div class="span12">
-    	<h1 class="grid-header">What Type of <span class="HOMERred">HOMER</span> User are You?</h1>
-      <div class="grid">
-        <div class="grid-sizer"></div>
-        <div class="gutter-sizer"></div>
-        
-        <div class="grid-item" id="island">  <img src="photo-grid/island.jpg" /> </div>
-        <div class="grid-item" id="hospital">  <img src="photo-grid/hospital.jpg" /> </div>
-        <div class="grid-item" id="emergency">  <img src="photo-grid/emergency.jpg" /> </div>
-        <div class="grid-item" id="data-center"> <img src="photo-grid/datacenter.jpg" /> </div>
-        <div class="grid-item" id="campus">  <img src="photo-grid/campus.jpg" /> </div>
-        
-        <div class="grid-item" id="grid-backup">  <img src="photo-grid/grid-backup.jpg" /> </div>
-        <div class="grid-item" id="telecom">  <img src="photo-grid/telecom.jpg" /> </div>
-        <div class="grid-item" id="unreliable-grid">  <img src="photo-grid/unreliable-grid.jpg" /> </div>
-        <div class="grid-item" id="grid-independence">  <img src="photo-grid/grid-independence.jpg" /> </div>
-        <div class="grid-item" id="resorts">  <img src="photo-grid/resort.jpg" /> </div>
-        
-        <div class="grid-item" id="remote-mine">  <img src="photo-grid/remote-mines.jpg" /> </div>
-        <div class="grid-item" id="remote-clinic">  <img src="photo-grid/remote-clinic.jpg" /> </div>
-        <div class="grid-item" id="military">  <img src="photo-grid/military.jpg" /> </div>
-        <div class="grid-item" id="residence">  <img src="photo-grid/residence.jpg" /> </div>
-        <div class="grid-item" id="rural">  <img src="photo-grid/rural-community.jpg" /> </div>
-        
-        
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h1 class="grid-header">What Type of <span class="HOMERred">HOMER</span> User are You?</h1>
+          <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+            <div class="grid-item" id="island"> <img src="photo-grid/island.jpg" /> </div>
+            <div class="grid-item" id="hospital"> <img src="photo-grid/hospital.jpg" /> </div>
+            <div class="grid-item" id="emergency"> <img src="photo-grid/emergency.jpg" /> </div>
+            <div class="grid-item" id="data-center"> <img src="photo-grid/datacenter.jpg" /> </div>
+            <div class="grid-item" id="campus"> <img src="photo-grid/campus.jpg" /> </div>
+            <div class="grid-item" id="grid-backup"> <img src="photo-grid/grid-backup.jpg" /> </div>
+            <div class="grid-item" id="telecom"> <img src="photo-grid/telecom.jpg" /> </div>
+            <div class="grid-item" id="unreliable-grid"> <img src="photo-grid/unreliable-grid.jpg" /> </div>
+            <div class="grid-item" id="grid-independence"> <img src="photo-grid/grid-independence.jpg" /> </div>
+            <div class="grid-item" id="resorts"> <img src="photo-grid/resort.jpg" /> </div>
+            <div class="grid-item" id="remote-mine"> <img src="photo-grid/remote-mines.jpg" /> </div>
+            <div class="grid-item" id="remote-clinic"> <img src="photo-grid/remote-clinic.jpg" /> </div>
+            <div class="grid-item" id="military"> <img src="photo-grid/military.jpg" /> </div>
+            <div class="grid-item" id="residence"> <img src="photo-grid/residence.jpg" /> </div>
+            <div class="grid-item" id="rural"> <img src="photo-grid/rural-community.jpg" /> </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    
-  </div>
-  </div>
   </div>
   <!-- InstanceEndEditable --> 
   <!--slider-bg ends-->
