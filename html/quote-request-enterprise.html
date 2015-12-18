@@ -247,6 +247,33 @@ $(document).ready(function() {
   <div class="container">
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+	
+	
+	$('.select2').select2();
+});
+
+</script>
     <div class="row">
       <fieldset>
         <legend>

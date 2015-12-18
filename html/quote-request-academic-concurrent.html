@@ -246,6 +246,33 @@ $(document).ready(function() {
   <div class="container">
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+	
+	
+	$('.select2').select2();
+});
+
+</script>
     <div class="row">
       <fieldset>
         <legend>
@@ -292,8 +319,8 @@ License Length
               <option value="Permanent">Permanent</option>
               <option value="Quote Both">Please Quote Both Options</option>
             </select>
-<br>
-Select modules that you wish to add to the base HOMER Pro product (use shift/ctrl)
+<br><br>
+Select modules that you wish to add to the base HOMER Pro product
 <select  id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
               <option value="Advanced Grid">Advanced Grid</option>
               <option value="Advanced Load">Advanced Load</option>
@@ -302,7 +329,7 @@ Select modules that you wish to add to the base HOMER Pro product (use shift/ctr
               <option value="Hydro">Hydro</option>
               <option value="Hydrogen">Hydrogen</option>
             </select>
-            <br>
+            <br><br>
             <label for="description">How will you use HOMER Pro?</label>
             <textarea name="description"></textarea>
             <br>
