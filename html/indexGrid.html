@@ -481,6 +481,7 @@ right connector from last child*/
             /*We will apply the hover effect the the lineage of the element also*/
             
             .tree li a:hover,
+			.tree li a:hover+ul li a,
             .tree li a:hover+ul li a {
                 background: #EBF5FC;
                 color: #000;
@@ -496,6 +497,18 @@ right connector from last child*/
             }
 			
 			
+			.tree {
+				height: 4px;
+				overflow: hidden;
+				-webkit-transition: all .725s ease-in;
+                -o-transition: all .725s sease-in;
+                -ms-transition: all .725s ease-in;
+                transition: all .725s ease-in;
+            }
+           
+			.tree:hover {
+				height: 360px;
+			}
 			
 			@media (max-width: 980px) {
 				.tree {
@@ -576,6 +589,9 @@ right connector from last child*/
         <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
+				
+				
+				//The Grid Code
 
                 // init Masonry after all images have loaded
                 var $grid = $('.grid').imagesLoaded(function () {
@@ -676,7 +692,20 @@ right connector from last child*/
                 }).mouseout(function () {
                     $("h1.grid-header").html('What Type of <span class="HOMERred">HOMER</span> User are You?');
                 });
-
+				
+				
+				
+				//The Tree Code
+				
+				
+				/*$('.tree').mouseover(function () {
+                    $(".tree .roots").show(650);
+                }).mouseout(function () {
+                     $(".tree .roots").hide();
+                });
+				*/
+	
+	
 
 
 
@@ -694,7 +723,7 @@ right connector from last child*/
                             <ul>
                                 <li>
                                     <a href="#" class="parent">Tools</a>
-                                    <ul>
+                                    <ul  class="roots">
                                         <li>
                                             <a href="#"><strong>HOMER Pro</strong><br>
                                           The global standard for early-stage feasibility and design of micro grids and distributed generation - for power experts</a>
@@ -715,7 +744,7 @@ right connector from last child*/
                             <ul>
                                 <li>
                                   <a href="#" class="parent">Services</a>
-                                    <ul>
+                                    <ul  class="roots">
                                         <li>
                                             <a href="#"><strong>HOMER Analysis and Consulting</strong><br>
                                             Trust your data to the people who invented economic optimization of distributed generation</a>
