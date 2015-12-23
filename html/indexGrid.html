@@ -365,7 +365,7 @@
       }
 
       #tools-services:hover {
-        height: 360px;
+        height: auto;
       }
 
       #tools-services h1 {
@@ -381,6 +381,7 @@
         float: left;
         padding-bottom: 50px;
         margin: 0 auto;
+        margin-bottom: 20px;
       }
 
       .tree ul {
@@ -485,9 +486,10 @@ right connector from last child*/
       .tree li a:not(.parent) {
         width: 110px;
         height: auto;
-        background: #EBF5FC;
-        background: rgba(238, 246, 252, 0.75);
-        color: #000;
+        background: rgb(0, 0, 0);
+        /* fallback color */
+        background: rgba(0, 0, 0, 0.3);
+        color: #FFF;
         border: 1px solid #94a0b4;
         padding: 5px 10px;
         text-decoration: none;
@@ -512,8 +514,8 @@ right connector from last child*/
       .tree li a:hover,
       .tree li a:hover+ul li a,
       .tree li a:hover+ul li a {
-        background: #EBF5FC;
-        color: #000;
+        background: rgba(0, 0, 0, .6);
+        color: #FFF;
         border: 1px solid #94a0b4;
       }
       /*Connector styles on hover*/
@@ -535,7 +537,7 @@ right connector from last child*/
       }
 
       .tree:hover {
-        height: 360px;
+        height: 180px;
       }
         /*End Tools and Services Section*/
 
@@ -578,7 +580,10 @@ right connector from last child*/
           float: none;
           margin: 0 auto;
           margin-bottom: 30px;
-          min-width: 370px;
+          min-width: 320px;
+        }
+        .tree:hover {
+            height: 200px;
         }
         .tree li a:not(.parent) {
           width: 70px;
