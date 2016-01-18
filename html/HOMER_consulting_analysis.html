@@ -234,6 +234,30 @@ $(document).ready(function() {
   <div class="container">
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
+    
+     <script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+});
+
+</script>
 
     <p>HOMER Energy provides a complete array of services to assist you in making decisions about increasing the penetration of renewables in your
     system, or how to operate your power system more effectively &ndash; from a single home to an island nation. Our analytical services are backed by the
@@ -257,11 +281,58 @@ $(document).ready(function() {
     to the experts. HOMER Energy engineers are available for everything from simple one hour consults, to complex analytical services and reporting projects to
     meet your needs.</p>
 
-    <p><a href="mailto:consulting@homerenergy.com">Email</a> or call us at 720-565-4046 to find out how to put HOMER Energy Consulting and Analytical Services to work.</p>
-
     <p>Download the
     	<a href="../pdf/Microgrid_Power_System_Design_Services_Using_HOMER.pdf" title="Microgrid Power System Design Services Using HOMER Brochure" target="_new">	
         	Microgrid Power System Design Services</a> brochure.</p>
+            
+     <p>Fill out the form below or call us at 720-565-4046 to find out how to put HOMER Energy Consulting and Analytical Services to work.</p>
+     
+     <fieldset >
+        <legend class="small-width">Send us a Message</legend>
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
+            <input type=hidden name="oid" value="00D61000000ZrBq">
+            <input type=hidden name="retURL" value="http://www.homerenergy.com">
+            <input type=hidden name="lead_source" value="Website">
+<input type=hidden name="rating" value="Hot">
+          <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="ContactConsulting">   
+            
+            <!--  ----------------------------------------------------------------------  --> 
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
+            <!--  these lines if you wish to test in debug mode.                          --> 
+            <!--  <input type="hidden" name="debug" value=1>                              --> 
+            <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
+            <!--  ----------------------------------------------------------------------  -->
+            
+            <label for="first_name">First Name</label>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+            <br>
+            <label for="email">Email</label>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+            <br>
+            <label for="company">Organization</label>
+            <input  id="company" maxlength="40" name="company" size="20" type="text" />
+            <br>
+            <label for="country">Country</label>
+            <input  id="country" maxlength="40" name="country" size="20" type="text" />
+            <br>
+            <label for="phone">Phone</label>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+            <br><br>
+            <label for="description">Message</label>
+            <textarea name="description" required></textarea>
+            <br>
+             <!-- Captcha//-->
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
+            <!-- Captcha //-->
+            <br>
+            <input type="submit" name="submit" class="mybtn">
+          </form>
+</fieldset>
 
 <br />
     <!-- InstanceEndEditable -->

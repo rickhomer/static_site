@@ -234,6 +234,32 @@ $(document).ready(function() {
   <div class="container">
     <!--features starts-->
     <!-- InstanceBeginEditable name="Main" -->
+    
+    <script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+});
+
+</script>
+
+
 <div class="span10">
   <p style="font-style:italic"><strong>Because of its reputation as a neutral platform for microgrid design, and HOMER&rsquo;s large and growing user base, HOMER Energy is the microgrid starting point &mdash; your unique resource for reaching innovators wanting clean, reliable, cost-effective power</strong>.</p>
     <p>We started the Microgrid Market Access Services program because of strong marketplace demand. Finding this dispersed but growing market is the most important thing you must do to succeed. With over 100,000 users in 193 countries, HOMER is the  undisputed leader in microgrid planning software. The following programs and options are available to get your name in front of your customers and partners:</p>
@@ -267,7 +293,53 @@ $(document).ready(function() {
     <td>Benefit from our unique insight and experience on  microgrids and the marketplace surrounding them</td>
   </tr>
 </table>
-    <p>Call +1-720-565-4046 or <a href="mailto:info@homerenergy.com">email</a> today to learn how you can access the customers who need your products or services. </p>
+    <p>Call +1-720-565-4046 or fill out the form below to learn how you can access the customers who need your products or services. </p>
+    <fieldset >
+        <legend class="small-width">Send us a Message</legend>
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
+            <input type=hidden name="oid" value="00D61000000ZrBq">
+            <input type=hidden name="retURL" value="http://www.homerenergy.com">
+            <input type=hidden name="lead_source" value="Website">
+<input type=hidden name="rating" value="Hot">
+          <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="MarketAccess">   
+            
+            <!--  ----------------------------------------------------------------------  --> 
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
+            <!--  these lines if you wish to test in debug mode.                          --> 
+            <!--  <input type="hidden" name="debug" value=1>                              --> 
+            <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
+            <!--  ----------------------------------------------------------------------  -->
+            
+            <label for="first_name">First Name</label>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+            <br>
+            <label for="email">Email</label>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+            <br>
+            <label for="company">Organization</label>
+            <input  id="company" maxlength="40" name="company" size="20" type="text" />
+            <br>
+            <label for="country">Country</label>
+            <input  id="country" maxlength="40" name="country" size="20" type="text" />
+            <br>
+            <label for="phone">Phone</label>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+            <br><br>
+            <label for="description">Message</label>
+            <textarea name="description" required></textarea>
+            <br>
+             <!-- Captcha//-->
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
+            <!-- Captcha //-->
+            <br>
+            <input type="submit" name="submit" class="mybtn">
+          </form>
+</fieldset>
 </div>
     <!-- InstanceEndEditable -->
     <!--box ends-->
