@@ -249,6 +249,8 @@ $(document).ready(function() {
     <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
     <script language="javascript" type="text/javascript">  
 $(document).ready(function(){
+	document.getElementById('oid').value = '00D61000000ZrBq';
+	
     var $newDiv = jQuery("<div> </div>");
     var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
         $newInput
@@ -280,7 +282,7 @@ $(document).ready(function(){
         </legend>
         <div class="span10">
           <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
-            <input type=hidden name="oid" value="00D61000000ZrBq">
+            <input type=hidden name="oid" id="oid">
             <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
             <input type=hidden name="lead_source" value="Website">
 <input type=hidden name="rating" value="Hot">
