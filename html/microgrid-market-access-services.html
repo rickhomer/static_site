@@ -300,50 +300,55 @@ $(document).ready(function(){
     <p>Call +1-720-565-4046 or fill out the form below to learn how you can access the customers who need your products or services. </p>
     <fieldset >
         <legend class="small-width">Send us a Message</legend>
-		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" id="MyForm">
-            <input type=hidden name="oid" id="oid">
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
+            <input type=hidden name="oid" id='oid'>
             <input type=hidden name="retURL" value="http://www.homerenergy.com">
             <input type=hidden name="lead_source" value="Website">
 <input type=hidden name="rating" value="Hot">
-          <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="MarketAccess">   
-
+          <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="IndustryPartnerProgram">   
+            
+            <!--  ----------------------------------------------------------------------  --> 
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
+            <!--  these lines if you wish to test in debug mode.                          --> 
+            <!--  <input type="hidden" name="debug" value=1>                              --> 
+            <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
             <!--  ----------------------------------------------------------------------  -->
-            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-            <!--  these lines if you wish to test in debug mode.                          -->
-            <!--  <input type="hidden" name="debug" value=1>                              -->
-            <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    -->
-            <!--  ----------------------------------------------------------------------  -->
-
+            
             <label for="first_name">First Name</label>
             <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
-            <br>
+            <br><br>
             <label for="last_name">Last Name</label>
             <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
-            <br>
+            <br><br>
             <label for="email">Email</label>
             <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
-            <br>
+            <br><br>
             <label for="company">Organization</label>
             <input  id="company" maxlength="40" name="company" size="20" type="text" />
-            <br>
+            <br><br>
             <label for="country">Country</label>
             <input  id="country" maxlength="40" name="country" size="20" type="text" />
-            <br>
+            <br><br>
             <label for="phone">Phone</label>
             <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             <br><br>
-            <label for="description">Message</label>
+            <label for="description">Who are you and why you would like to partner with us?</label>
             <textarea name="description" required></textarea>
-            <br>
+            <br><br>
+            <label>Do you distribute or manufacture products that could be modeled in HOMER Pro?</label>
+           <select  id="00N6100000CManA" name="00N6100000CManA" title="Is Component Partner"><option value="YES">YES</option>
+<option value="NO">NO</option>
+</select><br><br><br><br><br><br>
              <!-- Captcha//-->
 					<div class="form-group" id="hvm">
-					    <label for="description">Please check this box if not a bot:</label>
+					    <label for="description">Check this box if not a bot:</label>
 					</div>
             <!-- Captcha //-->
             <br>
             <input type="submit" name="submit" class="mybtn">
           </form>
 </fieldset>
+
 </div>
     <!-- InstanceEndEditable -->
     <!--box ends-->
