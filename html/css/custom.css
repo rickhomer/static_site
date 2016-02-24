@@ -3,6 +3,23 @@
 /* Custom styles for the HOMER website                                           */
 /* Edit here - do not edit styles.css in order to make upgrades go more smoothly */
 
+/*** Styles used by Version History Page ***/
+.indent-bullet {
+	padding-left: 25px;
+}
+.major-release {
+	font-weight: bold;
+}
+.minor-release {
+	font-weight: bold;
+}
+.sub-header {
+	font-weight: bold;
+}
+
+
+
+
 h1 {
 	margin-top: 20px;
 }
