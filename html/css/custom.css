@@ -18,6 +18,17 @@
 }
 
 
+.feature-list {
+	margin-left: 20px;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+.feature-list-secondary {
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-left: 20px;
+}
+
 
 
 h1 {
