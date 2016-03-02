@@ -31,7 +31,6 @@
 <link rel="stylesheet" media="screen" href="css/bootstrap-override.css"/>
 <link rel="stylesheet" media="screen" href="css/style.css"/>
 <link rel="stylesheet" media="screen" href="css/custom.css">
-<link rel="stylesheet" media="screen" href="css/custom2.css"/>
 <link href="css/zozo.tabs.min.css" rel="stylesheet">
 
 <!--Google analytics-->
@@ -244,7 +243,7 @@ $(document).ready(function() {
       /* ---- The Photo Grid Styles ---- */
 
       #grid-bg {
-        background: url(img/patterns/body-bg.jpg) repeat;
+        background: url(img/patterns/slider-background.jpg) no-repeat scroll center top;
         background-size: 100% 100%;
         width: 100%;
         height: auto;
@@ -300,7 +299,7 @@ $(document).ready(function() {
         -webkit-box-shadow: 3px 3px 5px #111;
         box-shadow: 3px 3px 5px #111;
         cursor: pointer;
-        border: 2px #eb3c3e solid;
+        border: 2px #44b1d9 solid;
       }
 
       .grid-item img {
@@ -349,6 +348,7 @@ $(document).ready(function() {
         -o-transition: all .25s ease-in;
         -ms-transition: all .25s ease-in;
         transition: all .25s ease-in;
+		display: none;
       }
 
       #tools-services:hover {
@@ -647,91 +647,91 @@ right connector from last child*/
         });
 
         $('#island img').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Island Utilities</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Island Utilities</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#hospital').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Hospitals</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Hospitals</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#emergency').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Emergency Services</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Emergency Services</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#data-center').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Data Centers</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Data Centers</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#campus').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Campuses</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Campuses</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#grid-backup').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Grid Backup</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Grid Backup</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#grid-independence').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Grid Independence</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Grid Independence</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#military').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Military</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Military</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#telecom').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Telecommunications</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Telecommunications</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#resorts').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Resorts</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Resorts</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#rural').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Rural Communities</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Rural Communities</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#remote-clinic').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Remote Health Clinics</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Remote Health Clinics</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#unreliable-grid').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Unreliable Grids</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Unreliable Grids</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#residence').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Residences</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Residences</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
 
         $('#remote-mine').mouseover(function() {
-          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="HOMERred">Remote Mines</span>');
+          $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for <span class="color">Remote Mines</span>');
         }).mouseout(function() {
           $("h1.grid-header").html('I need to explore affordable, clean, distributed electrical power&nbsp;options&nbsp;for:');
         });
