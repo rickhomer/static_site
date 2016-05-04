@@ -12,6 +12,17 @@
 <meta name="description" content="HOMER microgrid software for optimized microgrid and distributed generation power system design" />
 <meta name="keywords" content="renewable energy, microgrid software, distributed generation software, off-grid power system software"/>
 <title>HOMER Pro - Microgrid Software for Designing Optimized Hybrid Microgrids</title>
+
+<!--flexslider scripts starts-->
+<link rel="stylesheet" media="screen" href="css/flexslider.css"/>
+<!--flexslider scripts ends-->
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
 <link rel="shortcut icon" href="img/icons/favicon.ico">
@@ -129,6 +140,7 @@ $(document).ready(function() {
                                     <li><a href="../HOMER_explorer.html">HOMER Explorer</a></li>-->
                                     <li><a href="HOMER_pro.html">HOMER Pro</a>
 										<ul><li><a href="HOMER_pro.html">Information</a></li>
+                                            <li><a href="HOMER_pro_modules.html">Modules</a></li>
 											<li><a href="pro-pricing.html">Pricing</a></li>
 											<li><a href="HOMER-Pro-features.html">Features</a></li>
                                              <li><a href="HOMER-testimonials.html">Testimonials</a></li>
@@ -241,60 +253,188 @@ $(document).ready(function() {
 
 <p><strong>The HOMER Pro<sup>&reg;</sup> microgrid software by HOMER Energy</strong> is the global standard for optimizing microgrid design in <em>all</em> sectors, from village power and island utilities to grid-connected campuses and military bases. Originally developed at the National Renewable Energy Laboratory, and enhanced and distributed by HOMER Energy, HOMER (Hybrid Optimization Model for Multiple Energy Resources) nests<em><strong> three powerful tools in one software product</strong></em>, so that <em><strong>engineering and  economics work side by side</strong></em>:</p>
 
-<ol>
-    <li><strong>Simulation:</strong> HOMER simulates the operation of a  hybrid microgrid for an entire year, in time steps from one minute to one hour.</li>
-    <li><strong>Optimization:</strong> HOMER examines all possible combinations of system types in a single run, and then sorts the systems  according to the optimization variable of choice.</li>
-    <li><strong>Sensitivity analysis:</strong> HOMER lets you ask as many  “What if?” questions as you’d like, because you cannot control all aspects of a system, and you cannot know the importance of a particular variable or option without running hundreds or thousands of simulations and comparing the results. HOMER makes it easy to compare thousands of possibilities in a single run.</li>
-</ol>
+<!--flexslider scripts starts-->
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+// Slider with thumbnail
+$(document).ready(function() {
+if($(window).width() < 959)
+{
+		$('#slider').flexslider({
+		directionNav: true,
+		controlNav: false,
+		});
+}
+else
+{
+		$('#thumb-slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: true,
+		slideshow: true,
+		directionNav: false,
+		controlNav: false,
+		itemWidth: 180,
+		itemMargin: 0,
+		asNavFor: '#slider'
+		});
+		$('#slider').flexslider({
+		animation: "slide",
+		slideshowSpeed: 10000,
+		controlNav: false,
+		directionNav: false,
+		animationLoop: true,
+		slideshow: true,
+		sync: "#thumb-slider"
+        });
+}
+});
+</script>
+<!--flexslider scripts ends-->
 
-<p> <img src="images/sicud-components.png" /><br>
-  <br>
-  HOMER Energy introduced the HOMER Pro microgrid software product in 4th quarter of 2014, as a completely redesigned product with a new look and many new features. Our intention is to continually improve the product, with quarterly updates. </p>
+<div id="slider-bg" style="background: none !important;">
+  <div class="container">
+    <div class="row content-top">
+      <!--slides starts-->
+      <div class="span12">
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+          
+            <!--slide one starts-->
+            <li>
+              <div class="row">
 
-<p>One of the most significant changes to the user experience over earlier versions is the addition of add-on modules. This feature accomplishes two  important goals: (1) It allowed us to keep the price affordable and similar to HOMER 2, while greatly enhancing the product, and (2) it simplifies the interface &mdash; customers will not see features that they do not require. </p>
+                <div class="span6">
+                  <h2>Simulation</h2>
+                  <p class="pro-slider-text !important;">At its core, HOMER is a simulation model. It will attempt to simulate a viable system for all possible combinations of the equipment that you wish to consider. Depending on how you set up your problem, HOMER may simulate hundreds or even thousands of systems.</p>
+                  <p class="pro-slider-text !important;">HOMER simulates the operation of a  hybrid microgrid for an entire year, in time steps from one minute to one hour.</p>
 
-<h2>Current add-on modules for HOMER Pro Microgrid Software:</h2>
+                </div>
+                <div class="span6"><img src="images/homer_pro_screenshot.png" alt="HOMER Pro screenshot" /></div>
+              </div>
+            </li>
+            <!--slide one ends-->
+                 
+            
+            <!--slide two starts-->
+            <li>
+              <div class="row">
+                <div class="span6">
+                  <h2>Optimization</h2>
+                  <p class="pro-slider-text !important;">HOMER examines all possible combinations of system types in a single run, and then sorts the systems  according to the optimization variable of choice.</p>
+                  <p class="pro-slider-text !important;">HOMER Pro features our new optimization algorithm that significantly simplifies the design process for identifying least-cost options for microgrids or other distributed generation electrical power systems. HOMER Optimizer™ is a proprietary “derivative free” optimization algorithm that was designed specifically to work in HOMER.</p>
+                  <p class="pro-slider-text !important;"><a href="http://microgridnews.com/homer-optimizer-a-faster-path-to-finding-least-cost-microgrid-options/" target="_blank">Learn more >></a></p>
 
-<table border='1' cellpadding='3'>
-<tr>
-     <th>Module</th>
-     <th>Features</th></tr>
-<tr>
-    <td><a href="modules/Biomass.html">Biomass</a></td>
-    <td>Biomass resource, bio-gas fuel, bio-gas and co-fired generator.</td></tr>
-<tr>
-    <td><a href="modules/Hydro.html">Hydro</a></td>
-    <td>Hydro component and hydro resource.</td></tr>
-  <TR>
-    <TD><a href="modules/Combined_Heat_and_Power.html">Combined Heat and Power</a></TD>
-    <TD>Thermal load, boiler, thermal load controller, and generator heat recovery ratio.</TD></TR>
+                </div>
+                <div class="span6"> <img src="img/montage.png" alt="HOMER results"/></div>
+              </div>
+            </li>
+            <!--slide two ends-->
+            <!--slide three starts-->
+            <li>
+              <div class="row">
+                <div class="span6">
+                  <h2>Sensitivity Analysis</h2>
+                  <p class="pro-slider-text !important;">HOMER lets you ask as many  “What if?” questions as you’d like, because you cannot control all aspects of a system, and you cannot know the importance of a particular variable or option without running hundreds or thousands of simulations and comparing the results.</p>
+                  <p class="pro-slider-text !important;">HOMER makes it easy to compare thousands of possibilities in a single run. This allows you to see the impact of variables that are beyond your control, such as wind speed, fuel costs, etc, and understand how the optimal system changes with these variations.
+</p>
+                </div>
+                <div class="span6"> <img src="img/11261.png"/></div>
+              </div>
+            </li>
+            <!--slide three ends-->
+            <!--slide four starts-->
+            <li>
+              <div class="row">
+                <div class="span6">
+                  <h2>Modules</h2>
+                  <p class="pro-slider-text !important;">HOMER Pro can be cusomized with up to 8 individual modules to meet your specific modeling needs:</p>
+                  <p>
+                      <ul class="pro-slider-text !important;" style="margin-left:20px;">
+                        <li>Biomass</li>
+                        <li>Hydro</li>
+                        <li>Combined Heat & Power</li>
+                        <li>Advanced Load</li>
+                        <li>Advanced Grid</li>
+                        <li>Hydrogen</li>
+                        <li>Advanced Storage</li>
+                        <li>Multi-Year</li>
+                      </ul>
+                  </p>
+                  <p class="pro-slider-text !important;"><a href="HOMER_Pro_Modules.html">Read more</a></p>
+                </div>
+                <div class="span6"> <img src="img/grid_system.png" alt="Power grid, electric vehicle, rooftop solar, wind turbine"/></div>
+                </div>
+            </li>
+            <!--slide four ends-->
+            <!--slide five starts-->
+            <li>
+              <div class="row">
+                <div class="span6">
+                  <h2>Free 30-Day Trial</h2>
+                  <p class="pro-slider-text !important;">We encourage you to<em><strong> take advantage of the full-featured 30-day trial</strong></em> in order to fully explore HOMER Pro&rsquo;s capabilities, and then <a href="pro-pricing.html"><em><strong>find a licensing scheme that works for you</strong></em></a>.</p>
+                  <p class="pro-slider-text !important;">HOMER Pro runs on all Windows Operating Systems that are currently supported by Microsoft (Vista, 7, 8, 8.1, and 10).</p>
+ 
+                        <form action="https://users.homerenergy.com/pages/homer_pro/" target="_blank">
+                            <input type="submit" value="Try HOMER Pro Now" class="mybtn" />
+                        </form> 
 
-    <td><a href="modules/Advanced_Load.html">Advanced Load</a></td>
-    <td>Additional electric load and deferrable load (with storage capacity, peak, and minimum load ratio)..</td></tr>
-<tr>
-    <td><a href="modules/Advanced_Grid.html">Advanced Grid</a></td>
-    <td>Real time rates, time of use pricing, scheduled and random outages, purchase capacity, interconnection charge, standby charge, grid extension models, and demand charges.</td></tr>
-<tr>
-    <td><a href="modules/Hydrogen.html">Hydrogen</a></td>
-    <td>Includes the reformer, electrolyzer, hydrogen tank, and fuel cell (generator fueled by stored hydrogen) components, as well as the hydrogen load.</td></tr>
-</table>
-
-<p>We encourage you to<em><strong> take advantage of the full-featured 30-day trial</strong></em> in order to fully explore HOMER Pro&rsquo;s capabilities, and then <a href="pro-pricing.html"><em><strong>find a licensing scheme that works for you</strong></em></a>.</p>
-<p>HOMER Pro runs on all Windows Operating Systems that are currently supported by Microsoft (Vista, 7, 8, 8.1, and 10).</p>
-
-<div style="margin:30px 0px 30px 60px;">
-    <form action="https://users.homerenergy.com/pages/homer_pro/" target="_blank">
-        <input type="submit" value="Try HOMER Pro Now" class="btn btn-success" />
-    </form> 
+                </div>
+                <div class="span6"> <img src="images/free_trial.jpg" alt="Free trial"/></div>
+              </div>
+            </li>
+            <!--slide five ends-->
+          </ul>
+        </div>
+        <!--this is where I insert it-->
+      </div>
+      <!--slides ends-->
+      
+      <!--thumbnails starts-->
+      <div class="span12">
+        <div id="thumb-slider" class="flexslider">
+          <ul class="slides">
+            <li>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon1.png" width="64" height="64" alt="Globe">
+                <p class="pro-thumb-text !important;">Simulation</p>
+              </div>
+            </li>            
+            <li>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon2.png" width="64" height="64" alt="Gears">
+                <p class="pro-thumb-text !important;">Optimization</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon5	.png" width="64" height="64" alt="Fuel pump">
+                <p class="pro-thumb-text !important;">Sensitivity Analysis</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon4.png" width="64" height="64" alt="Electrical plug">
+                <p class="pro-thumb-text !important;">Modules</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-text clearfix"><img src="img/icons/slider-tab-icon6.png" width="64" height="64" alt="Charts and graphs">
+                <p class="pro-thumb-text !important;">Free 30-day Trial</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--thumbnails ends-->
+      
+    </div>
+  </div>
 </div>
 
-<h3>Use these links to learn more about HOMER Pro:</h3>
-    <ul class="feature-list">
-      <li><a href="HOMER-Pro-features.html">Complete features list</a></li>
-      <li><a href="pro-faq.html">Frequently asked questions about buying and using the HOMER Pro microgrid optimization software</a></li>
-      <li><a href="pro-pricing.html">HOMER Pro microgrid software pricing explained</a></li>
+<h2>Learn more about HOMER Pro:</h2>
+    <ul class="list-checkmark">
+      <li><a href="pro-pricing.html">HOMER Pro Pricing</a></li>
+      <li><a href="HOMER-Pro-features.html">Complete Features List</a></li>
+      <li><a href="pro-faq.html">Frequently Asked Questions</a></li>
       <!--      <li><a href="software.html">Overview and features</a></li> -->
-      <li><a href="version_history.html">HOMER Version History</a></li>
+      <li><a href="version_history.html">HOMER version history</a></li>
 <!--      <li><a href="HOMER-getting-started-guide.html">HOMER Getting Started Guide</a> (self-guided training)</li> -->
       <li><a href="http://usersupport.homerenergy.com/" target="_blank">Searchable Knowledgebase</a></li> 
       <li><a href="HOMER-licensing.html">HOMER Pro End User License Agreement</a></li>

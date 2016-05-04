@@ -834,4 +834,18 @@ p.marg-top {
 	z-index: 8;
 }
 
+.pro-slider-text {
+	text-shadow: none;
+	color: #000;
+	font-size: 16px;
+}
+
+.pro-thumb-text {
+	font-size: 14px;
+    color: #fff;
+    font-weight: 1600;
+    line-height: 1.4em;
+    text-shadow: 1px 2px 2px #000;
+}
+
 
