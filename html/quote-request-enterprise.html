@@ -283,7 +283,72 @@ $(document).ready(function(){
         <h1>Request Quote for 10+ Licenses</h1>
         </legend>
         <div class="span10">
-            <iframe src="http://ww2.homerenergy.com/l/171982/2016-06-13/wmxh" width="100%" height="600" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
+            <input type=hidden name="oid" id="oid">
+            <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
+            <input type=hidden name="lead_source" value="Website">
+            <input type=hidden name="rating" value="Hot">
+          <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="QuoteRequestEnterprise">   
+            
+            <!--  ----------------------------------------------------------------------  --> 
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
+            <!--  these lines if you wish to test in debug mode.                          --> 
+            <!--  <input type="hidden" name="debug" value=1>                              --> 
+            <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
+            <!--  ----------------------------------------------------------------------  -->
+            
+            <label for="first_name">First Name</label>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+            <br>
+            <label for="email">Email</label>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+            <br>
+            <label for="company">Organization</label>
+            <input  id="company" maxlength="40" name="company" size="20" type="text" />
+            <br>
+            <label for="country">Country</label>
+            <input  id="country" maxlength="40" name="country" size="20" type="text" />
+            <br>
+            <label for="phone">Phone</label>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+            <br>
+            <label>Number Of Licenses (10+)</label>
+            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
+            <br>
+            License Length
+            <select id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term" class="select2">
+              <option value="Monthly">Monthly</option>
+              <option value="Annual">Annual</option>
+              <option value="Permanent">Permanent</option>
+              <option value="Quote Both">Please Quote Both Options</option>
+            </select>
+            <br><br>
+		    Select modules that you wish to add to the base HOMER Pro product
+		    <select id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
+                <option value="Advanced Grid">Advanced Grid</option>
+                <option value="Advanced Load">Advanced Load</option>
+                <option value="Advanced Storage">Advanced Storage</option>
+                <option value="Biomass">Biomass</option>
+                <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
+                <option value="Hydro">Hydro</option>
+                <option value="Hydrogen">Hydrogen</option>
+                <option value="Multi-year">Multi-year</option>
+            </select>
+            <br><br>
+            <label for="description">How will you use HOMER Pro?</label>
+            <textarea name="description"></textarea>
+            <br>
+             <!-- Captcha//-->
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
+            <!-- Captcha //-->
+            <br>
+            <input type="submit" name="submit" class="mybtn">
+          </form>
         </div>
       </fieldset>
     </div>

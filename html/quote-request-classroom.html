@@ -282,7 +282,48 @@ $(document).ready(function(){
         <h1>Request Quote</h1>
         </legend>
         <div class="span10">
-            <iframe src="http://ww2.homerenergy.com/l/171982/2016-06-13/wmxy" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
+            <input type=hidden name="oid" id="oid">
+            <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
+            <input type=hidden name="lead_source" value="Website">
+            <input type=hidden name="rating" value="Hot">
+          <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="QuoteRequestClassroom">  
+            <!--  ----------------------------------------------------------------------  --> 
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
+            <!--  these lines if you wish to test in debug mode.                          --> 
+            <!--  <input type="hidden" name="debug" value=1>                              --> 
+            <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
+            <!--  ----------------------------------------------------------------------  -->
+            
+            <label for="first_name">First Name</label>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+            <br>
+            <label for="last_name">Last Name</label>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+            <br>
+            <label for="email">Email</label>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+            <br>
+            <label for="company">Educational Institution</label>
+            <input  id="company" maxlength="40" name="company" size="20" type="text" />
+            <br>
+            <label for="country">Country</label>
+            <input  id="country" maxlength="40" name="country" size="20" type="text" />
+            <br>
+            <label for="phone">Phone</label>
+            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+            <br>
+            <label>Number Of Seats</label>
+            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
+            <br>
+             <!-- Captcha//-->
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
+            <!-- Captcha //-->
+            <br>
+            <input type="submit" name="submit">
+          </form>
         </div>
       </fieldset>
     </div>
