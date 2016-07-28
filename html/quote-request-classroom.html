@@ -282,12 +282,12 @@ $(document).ready(function(){
         <h1>Request Quote</h1>
         </legend>
         <div class="span10">
-          <form action="https://go.pardot.com/l/171982/2016-07-18/3561h" method="POST" id="MyForm">
+          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
             <input type=hidden name="oid" id="oid">
-            <input type=hidden name="retURL" value="http://ec2-50-18-2-146.us-west-1.compute.amazonaws.com/thank-you.html">
+            <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
             <input type=hidden name="lead_source" value="Website">
-            <input type=hidden name="rating" value="Hot">
-			<input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="QuoteRequestClassroom">  
+			<input type=hidden name="rating" value="Hot">
+            <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="QuoteRequestClassroom">  
             <!--  ----------------------------------------------------------------------  --> 
             <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
             <!--  these lines if you wish to test in debug mode.                          --> 
@@ -308,7 +308,8 @@ $(document).ready(function(){
             <input  id="company" maxlength="40" name="company" size="20" type="text" />
             <br>
             <label for="country">Country<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <select  id="country" maxlength="40" name="country" size="1" type="text" />
+            <select  id="country" maxlength="40" name="country" size="1" type="text" class="quoteform_select_width"/>
+				<option value=''></option>
 				<option value='Afghanistan'>Afghanistan</option>
 				<option value='Aland Islands'>Aland Islands</option>
 				<option value='Albania'>Albania</option>
@@ -556,19 +557,18 @@ $(document).ready(function(){
 				<option value='Yemen'>Yemen</option>
 				<option value='Zambia'>Zambia</option>
 				<option value='Zimbabwe'>Zimbabwe</option>
-			</select>
-			
+			</select>			
             <br>
             <label for="phone">Phone</label>
             <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             <br>
             <label>Number Of Seats<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="text" required/>
+            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
             <br>
              <!-- Captcha//-->
-					<div class="form-group" id="hvm">
-					    <label for="description">Please check this box if not a bot:</label>
-					</div>
+				<div class="form-group" id="hvm">
+					<label for="description">Please check this box if not a bot:</label>
+				</div>
             <!-- Captcha //-->
             <br>
 			<img alt="Red-asterisk" src="/img/red_asterisk.gif" /> required

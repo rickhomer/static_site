@@ -249,31 +249,32 @@ $(document).ready(function() {
     <!-- InstanceBeginEditable name="Main" -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
     <script language="javascript" type="text/javascript">  
-		$(document).ready(function(){
-			document.getElementById('oid').value = '00D61000000ZrBq';
-			
-			var $newDiv = jQuery("<div> </div>");
-			var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
-				$newInput
-				.attr("name", "hvcscrib")
-				.attr("id", "hvcscrib")
-				.attr("value", "Yes")
-				.attr("class", "nowidth")
-				jQuery("#hvm").append($newInput);
-		
-			$('#MyForm').submit(function() {
-			var captcha = $('#hvcscrib').is(":checked");
-		
-			if(!captcha){
-			   alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
-			}
-			if(captcha){ return true;}
-		
-			});
-			
-			
-			$('.select2').select2();
-		});
+$(document).ready(function(){
+	document.getElementById('oid').value = '00D61000000ZrBq';
+	
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+	
+	
+	$('.select2').select2();
+});
+
 </script>
     <div class="row">
       <fieldset>
@@ -281,12 +282,12 @@ $(document).ready(function() {
         <h1>Request Quote</h1>
         </legend>
         <div class="span10">
-          <form action="https://go.pardot.com/l/171982/2016-07-18/355tw" method="POST" id="MyForm">
+          <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
             <input type=hidden name="oid" id="oid">
-            <input type=hidden name="retURL" value="http://ec2-50-18-2-146.us-west-1.compute.amazonaws.com/thank-you.html">
+            <input type=hidden name="retURL" value="http://www.homerenergy.com/thank-you.html">
             <input type=hidden name="lead_source" value="Website">
-            <input type=hidden name="rating" value="Hot">
-			<input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="QuoteRequestConcurrent">   
+			<input type=hidden name="rating" value="Hot">
+            <input type=hidden id="00N6100000Aw7Zm" name="00N6100000Aw7Zm" value="QuoteRequestConcurrent">   
             
             <!--  ----------------------------------------------------------------------  --> 
             <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
@@ -308,7 +309,8 @@ $(document).ready(function() {
             <input  id="company" maxlength="40" name="company" size="20" type="text" />
             <br>
             <label for="country">Country<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <select  id="country" maxlength="40" name="country" size="1" type="text" />
+            <select  id="country" maxlength="40" name="country" size="1" type="text" class="quoteform_select_width"/>
+				<option value=''></option>
 				<option value='Afghanistan'>Afghanistan</option>
 				<option value='Aland Islands'>Aland Islands</option>
 				<option value='Albania'>Albania</option>
@@ -556,41 +558,39 @@ $(document).ready(function() {
 				<option value='Yemen'>Yemen</option>
 				<option value='Zambia'>Zambia</option>
 				<option value='Zimbabwe'>Zimbabwe</option>
-			</select>
+			</select>			
             <br>
             <label for="phone">Phone</label>
             <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             <br>
             <label>Number Of Simultaneous Users<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="text" required/>
+            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
             <br>
-            License Length <img alt="Red-asterisk" src="/img/red_asterisk.gif" />
+            <label for="00N6100000AvOYT">License Length<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
             <select  id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term" class="select2">
               <option value="Annual">Annual</option>
               <option value="Permanent">Permanent</option>
               <option value="Quote Both">Please Quote Both Options</option>
             </select>
             <br><br>
-            Select modules that you wish to add to the base HOMER Pro product
-            <select  id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
-                <option value="Advanced Grid">Advanced Grid</option>
-                <option value="Advanced Load">Advanced Load</option>
-                <option value="Advanced Storage">Advanced Storage</option>
-                <option value="Biomass">Biomass</option>
-                <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
-                <option value="Hydro">Hydro</option>
-                <option value="Hydrogen">Hydrogen</option>
-                <option value="Multi-year">Multi-year</option>
+			Select modules that you wish to add to the base HOMER Pro product
+			<select  id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
+              <option value="Advanced Grid">Advanced Grid</option>
+              <option value="Advanced Load">Advanced Load</option>
+              <option value="Biomass">Biomass</option>
+              <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
+              <option value="Hydro">Hydro</option>
+              <option value="Hydrogen">Hydrogen</option>
+              <option value="MATLAB">MATLAB</option>
             </select>
-			Hold CTRL Key + click (COMMAND Key on MAC) to select multiple
             <br><br>
             <label for="description">How will you use HOMER Pro?</label>
             <textarea name="description"></textarea>
             <br>
              <!-- Captcha//-->
-			<div class="form-group" id="hvm">
-				<label for="description">Please check this box if not a bot:</label>
-			</div>
+					<div class="form-group" id="hvm">
+					    <label for="description">Please check this box if not a bot:</label>
+					</div>
             <!-- Captcha //-->
             <br>
 			<img alt="Red-asterisk" src="/img/red_asterisk.gif" /> required
