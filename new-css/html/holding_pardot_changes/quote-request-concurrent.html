@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie" lang="en"><!-- InstanceBegin template="/Templates/HOMER3.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<meta name="description" content="HOMER software for microgrid and distributed generation power system design and optimization" />
+<meta name="keywords" content="renewable energy, microgrid, distributed generation, off-grid power systems"/>
+<title>HOMER - Hybrid Renewable Microgrid System Design Software</title>
+<style type="text/css">
+	form input, form select {
+			margin-bottom: 15px !important;
+		}
+</style>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+<!-- InstanceEndEditable -->
+<!--Fav and touch icons-->
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+<!--google web font-->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+<!--style sheet-->
+<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
+<link rel="stylesheet" media="screen" href="css/bootstrap-responsive.css"/>
+<link rel="stylesheet" media="screen" href="css/bootstrap-override.css"/>
+<link rel="stylesheet" media="screen" href="css/style.css"/>
+<link rel="stylesheet" media="screen" href="css/custom.css">
+<link href="css/zozo.tabs.min.css" rel="stylesheet">
+
+<!--Google analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9723743-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--jquery libraries / others are at the bottom-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<!--elastislide carousel script starts-->
+<link rel="stylesheet" media="screen" href="css/elastislide.css"/>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#carousel').elastislide({
+		imageW 		: 300,
+		margin		: 20,
+		border		: 0,
+		easing		: 'easeInBack'
+});
+});
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="Marketing" type="boolean" value="false" -->
+<!-- InstanceParam name="Subheader" type="boolean" value="true" -->
+
+<!--elastislide carousel script ends-->
+
+<!--prettyphoto scripts starts-->
+<link rel="stylesheet" media="screen" href="css/prettyPhoto.css"/>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+		$('a[data-rel]').each(function() {
+		$(this).attr('rel', $(this).data('rel'));
+		});
+		$("a[rel^='prettyPhoto[gallery1]']").prettyPhoto({
+		animation_speed: 'fast',
+		slideshow: 5000,
+		autoplay_slideshow: false,
+		opacity: 0.80,
+		show_title: false,
+		theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+		overlay_gallery: false,
+		social_tools: false,
+		changepicturecallback: function(){
+		var $pp = $('.pp_default');
+		if( parseInt( $pp.css('left') ) < 0 ){
+		$pp.css('left', 0 );
+		}
+		}
+		});	
+});
+</script>
+<!--prettyphoto scripts ends-->
+
+
+
+<!-- zozo tabs scripts -->
+<script src="js/zozo.tabs.min.js"></script>
+<!-- zozo tabs end -->
+
+
+
+</head>
+<body>
+
+<!-- header starts
+================================================== -->
+<section id="header" class="clearfix">
+	<div class="container">
+    	<div class="row"> 
+      
+      <!--logo starts-->
+      		<div class="span4 logo"><a href="index.html"><img src="img/HOMERwttr300x90.png" alt="HOMER Energy Logo"></a></div>
+      <!--logo ends-->
+      
+      		<div class="span8 clearfix"> 
+        
+        <!--login section-->
+        		<a class="btn btn-info floatright" rel="nofollow" data-method="delete" href="http://users.homerenergy.com" target="_blank">Login</a>
+
+        <!--login ends--> 
+        
+        <!--menu starts-->
+        			<div id="smoothmenu" class="ddsmoothmenu">
+        				<ul>
+            				<li><a href="index.html" class="selected">Home</a></li>
+             				<li><a href="software.html">Products</a>
+                                <ul>
+                                    <!--<li><a href="../HOMER_quickstart.html">HOMER Quickstart</a></li>
+                                    <li><a href="../HOMER_explorer.html">HOMER Explorer</a></li>-->
+                                    <li><a href="HOMER_pro.html">HOMER Pro</a>
+										<ul><li><a href="HOMER_pro.html">Information</a></li>
+                                            <li><a href="HOMER_pro_modules.html">Modules</a></li>
+											<li><a href="pro-pricing.html">Pricing</a></li>
+											<li><a href="HOMER-Pro-features.html">Features</a></li>
+                                             <li><a href="HOMER-testimonials.html">Testimonials</a></li>
+										</ul>
+
+									</li>
+                                    <!--<li><a href="../compare.html">Compare all</a></li>-->
+                                    
+                                    <li><a href="HOMER_customization.html">Custom HOMER versions</a></li>
+                                    <!--<li><a href="#">Retired products</a>
+                                   			<ul>
+                                    			<li><a href="../HOMER_2.html">HOMER 2</a></li>
+                                   				<li><a href="../HOMER_legacy.html">HOMER Legacy</a></li>
+                                     		</ul>
+                                     </li>-->
+                                     <li><a href="industry-partner-program.html">Industry Partner Program</a></li>
+                                     
+                                </ul>
+            				</li>
+             				<li><a href="services.html">Services</a>
+              					<ul>
+                                    <li><a href="HOMER_consulting_analysis.html">Consulting</a></li>
+                                    <li><a href="HOMER_training.html">HOMER Training</a></li>
+                                    <li><a href="microgrid_power_system_design_services.html">Microgrid Power System Design Services</a></li>
+                                    <li><a href="microgrid-market-access-services.html">Market Access Services</a></li>
+								</ul>
+							</li>
+                			<li><a href="support.html">Support</a>
+                                <ul>
+                                    <li><a href="pro-faq.html">Frequently asked Questions</a></li>
+                                    <li><a href="http://usersupport.homerenergy.com" target="_blank">Support Portal</a></li>
+                                    <li><a href="http://usersupport.homerenergy.com" target="_blank">Knowledgebase</a></li>
+                                    <li><a href="http://homerusersgroup.ning.com" target="_blank">Community Forum</a></li>
+                                    <li><a href="HOMER_training.html">HOMER Training</a></li>
+                                    <!--<li><a href="../HOMER-getting-started-guide.html">Getting Started Guide</a></li>-->
+                                    <li><a href="HOMER-documentation.html">HOMER Documentation</a></li>
+                                </ul>
+                			</li>
+             				<li><a href="connect.html">Connect</a>
+              					<ul>
+                                    <li><a href="partners.html">HOMER Energy Partners</a></li>
+                                    <li><a href="http://microgridnews.com/category/events/homer-events/" target="_blank">Events</a></li>
+                                    <li><a href="http://homerusersgroup.ning.com" target="_blank">Online User Group</a></li>
+                                    <li><a href="microgrid-market-access-services.html">Market Access Services</a></li>
+								</ul>
+							</li>
+                            
+                            <li><a href="learn-more-about-HOMER-Energy.html">Learn More</a>
+                                <ul>
+                                    <!--<li><a href="../microgrids.html">Why microgrids?</a> </li>-->
+                                    <li><a href="http://microgridnews.com/category/homer-energy/blog-opinion/" target="_blank">Blog</a> </li>
+                                    <li><a href="http://microgridnews.com/homer-energy-bibliography/" target="_blank">HOMER Bibliography</a> </li>
+                                    <li><a href="http://microgridnews.com/microgrid-white-papers/" target="_blank">White Papers</a></li>
+                                    <li><a href="http://microgridnews.com/homer-energy-user-presentations/" target="_blank">Presentations</a></li>
+                                    <li><a href="HOMER-testimonials.html">Testimonials</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="company.html">Company</a>
+                                <ul>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="http://microgridnews.com/homer-energy-news/" target="_blank">In the News</a></li>
+                                    <li><a href="http://microgridnews.com/category/homer-energy/press-releases/" target="_blank">Press Releases</a></li>
+                                    <li><a href="http://microgridnews.com/homer-energy-newsletters/" target="_blank">Newsletters</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+        			</div>
+        <!--menu ends--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header ends
+================================================== --> 
+
+
+<!-- header-btm starts
+================================================== -->
+<!-- InstanceBeginEditable name="EditRegion5" -->
+<section id="header-btm" class="clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h4 class="heading-icon"> <img src="img/icons/heading-icon-1.png" width="40" height="40" alt="icon" class="icon-small-bg"> Concurrent Quote Request</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- InstanceEndEditable -->
+<!-- header-btm ends
+================================================== --> 
+
+<!-- content starts
+================================================== -->
+<section id="content" class="clearfix"> 
+<!--slider-bg starts-->
+
+<!--slider-bg ends-->
+  <div class="container">
+    <!--features starts-->
+    <!-- InstanceBeginEditable name="Main" -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script language="javascript" type="text/javascript">  
+$(document).ready(function(){
+	document.getElementById('oid').value = '00D61000000ZrBq';
+	
+    var $newDiv = jQuery("<div> </div>");
+    var $newInput = jQuery("<input type='checkbox' style='margin-top:12px;'>");
+        $newInput
+        .attr("name", "hvcscrib")
+        .attr("id", "hvcscrib")
+        .attr("value", "Yes")
+        .attr("class", "nowidth")
+        jQuery("#hvm").append($newInput);
+
+    $('#MyForm').submit(function() {
+    var captcha = $('#hvcscrib').is(":checked");
+
+    if(!captcha){
+       alert('Please check the box you are human..');$('#hvcscrib').focus();return false;
+    }
+    if(captcha){ return true;}
+
+    });
+	
+	
+	$('.select2').select2();
+});
+
+</script>
+    <div class="row">
+      <fieldset>
+        <legend>
+        <h1>Request Quote</h1>
+        </legend>
+        <div class="span10">
+            <iframe src="http://ww2.homerenergy.com/l/171982/2016-06-13/wmxr" width="100%" height="600" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+        </div>
+      </fieldset>
+    </div>
+    <!-- InstanceEndEditable -->
+    <!--box ends-->
+  </div>
+</section>
+<!-- content ends
+================================================== --> 
+
+<!-- footer starts
+================================================== -->
+<footer id="footer" class="clearfix">
+  <div class="container"> 
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one / social icon list starts-->
+      <div class="span2">
+        <ul class="social clearfix">
+          <li><a href="http://linkedin.com/company/homer-energy" target="_blank"><img src="img/icons/social-icon-linkedin.png" width="28" height="28" alt="icon"></a></li>
+          <li><a href="http://facebook.com/homerenergy" target="_blank"><img src="img/icons/social-icon-facebook.png" width="28" height="28" alt="icon"></a></li>
+			<li><a href="http://twitter.com/homerenergy" target="_blank"><img src="img/icons/social-icon-twitter.png" width="28" height="28" alt="icon"></a></li>
+        </ul>
+      </div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span2 text-center"> Follow on Twitter
+        <h5><a href="http://twitter.com/homerenergy" target="_blank">@homerenergy</a></h5>
+      </div>
+      <!--column two ends--> 
+      
+      <!--column three / twitter feed starts-->
+<!--  <div class="span8">
+        <div class="twitter"></div>
+       
+      </div>   -->
+      <!--column three / twitter feed ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+    <!--spacer here-->
+    <div class="spacer-30px"></div>
+    
+    <!--row starts-->
+    <div class="row"> 
+      
+      <!--column one starts-->
+      <div class="span4">
+        <p> <img src="http://www.homerenergy.com/img/HOMERwttr200x60.png" alt="HOMER Energy logo"></p>
+        <p class="footer-text">HOMER Energy LLC is the world’s leading microgrid modeling software company. The HOMER (Hybrid Optimization of Multiple Energy Resources) microgrid software navigates the complexities of building cost effective and reliable microgrids that combine traditionally generated and renewable power, storage, and load management. With over 120,000 users in 193 countries, HOMER is the established global leader for microgrid design optimization and feasibility, and HOMER Energy is a nexus for the microgrid market.</p>
+       </div>
+      <!--column one ends--> 
+      
+      <!--column two starts-->
+      <div class="span4">
+        <h5>Top Content</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://microgridnews.com/microgrid-value-propositions/" target="_blank"><img src="http://www.homerenergy.com/img/microgrid-market-growth.jpg" width="70" alt="Microgrid Market Growth"></a>
+            <h6>Microgrid Value Propositions</h6>
+            <span>123 Jan 2012 | <a href="http://microgridnews.com/microgrid-value-propositions/" target="_blank">by Peter Lilienthal</a></span> </li>
+          <li><a href="http://microgridnews.com/how-to-classify-microgrids-setting-the-stage-for-a-distributed-generation-energy-future/" target="_blank"><img src="http://www.homerenergy.com/img/scaling_microgrids.png" alt="Scaling Microgrids"/></a>
+            <h6>Classifying Microgrids</h6>
+            <span>2 Apr 2013 | <a href="http://microgridnews.com/how-to-classify-microgrids-setting-the-stage-for-a-distributed-generation-energy-future/" target="_blank">by Peter Lilienthal</a></span> </li>
+          <li><a href="http://microgridnews.com/the-problem-with-100-renewable-energy/" target="_blank"><img src="http://www.homerenergy.com/img/solar-photovoltaics-sunrise.jpg" width="70" alt="Solar PV cells with sunrise"></a>
+            <h6>100% Renewable Energy Challenges</h6>
+            <span>24 Apr 2013 | <a href="http://microgridnews.com/the-problem-with-100-renewable-energy/" target="_blank">by Peter Lilienthal</a></span> </li>
+        </ul>
+      </div>
+      <!--column two ends--> 
+      
+      <!--column three starts-->
+      <div class="span4">
+        <h5>Get in touch</h5>
+        <ul class="list-info">
+          <li><img src="http://www.homerenergy.com/img/icons/icon-18-address.png" alt="icon" style="margin-bottom:30px;">HOMER Energy<br/>
+            1790 30th St, Suite 100<br/>
+            Boulder, CO 80301 USA </li>
+          <li><img src="http://www.homerenergy.com/img/icons/icon-18-phone.png" alt="icon">+(1) 720-565-4046</li>
+          <li><img src="http://www.homerenergy.com/img/icons/icon-18-mail.png" alt="icon"><a href="http://homerenergy.com/contact.html">Contact Us</a></li>
+         <!-- <li><img src="http://www.homerenergy.com/img/icons/icon-18-skype.png" alt="icon" class="mar-btm"><a href="#">http://skype.com/skypename</a></li>-->
+        </ul>
+      </div>
+      <!--column three ends--> 
+      
+    </div>
+    <!--row ends--> 
+    
+  </div>
+</footer>
+<!-- footer ends
+================================================== --> 
+
+
+<!--other jqueries required--> 
+<!-- copyright starts
+================================================== -->
+<section id="copyright" class="clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p> © Copyright 2014-2015 HOMER Energy LLC</p>
+        
+        <!--copyright menu starts-->
+        <ul class="copyright-menu">
+          <li><a href="http://www.homerenergy.com/index.html">Home</a></li>
+          <li><a href="http://usersupport.homerenergy.com" target="_blank">Support</a></li>
+          <li><a href="http://blog.homerenergy.com" target="_blank">Blog</a></li>
+          <li><a href="http://www.homerenergy.com/sitemap.html">Site Map</a></li>
+          <li><a href="http://www.homerenergy.com/contact.html">Contact</a></li>
+          <li><a href="http://www.homerenergy.com/privacy.html">Privacy</a></li>
+          <li><a href="http://www.homerenergy.com/terms-of-use.html">Terms of Use</a></li>
+        </ul>
+        <!--copyright menu ends-->
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- copyright ends 
+================================================== --> 
+
+<script src="js/bootstrap.js" type="text/javascript" ></script> 
+<script src="js/ddsmoothmenu.js" type="text/javascript" ></script> 
+<script src="twitter/twitter.js" type="text/javascript" ></script> 
+<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script> 
+<script src="js/custom.js" type="text/javascript" ></script>
+<script src="js/comparetable.js" type="text/javascript"></script>
+<!--Begin Pardot Tracking Code-->
+<script type="text/javascript">
+piAId = '172982';
+piCId = '1146';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+<!--End Pardot Tracking Code-->
+</body>
+<!-- InstanceEnd --></html>

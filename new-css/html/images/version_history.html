@@ -1,0 +1,1667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/software.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>HOMER Energy - Hybrid Renewable &amp; Distributed Power Design Support</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/tables.css" rel="stylesheet" type="text/css" />
+<script src="../javascript/testimonials.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+
+function getSessionId()
+{
+return window.loginFrame.document.getElementById("sessionID").value;
+}
+
+function getSerialNo()
+{
+return window.loginFrame.document.getElementById("serialNo").value;
+}
+</script>
+<script type="text/javascript">
+window.onload=getSessionId;
+</script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+
+function loginInput() 
+	
+{	
+	
+	var login = window.loginFrame.document.loginForm.username.value;
+    var password = window.loginFrame.document.loginForm.password.value; 
+	
+	document.hiddenLoginForm.username.value = login;
+	document.hiddenLoginForm.password.value = password;
+
+	document.hiddenLoginForm.submit();
+	
+}
+
+</script>
+<script type="text/javascript">
+
+
+//This variable must contain the name of all of your submenus
+
+subMenus = new Array('home','software','services','community','news','about');
+
+function hideElement (elementId) {
+	var element;
+	if (document.all)
+	element = document.all[elementId];
+	else if (document.getElementById)
+	element = document.getElementById(elementId);
+	if (element && element.style)
+	element.style.display = 'none';
+}
+
+function showElement (elementId) {
+	var element;
+	if (document.all)
+	element = document.all[elementId];
+	else if (document.getElementById)
+	element = document.getElementById(elementId);
+	if (element && element.style)
+	element.style.display = '';
+}
+function hideAll () {
+	for(var i=0; i<subMenus.length; i++) {
+		hideElement(subMenus[i]);
+	}
+}
+function showSubMenu(elementID) {
+	hideAll();
+	showElement(elementID);
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//]]>
+</script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9723743-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+<body>
+
+<!-- ImageReady Slices (Homer-Inside-Builder.psd) -->
+<table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="123">&nbsp;</td>
+    <td width="1183" align="center"><table style="width:1000px; height:801px;" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" id="Table_01">
+      <tr>
+        <td colspan="5" bgcolor="#FFC20F"><table width="1000" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="71" valign="top">
+              <img src="homer_01.jpg" alt="" width="71" height="135" border="0" usemap="#Map2MapMap2" />
+              <map name="Map2MapMap2" id="Map2MapMap2">
+                <area shape="rect" coords="4,3,70,130" href="/index.html" alt="" />
+              </map></td>
+            <td align="left" valign="top"><img src="homer_02.jpg" alt="" width="115" height="135" border="0" usemap="#MapMapMap" />
+              <map name="MapMapMap" id="MapMapMap">
+                <area shape="rect" coords="3,3,112,132" href="../index.html" alt="" />
+              </map></td>
+            <td><table width="823" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="615" align="right" valign="top"><table width="614" border="0" align="right" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="background-image:url(homer_03.jpg)"><table width="614" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="10"><img src="dot_clear.gif" width="10" height="19" alt="" /></td>
+                         <!-- <td align="right" valign="bottom" class="nav-tiny"><% call homer_DisplayLoginRegisterLink(vhomer_uid, vhomer_username) %>
+                            &nbsp;|&nbsp; <a href="mailto:info@homerenergy.com" class="nav-tiny">Email Us</a></td> -->
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td style="background-image:url(homer_03.jpg)"><table width="614" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="10"><img src="dot_clear.gif" width="10" height="48" alt="" /></td>
+                          <td align="right" valign="middle" class="nav-top"><a href="../index.html" class="nav-top">HOME&nbsp;</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+                          <a href="/software.html" class="nav-top" onmouseover="showSubMenu('software')">SOFTWARE</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                          <a href="../services.html" class="nav-top" onmouseover="showSubMenu('services')">SERVICES</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                          <a href="../community.html" class="nav-top" onmouseover="showSubMenu('community')">COMMUNITY </a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                          <a href="../news.html" class="nav-top" onmouseover="showSubMenu('news')">NEWS</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                          <a href="../about.html" class="nav-top" onmouseover="showSubMenu('about')">ABOUT</a></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td style="background-image:url(homer_06.jpg)"><table width="614" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="10"><img src="dot_clear.gif" width="10" height="23" alt="" /></td>
+                          <td align="right" class="nav-top" valign="middle">
+                            <div id="home"> &nbsp;&nbsp;&nbsp; </div>
+                            <div id="software"> 
+                            <a href="../Pre_DL.html" class="nav-top">Download</a> &nbsp;|&nbsp; 
+                            <a href="../user_interface.html" class="nav-top">User Interface</a> &nbsp;|&nbsp; 
+                            <a href="../documentation.html" class="nav-top">Documentation</a> &nbsp;|&nbsp; 
+                            <a href="../sample_files_2.html" class="nav-top">Sample Files</a> &nbsp;|&nbsp; 
+                            <a href="../version_history.html" title="HOMER Software Version History" class="nav-top">Version History</a> &nbsp;|&nbsp; 
+                            <a href="http://support.homerenergy.com" class="nav-top" target="_blank">Support</a></div>
+                            <div id="services"> 
+                            <a href="../HOMER_customization.html" class="nav-top">HOMER Customization</a> &nbsp;|&nbsp; 
+                            <a href="../HOMER_training.html" class="nav-top">HOMER Training</a> &nbsp;|&nbsp; 
+                            <a href="../HOMER_consulting_analysis.html" class="nav-top">HOMER Consulting</a> &nbsp;|&nbsp; 
+                            <a href="../HOMER_market_access_services.html" class="nav-top">Microgrid Market Access Services</a> &nbsp;|&nbsp; 
+                            <a href="../client_list.html" class="nav-top">Client List</a></div>
+                            <div id="community"> 
+                            <a href="http://homerusersgroup.ning.com/" class="nav-top" target="blank">Users Group</a> &nbsp;|&nbsp; <a href="../HOMER-presentations.html" class="nav-top">User Presentations</a> &nbsp;|&nbsp; 
+                            <a href="../testimonials.html" class="nav-top">Testimonials</a></div>
+                            <div id="news"> 
+                            <a href="../news.html" class="nav-top">Press Releases</a> &nbsp;|&nbsp; 
+                            <a href="../news_coverage.html" class="nav-top">News Coverage</a> &nbsp;|&nbsp; 
+                            <a href="../newsletters.html" class="nav-top">Newsletter Archive</a> &nbsp;|&nbsp;
+                            <a href="http://blog.homerenergy.com" class="nav-top" target="_blank">Blog</a></div>
+                            <div id="about"> 
+                            <a href="../jobs.html" class="nav-top">Jobs</a> &nbsp;|&nbsp; 
+                            <a href="../history.html" class="nav-top">History</a> &nbsp;|&nbsp; 
+                            <a href="../team.html" class="nav-top">Team</a> &nbsp;|&nbsp; 
+                            <a href="../board.html" class="nav-top">Board of Advisors</a></div>
+                            <script language="javascript" type="text/javascript">
+							hideAll(subMenus);
+							</script>
+                          </td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><img src="homer_07.jpg" alt="" width="614" height="45" border="0" usemap="#Map3MapMap" /></td>
+                  </tr>
+                </table>
+                  <map name="Map3MapMap" id="Map3MapMap">
+                    <area shape="rect" coords="4,3,609,42" alt="" />
+                  </map></td>
+                <td style="background-image:url(homer_04.jpg)" width="4" rowspan="2" valign="top">&nbsp;</td>
+                <td style="background-image:url(homer_04.jpg)" width="204" rowspan="2" valign="top"><br />
+                 
+                  <iframe name="loginFrame" id="loginFrame" allowtransparency="true" frameborder="0" width="195px" height="75px" src="../loginAppFrame.html"></iframe>
+                  </a>
+<p align="left">&nbsp;</p>   	</td>
+
+              </tr>
+            </table></td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <!--5 pixel left border-->
+        <td colspan="5">
+        <!--Main section is here, 1000 pixels wide-->
+        <table width="1000" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="5" valign="top">&nbsp;</td>
+            </tr>
+          <tr>
+            <td colspan="2" valign="top">
+            <!--Creates the white rectangle that forces the left navigation section to be in line with the body--><img src="homer_09.jpg" width="186" height="51" alt="" /></td>
+            <td colspan="3" valign="top"><!--Page Header Intro goes here--><!-- InstanceBeginEditable name="PageHeader" -->
+                      <h1> HOMER Version History</h1>
+                      <h1>
+  					  <a href="download.html"><img src="/images/upgradenow.png" /></a>
+                      </h1>
+            <!-- InstanceEndEditable --></td><!--End 3-column wide page header section-->
+            </tr>
+          <tr>
+            <td width="130" valign="top"><table width="130" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>&nbsp;</td>
+                  <td align="right" valign="top">
+                <p class="side-nav"><a href="../software.html" class="nav-side">SOFTWARE</a></p>
+                 <p class="side-nav"><a href="../Pre_DL.html" class="nav-side">Download HOMER</a></p>
+              <p class="side-nav"><a href="http://support.homerenergy.com" class="nav-side" target="_blank">Support</a></p>
+                <p class="side-nav"><a href="../user_interface.html" class="nav-side">
+                  User Interface</a></p>
+                <p class="side-nav"><a href="../documentation.html" class="nav-side">Documentation</a></p>
+                <p class="side-nav"><a href="../pdf/homergettingstarted268.pdf" class="nav-side" target="_blank">Getting Started Guide (PDF)</a></p>
+                <p class="side-nav"><a href="../sample_files_2.html" class="nav-side">Sample Files</a></p>
+                <p class="side-nav"><a href="../pdf/HOMERPublications.pdf" target="_blank" class="nav-side">Bibliography (PDF)</a></p>
+                <p class="side-nav"><a href="../version_history.html" class="nav-side">Version History</a>              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15"><img src="dot_clear.gif" width="15" height="10" alt="" /></td>
+                  <td width="115">&nbsp;</td>
+                </tr>
+            </table></td>
+            <td width="56" valign="top"><img src="homer_12.jpg" width="56" height="522" alt="" /></td>
+            
+            <!--Added 10px padding to right side of BodyText editable section-->
+            <td width="599" valign="top" style="padding-right: 10px;"><!-- InstanceBeginEditable name="BodyText" -->
+
+
+<p><b>Version 2.67 beta (April 21, 2008)</b>
+  
+</p>
+<ul>
+	<li>
+	  <p>Added the ability to model up to ten generators.
+	    </p>
+	</li>
+	<li>
+	  <p>Added the ability to compete up to ten battery types against each other.
+	    </p>
+	</li>
+</ul>
+
+
+<p><b>Version 2.64 beta (December 27, 2007)</b>
+  
+</p>
+<ul>
+	<li>
+	  <p>Added battery string size.
+	    </p>
+	</li>
+	<li>
+	  <p>Added energy in, energy out, and losses to the battery tab of Simulation Results window.
+	    </p>
+	</li>
+	<li>
+	  <p>Added delta plot to the Hourly tab of the Simulation Results window
+	    </p>
+	</li>
+	<li>
+	  <p>Updated cost summary section of the HTML system report.
+	    </p>
+	</li>
+</ul>
+
+<p><b>Version 2.63 beta (November 30, 2007)</b>
+  
+</p>
+<ul>
+	<li>
+	  <p>Added the ability to model the temperature effect on the PV array.
+	    </p>
+	</li>
+	<li>
+	  <p>Added the ability to import solar radiation and temperature data from TMY2 files.
+	    </p>
+	</li>
+	<li>
+	  <p>Made the reformer and the electrolyzer capable of supplying hydrogen to a generator as needed to serve an electric load.
+	    </p>
+	</li>
+	<li>
+	  <p>Added the ability to limit the excess thermal output.
+	    </p>
+	</li>
+	<li>
+	  <p>Added a constraint on net grid purchases.
+	    </p>
+	</li>
+	<li>
+	  <p>Added checkbox to System Control window allowing two types of wind turbines in a single system.
+	    </p>
+	</li>
+	<li>
+	  <p>Added a second thermal load.
+	    </p>
+	</li>
+	<li>
+	  <p>Added a new grid/battery control parameter prohibiting any battery charging above a certain grid power price.
+	    </p>
+	</li>
+</ul>
+
+<p><b>Version 2.52 beta (August 31, 2007)</b>
+</p>
+<ul>
+	<li>
+	  <p>Fixed bug that prevented the Plot button from working in the load and resource input windows.
+	    </p>
+	</li>
+	<li>
+	  <p>Fixed bug that caused incorrect calculation of grid sales in some grid-connected systems.
+	    </p>
+	</li>
+</ul>
+
+<p><b>Version 2.5 beta (July 20, 2007)</b>
+</p>
+<ul>
+	<li>
+	  <p>Added operating cost to Optimization Results and Simulation Results.
+	    </p>
+	</li>
+	<li>
+	  <p>Added rated power to wind turbine properties.
+	    </p>
+	</li>
+	<li>
+	  <p>New ability to calculate primary energy savings.
+	    </p>
+	</li>
+	<li>
+	  <p>New Cost Summary tab in the Simulation Results window.
+	    </p>
+	</li>
+	<li>
+	  <p>New scatterplot window to the Simulation Results window.
+	    </p>
+	</li>
+	<li>
+	  <p>New Compare Economics window, which calculates payback, ROI, and IRR.
+	    </p>
+	</li>
+	<li>
+	  <p>New ability to forecast wind power sales to the grid, and calculate resulting imbalance penalties when actual sales deviate from the forecasts.
+	    </p>
+	</li>
+</ul>
+
+<p><b>Version 2.42 beta (May 21, 2007)</b>
+</p>
+<ul>
+	<li>
+	  <p>Added a graph to the cash flow window.
+	    </p>
+	</li>
+</ul>
+
+<p><b>Version 2.41 beta (May 10, 2007)</b>
+</p>
+<ul>
+	<li>
+	  <p>Added the ability to simulate the system using any time step down to 1 minute.
+	    </p>
+	</li>
+	<li>
+	  <p>Added the ability to import time series data with any time step down to 1 minute.
+	    </p>
+	</li>
+	<li>
+	  <p>Added window showing the cash flow over the lifetime of the project.
+	    </p>
+	</li>
+	<li>
+	  <p>Changed cost of energy equation denominator to exclude grid sales.
+	    </p>
+	</li>
+	<li>
+	  <p>Changed calculation of PV power output to eliminate twilight power spikes.
+	    </p>
+	</li>
+	<li>
+	  <p>Changed PV derating factor from 90% to 80%.
+	    </p>
+	</li>
+	<li>
+	  <p>Fixed bug in solar azimuth calculation, which caused errors with tracking in the tropics.
+	    </p>
+	</li>
+	<li>
+	  <p>Added two control parameters for grid/battery systems.
+	    </p>
+	</li>
+	<li>
+	  <p>Made the grid stop charging the battery bank when it reaches the setpoint state of charge.
+	    </p>
+	</li>
+	<li>
+	  <p>Improved hourly results table and export file to show date/time rather than hour of year.
+	    </p>
+	</li>
+	<li>
+	  <p>Changed wind turbine power curve to accept two decimal places in wind speed.
+	    </p>
+	</li>
+	<li>
+	  <p>Fixed the bug that caused the y-axis label to disappear in metafiles copied from graphs.
+	    </p>
+	</li>
+	<li>
+	  <p>Allowed manual setting of graph axes.
+	    </p>
+	</li>
+	<li>
+	  <p>Allowed manual override of graph colors.
+	    </p>
+	</li>
+	<li>
+	  <p>Implemented new click-and-drag zoom feature in time series graphs.
+	    </p>
+	</li>
+</ul>
+
+<p><b>Version 2.2 beta (October 26, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Added ability to model flow batteries.
+  </p>
+</li>
+<li>
+  <p>Added ability to connect the PV panel to the AC bus.
+  </p>
+</li>
+<li>
+  <p>Allowed real-time (hourly) grid power pricing.
+  </p>
+</li>
+<li>
+  <p>Added threshold power price above which grid will not charge battery bank.
+  </p>
+</li>
+<li>
+  <p>Added threshold sellback rate below which the system will not sell power to the grid.
+  </p>
+</li>
+<li>
+  <p>Allowed hydrogen demand to be specified hourly.
+  </p>
+</li>
+<li>
+  <p>Added calculation of levelized cost of hydrogen.
+  </p>
+</li>
+<li>
+  <p>Changed formula for battery energy cost to account for discharge efficiency.
+  </p>
+</li>
+<li>
+  <p>Added fixed and marginal generation cost to generator page of Simulation Results window.
+  </p>
+</li>
+<li>
+  <p>Added battery wear and energy cost to battery details page of Simulation Results window.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.19 (June 14, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed bug causing some infeasible deferrable load-serving systems to be counted as feasible.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.18 (June 1, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed bug in renewable fraction equation causing an incorrect calculation when excess electricity served the thermal load.
+  </p>
+</li>
+<li>
+  <p>Fixed bug preventing browser launch with Firefox as default browser.
+  </p>
+</li>
+<li>
+  <p>Added constraints, emissions, and generator control sections to the HTML input report.
+  </p>
+</li>
+<li>
+  <p>Added excess electricity to monthly thermal production graph.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.17 (May 16, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed bug causing boiler emissions costs to be double counted in calculation of total net present cost.
+  </p>
+</li>
+<li>
+  <p>Changed equation for levelized cost of energy to subtract the cost associated with serving the thermal load.
+  </p>
+</li>
+</ul>
+
+
+<p><b>Version 2.16 (April 8, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed bug preventing HOMER from recalculating results after a change to the grid rate schedule.
+  </p>
+</li>
+<li>
+  <p>Fixed bug preventing HOMER from recalculating results after a change to the emissions constraints.
+  </p>
+</li>
+</ul>
+
+
+<p><b>Version 2.15 (April 5, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Made the units of the emissions factors on the Boiler Inputs window correspond to the fuel units.
+  </p>
+</li>
+<li>
+  <p>Fixed a problem that prevented the creation of the HTML report before the document was saved to disk.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.14 (January 25, 2005)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed several bugs in the XML import facility.
+  </p>
+</li>
+<li>
+  <p>Changed to new kind of install file created with Inno Setup.  This avoids the error that occurred when running the old install file on some versions of Windows stating &quot;The system file is not suitable for running MS-DOS and Microsoft Windows applications.&quot;
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.13 (December 16, 2004)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed bug where HOMER did not properly consider the emissions costs when controlling dispatchable power sources.
+  </p>
+</li>
+<li>
+  <p>Fixed bug causing incorrect column headings in text export of the tabular sensitivity results table.
+  </p>
+</li>
+</ul>
+
+
+<p><b>Version 2.12 (December 13, 2004)</b>
+</p>
+<ul>
+<li>
+  <p>Fixed bug where total electrical production value excluded grid purchases.
+  </p>
+</li>
+<li>
+  <p>Fixed bug causing erroneous extraterrestrial solar radiation calculation at midnight in polar latitudes during 24 hours of daylight.
+  </p>
+</li>
+</ul>
+
+
+<p><b>Version 2.11 (December 1, 2004)</b>
+</p>
+<ul>
+<li>
+  <p>Added Furhl&auml;nder and Windside wind turbines to the default component library. </p>
+</li>
+<li>
+  <p>Added Hoppecke and Vision batteries to the default component library.
+  </p>
+</li>
+<li>
+  <p>Fixed bug in pie charts where legend occasionally disappeared.
+  </p>
+</li>
+<li>
+  <p>Added Import XML button to Create New Battery window.
+  </p>
+</li>
+<li>
+  <p>Fixed a few minor interface problems in the Create New Battery window.
+  </p>
+</li>
+<li>
+  <p>Changed HTML input summary to show annual average load profile rather than January load profile.
+  </p>
+</li>
+<li>
+  <p>Improved the FAQ page in the help file.
+  </p>
+</li>
+</ul>
+
+
+<p><b>Version 2.10 (November 8, 2004)</b>
+</p>
+<ul>
+<li>
+  <p>Changed calculation process to avoid recalculating existing results.  This  can dramatically reduce run times.
+  </p>
+</li>
+<li>
+  <p>Added ability to specify daily, weekly, and seasonal variations in grid power cost.
+  </p>
+</li>
+<li>
+  <p>Added ability to schedule generator operation.
+  </p>
+</li>
+<li>
+  <p>Added link to solar resource database.
+  </p>
+</li>
+<li>
+  <p>Added ability to calculate, penalize, and limit emissions of CO2, CO, SO2, NOx, particulate matter, and unburned hydrocarbons.
+  </p>
+</li>
+<li>
+  <p>Added fuel curve calculator window.
+  </p>
+</li>
+<li>
+  <p>Added HTML reports summarizing inputs and simulation results.
+  </p>
+</li>
+<li>
+  <p>Added XML import/export capability.
+  </p>
+</li>
+<li>
+  <p>Added ability to create spider graphs of sensitivity results.
+  </p>
+</li>
+<li>
+  <p>Added ability to model an external hydrogen load and a steam reformer.
+  </p>
+</li>
+<li>
+  <p>Added variable for initial hydrogen tank level.
+  </p>
+</li>
+<li>
+  <p>Added constraint on final hydrogen tank level.
+  </p>
+</li>
+<li>
+  <p>Replaced wind speed scaling factor with anemometer height and turbine hub height.
+  </p>
+</li>
+<li>
+  <p>Replaced power curve scaling factor with altitude.
+  </p>
+</li>
+<li>
+  <p>Added additional pages to Simulation Results window showing detailed operation of the wind turbine, hydro turbine, PV array, hydrogen tank.
+  </p>
+</li>
+<li>
+  <p>Fixed bug in net metering logic causing incorrect calculation of annual energy charge.
+  </p>
+</li>
+<li>
+  <p>Fixed bug causing incorrect economic calculations when the interest rate was zero.
+  </p>
+</li>
+<li>
+  <p>Fixed bug causing unmet load in setpoint mode with undersized generator.
+  </p>
+</li>
+</ul>
+
+
+<p><b>Version 2.09 (February 18, 2004)</b>
+</p>
+<ul><li>
+  <p>Fixed bug that in some situations caused HOMER to ignore the battery setpoint state of charge.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.08 (February 11, 2004)</b>
+</p>
+<ul><li>
+  <p>Fixed bug that in some instances caused HOMER to be unable to initiate a license.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.07 (January 15, 2004)</b>
+</p>
+<ul><li>
+  <p>Fixed a bug where HOMER considered electricity produced by a hydrogen-fuelled generator to be non-renewable.  HOMER now considers such electricity to be 100% renewable.</p>
+</li>
+<li>
+  <p>Fixed a problem with the behavior of generators fuelled by stored hydrogen and operating under the cycle charging dispatch strategy.</p>
+</li>
+<li>
+  <p>Fixed a calculation error that occurred when a generator operating under the influence of a setpoint state of charge ran out of fuel.</p>
+</li>
+<li>
+  <p>Added the ability to graph the amount of hydrogen in the storage tank.</p>
+</li>
+</ul>
+
+<p><b>Version 2.06 (October 21, 2003)</b>
+</p>
+<ul><li>
+  <p>Fixed bug relating to the calculation of carbon emissions.</p>
+</li>
+</ul>
+
+<p><b>Version 2.05 (August 26, 2003)</b>
+</p>
+<ul><li>
+  <p>Added the ability to import .tpc files into the Create New Wind Turbine window.</p>
+</li>
+</ul>
+
+<p><b>Version 2.04 (August 5, 2003)</b>
+</p>
+<ul><li>
+  <p>Fixed bug that could cause HOMER to crash when opening a file containing fewer than 8760 hours of primary load data.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.03 (July 30, 2003)</b>
+</p>
+<ul><li>
+  <p>Fixed bug in grid sales logic.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.02 (July 24, 2003)</b>
+</p>
+<ul><li>
+  <p>Fixed bug causing Search Space Usage window to crash in certain circumstances.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.01 (July 22, 2003)</b>
+</p>
+<ul><li>
+  <p>Fixed bug in deferrable load logic.
+  </p>
+</li>
+</ul>
+
+<p><b>Version 2.0 (July 10, 2003)</b>
+</p>
+<ul><li>
+  <p>Added ability to model grid-connected systems.
+  </p>
+</li>
+  <li>
+  <p>Added ability to model both AC and DC electric loads.
+  </p>
+</li>
+  <li>
+  <p>Added ability to model thermal loads and combined heat and power.
+  </p>
+</li>
+  <li>
+  <p>Added ability to model as many as three generators.
+  </p>
+</li>
+  <li>
+  <p>Added ability to model electrolyzers, hydrogen storage, and hydrogen-fueled generators.
+  </p>
+</li>
+  <li>
+  <p>Added ability to model operating reserve.
+  </p>
+</li>
+  <li>
+  <p>Added a clickable schematic diagram to the main window.
+  </p>
+</li>
+  <li>
+  <p>Redesigned all input windows.
+  </p>
+</li>
+  <li>
+  <p>Rewrote battery module and allowed battery bank size to be specified
+    in terms of number of batteries, rather than kWh of nominal capacity.
+  </p>
+</li>
+  <li>
+  <p>Allowed generators to be fueled by pure biogas
+  </p>
+</li>
+  <li>
+  <p>Added carbon tax.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.58 (March 26, 2002)</b>
+</p>
+<ul><li>
+  <p>Fixed bug causing certain systems to be mistakenly omitted.
+  </p>
+</li>
+  <li>
+  <p>Changed default wind turbine lifetime from 20 yrs to 15 yrs.
+  </p>
+</li>
+  <li>
+  <p>Changed default biomass carbon content from 50% to 0%.
+  </p>
+</li>
+  <li>
+  <p>Changed default battery maximum charge rate from 1 A/Ah to 0.1 A/Ah.
+  </p>
+</li>
+  <li>
+  <p>Changed default real interest rate from 10% to 6%.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.57 (October 24, 2001)</b>
+</p>
+<ul><li>
+  <p>Minor bug fix.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.56 (October 3, 2001)</b>
+</p>
+<ul><li>
+  <p>Minor bug fix.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.55 (September 13, 2001)</b>
+</p>
+<ul><li>
+  <p>Increased length of temporary license from 60 to 180 days.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.54 (September 12, 2001)</b>
+</p>
+<ul><li>
+  <p>Made the PV slope and azimuth default to values appropriate to the latitude.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.53 (September 11, 2001)</b>
+</p>
+<ul><li>
+  <p>Changed default hourly and daily noise values to 15% and 25%.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.52 (June 22, 2001)</b>
+</p>
+<ul><li>
+  <p>Added ability to copy and save graphic images in metafile format.
+  </p>
+</li>
+  <li>
+  <p>Made symbol size and line width in graphics configurable by user.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.51 (June 6, 2001)</b>
+</p>
+<ul><li>
+  <p>Added asterisk to the document title when modified.
+  </p>
+</li>
+  <li>
+  <p>Added version number and remaining days to the splash screen.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.5 (May 11, 2001)</b>
+</p>
+<ul><li>
+  <p>Added ability to model small modular biomass systems.
+  </p>
+</li>
+  <li>
+  <p>Improved procedure for fitting kinetic battery model constants to a discharge curve.
+  </p>
+</li>
+  <li>
+  <p>Added capability to identify file version of an invalid-format .hmr file.
+  </p>
+</li>
+  <li>
+  <p>Changed units of output variable carbon emissions to t/yr from kg/yr.
+  </p>
+</li>
+  <li>
+  <p>Improved scroll bar operation and eliminated flicker in time series plots.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.4 (March 1, 2001)</b>
+</p>
+<ul><li>
+  <p>Added capability to model small hydro systems.
+  </p>
+</li>
+  <li>
+  <p>Changed image file format from bitmap to PNG (Portable Network Graphics).
+  </p>
+</li>
+  <li>
+  <p>Added protection from low values of Kt in the solar data generation algorithm.
+  </p>
+</li>
+  <li>
+  <p>Fixed bug causing crash when writing large .hmr files.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.3 (November 9, 2000)</b>
+</p>
+<ul><li>
+  <p>Stored hourly values of inverter power and rectifier power.
+  </p>
+</li>
+  <li>
+  <p>Added primary load efficiency analysis capability.
+  </p>
+</li>
+  <li>
+  <p>Added linked sensitivities.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.2 (July 31, 2000)</b>
+</p>
+<ul><li>
+  <p>Changed to compressed binary .hmr file format.
+  </p>
+</li>
+  <li>
+  <p>Included imported load and resource data in the .hmr file.
+  </p>
+</li>
+  <li>
+  <p>Added maximum diesel run time and minimum battery life constraints.
+  </p>
+</li>
+  <li>
+  <p>Added carbon emissions.
+  </p>
+</li>
+  <li>
+  <p>Allowed the resorting of the sensitivity results list control.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.1 (June 27, 2000)</b>
+</p>
+<ul><li>
+  <p>Added superimposed variable to surface plots and OST graphs.
+  </p>
+</li>
+  <li>
+  <p>Added ability to simulate on demand so all systems appear to have hourly data.
+  </p>
+</li>
+</ul>
+<p><b>Version 1.0 (February 14, 2000)</b>
+  
+  
+</p>
+              <!-- InstanceEndEditable --></td>
+            <td width="200" valign="top"><table style="width:200px; border-color:#999999;" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" valign="top">                    <map name="Map7" id="Map7">
+                    <area shape="rect" coords="6,38,198,117" href="http://www.zbbenergy.com/" target="_blank" alt="" />
+                  </map></td>
+              </tr>
+                <tr>
+                  <td><img src="dot_clear.gif" width="200" height="35" alt="" /></td>
+                </tr>
+                <tr>
+                <td align="center" valign="top"><table style="width:200px; background-color:#FEF8D7;" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center"><p class="testimonial-text"><img src="users-group-allone.jpg" width="200" height="104" border="0" usemap="#Map6" alt="" /></p></td>
+                  </tr>
+                </table>
+                  <map name="Map6"   id="Map6">
+                    <area shape="rect" coords="0,2,196,105" href="http://homerusersgroup.ning.com/" target="_blank" alt="" />
+                  </map></td>
+              </tr>
+              <tr>
+                <td><img src="dot_clear.gif" width="200" height="35" alt="" /></td>
+              </tr>
+                <tr>
+                <td align="center" class="body-text-smaller">
+                
+                <!-- Control X data goes here -->
+				
+				<table style="width:200px; height:200px; background-color:#FEF8D7" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                    	<td width="200" height="40">
+                        <p class="nav-side-people">What people are saying about HOMER:</p>
+                        </td>
+                    </tr>
+					<tr>
+						<td width="200" height="10" align="center">
+							<img src="dot_black.gif" width="160" height="1" alt="" />
+						</td>
+					</tr>
+                    <tr>
+						<td width="200" height="150" valign="top">
+       	   
+							<div id="contentwrapper">
+
+							<div id="billboard0" class="billcontent" >
+							<p><span class="testimonial-text">Best hourly assessment tool for hybrid renewable electric generation systems in the world &ndash; bar none.  </span></p>
+							<p><span class="testimonial-text"><b>Dr. Jan F. Kreider</b><br />
+							Building Systems Program, University of Colorado, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div style="visibility:hidden" id="billboard1" class="billcontent"> 
+							<p>
+							<span class="testimonial-text">We find the program easy to use and
+							straightforward and it has been great help in sorting out myriad possibilities.
+							HOMER presents results in a clear and concise manner, making decisions easy.  </span></p>
+							<p class="testimonial-text"><b>Mehmet Hanagasioglu</b><br />
+							Interwind AG, Switzerland<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard2" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">It's a unique tool that provides a depth of analysis simply impossible by any other means at my disposal.  </span></p>
+							<p class="testimonial-text"><b>Chris Greacen</b><br />
+							Palang Thai, Thailand<br />
+							<br />
+							</p>
+							</div>
+
+
+							<div id="billboard3" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">It allows simple apples to apples comparisons of drastically different system designs.
+							</span></p>
+							<p class="testimonial-text"><b>Erik Schoenfeld</b><br />
+							Massachusetts, USA<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard4" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">Interface is great.  Saves countless time trying to accomplish the same thing in Excel.  </span></p>
+							<p><span class="testimonial-text"><b>Jeff LeBrun</b><br />
+							University of Michigan, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard5" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">We have found it to be a most excellent tool, and are constantly surprised at
+							the quality of the analysis and reporting outputs.  </span></p>
+							<p><span class="testimonial-text"><b>David Edwards</b><br />
+							Horizon Power, Australia<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard6" class="billcontent"  style="visibility: hidden">  
+							<p>
+							<span class="testimonial-text">An excellent tool for financial and system modelling that combined with other software we use provides good comparisons.  </span></p>
+							<p><span class="testimonial-text"><b>Bruce Clay</b><br />
+							Clay Engineering Ltd, Fiji<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard7" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I always find the technical support for HOMER to be speedy and helpful.  It's one of the aspects of this tool that I find invaluable...  </span></p>
+							<p><span class="testimonial-text"><b>Cheryl Loone</b><br />
+							Powercorp, Australia<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard8" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">[HOMER is] very flexible.  I like specifying a range of components and letting HOMER do the work of finding optimal solutions.  </span></p>
+							<p><span class="testimonial-text"><b>Bradley Oxford</b><br />
+							Appalachian State University, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard9" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">HOMER is a beautiful thing... it doesn't crash, it does most everything you could want it to, and it actually presents results in an intuitive/ understandable manner.  </span></p>
+							<p><span class="testimonial-text"><b>Jonathan Murphy</b><br />
+							Aerospace Systems Design Laboratory, Georgia Tech, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard10" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">Congratulation for your HOMER program, it is really a very good tool to disseminate renewable energies.  </span></p>
+							<p class="testimonial-text"><b>Corinne Dubois</b><br />
+							Equitao, France<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard11" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">Your programme HOMER is very helpful to make economical calculations.
+							We are very impressed, program is very small but powerful and usage is very simple.  </span></p>
+							<p><span class="testimonial-text"><b>Andrius Belanoska</b><br />
+							Kaunas University for Technology, Lithuania<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard12" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">Congratulations for HOMER.  Very useful and
+							simple to use in the context of rural Africa.  </span></p>
+							<p><span class="testimonial-text"><b>Smail Khennas</b><br />
+							PREDAS-CILSS, Burkina Faso<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard13" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">Very easy to use but analytically powerful.
+							I was able to get a simple system up and
+							running quickly so that I could learn by doing.  </span></p>
+							<p class="testimonial-text"><b>Shaun Cornelius</b><br />
+							Meridian Energy Limited, New Zealand<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard14" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">It is fast, easy to use, provides valuable analysis data
+							for my clients to make informed decisions with regard
+							to fuel use, renewable energy options and cost/benefit.  </span></p>
+							<p><span class="testimonial-text"><b>David Feider</b><br />
+							PEER Group, LLC, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard15" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I continue being awed by HOMER. I find it to be a unique and extremely useful resource,
+							often giving insight that had not existed previously.</span></p>
+							<p><span class="testimonial-text"><b>Jim Easton PE</b><br />
+							Alternative Energy Technologies, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard16" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">It is a very easy and powerful software for the designing of the micropower systems.  </span></p>
+							<p class="testimonial-text"><b>Francisco Santamaria</b><br />
+							Cor Solar, Spain<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard17" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">It is a very quick and easy to learn program and a very powerful one when used correctly.  </span></p>
+							<p><span class="testimonial-text"><b>Luis Sanchez</b><br />
+							Florida State University<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard18" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I wanted to thank you for the years of effort that you've spent on building and perfecting HOMER. Thanks again for a job well done.  </span></p>
+							<p><span class="testimonial-text"><b>Hugh Jones</b><br />
+							Power and Energy Consultant, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard19" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">This is really an amazing tool!</span></p>
+							<p class="testimonial-text"><b>Karim Moutawakkil</b><br />
+							Conergy, Germany<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard20" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">The program makes easy the task of teaching and research on renewable energy subjects.  </span></p>
+							<p><span class="testimonial-text"><b>Dr. Jose R. Camacho, PhD</b><br />
+							Professor at Universidade Federal de Uberlandia, Brazil<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard21" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I found your HOMER amazing. Congratulations.  </span></p>
+							<p class="testimonial-text"><b>Esad Smajlovic</b><br />
+							Bosnia and Herzegovina<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard22" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">The support staff is wonderful.  The program is outstanding.  </span></p>
+							<p><span class="testimonial-text"><b>Christopher Simon, Ph.D.</b><br />
+							Associate Professor at University of Nevada, Reno, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard23" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">HOMER is an excellent tool not only for educational purposes but for developing renewable programs as well.  </span></p>
+							<p><span class="testimonial-text"><b>Sergio Capareda, Ph.D.</b><br />
+							Associate Professor at Texas A&#38;M University, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard24" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I love your software.  It has really enhanced the way I approach design.  </span></p>
+							<p><span class="testimonial-text"><b>Manuel Cilia</b><br />
+							Cilectric Pty Ltd, Australia<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard25" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">HOMER is superb.  </span></p>
+							<p><span class="testimonial-text"><b>Javier Sanz Rodriguez</b><br />
+							CENER, Spain<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard26" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Everbody I know who is working with HOMER is amazed.  </span></p>
+							<p><span class="testimonial-text"><b>Michael Tittmann</b><br />
+							Tittmann Solar GmbH, Germany<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard27" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I have used HOMER for a while now and I am very happy with it. Thanks a lot for a great product!  </span></p>
+							<p class="testimonial-text"><b>Torsten Br&ouml;er</b><br />
+							University of Oldenburg, Germany<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard28" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I like this program so much. It is very complete, useful and friendly.  </span></p>
+							<p><span class="testimonial-text"><b>Sergio Murillo</b><br />
+							Instituto Costarricense de Electricidad, Costa Rica<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard29" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Your program is amazing and I love it.  </span></p>
+							<p><span class="testimonial-text"><b>Michael Elliott</b><br />
+							Southwest Windpower, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard30" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">From our first look at the HOMER software it looks superb, as if written for
+							exactly what we are doing.
+							We thank you for creating this package.  </span></p>
+							<p><span class="testimonial-text"><b>Peter Heilveil</b><br />
+							Infratex Philippines Inc.<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard31" class="billcontent"  style="visibility: hidden">  
+							<p>
+							<span class="testimonial-text">We didn't have a predictable way to evaluate
+							the contribution from the wind turbine until we started using HOMER last year.  </span></p>
+							<p><span class="testimonial-text"><b>Edward Johnson</b><br />
+							BanDao Associates, LLC, USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard32" class="billcontent"  style="visibility: hidden"> 
+							<p>
+							<span class="testimonial-text">We find the program easy to use and
+							straightforward and it has been great help in sorting out myriad possibilities.
+							HOMER presents results in a clear and concise manner, making decisions easy.  </span></p>
+							<p class="testimonial-text"><b>Mehmet Hanagasioglu</b><br />
+							Interwind AG, Switzerland<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard33" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">The capacity of your program is very impressive, and it looks like the program
+							will be able to do most of what I will be doing for my Masters.  </span></p>
+							<p><span class="testimonial-text"><b>Gordon Dalton</b><br />
+							University of Queensland, Australia<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard34" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I have just started to use HOMER for my final year dissertation project and
+							have found it fantastic.  </span></p>
+							<p><span class="testimonial-text"><b>Simon Renwick</b><br />
+							Murdoch University, Australia<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard35" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Thanks a lot for providing HOMER free of cost.  It is really a very
+							useful tool for hybrid systems.  </span></p>
+							<p><span class="testimonial-text"><b>Himanshu Maheshwari</b><br />
+							Lynntech, Inc., 
+							USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard36" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">So far I am extremely impressed with the program and can certainly see its potential.  </span></p>
+							<p><span class="testimonial-text"><b>John Lepper, P.Eng</b><br />
+							Neill &#38; Gunter (Nova Scotia) Ltd., 
+							Canada<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard37" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I would like to commend you and your team for developing one of the most important tools
+							in furthering the viability of renewable energy technologies. </span></p>
+							<p><span class="testimonial-text"><b>Brook Porter</b><br />
+							Intelligent Energy, Ltd., 
+							USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard38" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I'm really happy with your software! I find it a very good tool for understanding hybrid
+							systems and their optimisation &ndash; very user-friendly interfaces.  Way to go and keep up the good work.  </span></p>
+							<p><span class="testimonial-text"><b>Jan Cloin</b><br />
+							South Pacific Applied Geoscience Commission (SOPAC), 
+							Fiji / Netherlands<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard39" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Congratulations for making such a user friendly software freely available.  </span></p>
+							<p><span class="testimonial-text"><b>Buerer Meinrad</b><br />
+							Swiss Federal Institute of Technology, 
+							Switzerland<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard40" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I am very impressed with the new look HOMER website. We're currently playing
+							with HOMER 2.0 on a small wind-hydrogen feasibility study. It looks
+							fantastic.  </span></p>
+							<p><span class="testimonial-text"><b>David Howey</b><br />
+							Whitbybird Engineers, 
+							United Kingdom<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard41" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I found the software easy to use and extremely useful;
+							great work!  </span></p>
+							<p><span class="testimonial-text"><b>Tony Hastings</b><br />
+							Australia<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard42" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I just downloaded and installed HOMER 2.0 and it appears to be working well.
+							Thanks for writing such an
+							excellent code for hybrid energy systems.  </span></p>
+							<p class="testimonial-text"><b>Tariq Iqbal</b><br />
+							Memorial University of Newfoundland, 
+							Canada<br />
+							<br />
+							</p>
+							</div>
+
+							<div id="billboard43" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Up and running (with version 2.0).   At first glance, she`s a beauty!
+							Nice going.  Easy to use, communicative, logical.  </span></p>
+							<p><span class="testimonial-text"><b>Nelson "Woody" Stevens</b><br />
+							Wireless Energy, 
+							Chile<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard44" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Actually I use HOMER a lot through Virtual PC.  I love this program,
+							nice work.  </span></p>
+							<p><span class="testimonial-text"><b>Scott Baron</b><br />
+							(a Macintosh User)<br />
+							University of Michigan, 
+							USA<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard45" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">HOMER is an indispensable tool when we talk of electrification with
+							renewables.  </span></p>
+							<p><span class="testimonial-text"><b>Cecilio U. Sumaoy</b><br />
+							Cagayan Electric Power &#38; Light Co., 
+							Philippines<br />
+							</span><br />
+							</p>
+							</div>
+
+							<div id="billboard46" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I must say that, you
+							guys are really incredible.  You have helped me solve and lighten my
+							workload problems in a faster and more efficient way. More power to you all!
+							</span></p>
+							<p class="testimonial-text"><b>Gina Saavedra Fenner</b><br />
+							International Centre for Application of Solar Energy (CASE), 
+							Perth, WA, Australia<br />
+							</p>
+							</div>
+
+							<div id="billboard47" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I am really enjoying the new version, and it is a very welcome
+							contribution to my PhD thesis work and to the greater industry.  You
+							folks are doing a good thing there.  </span></p>
+							<p class="testimonial-text"><b>Phil Murray</b><br />
+							Centre for Energy Research<br />
+							Massey University,  New Zealand<br />
+							</p>
+							</div>
+
+							<div id="billboard48" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">It is a unique and valuable tool for our core business of
+							designing hybrid power systems for remote applications, such as telecomm, pipelines,
+							village power systems and eco-tourism. </span></p>
+							<p class="testimonial-text"><b>Clint (Jito) Coleman</b><br />
+							President, Northern Power Systems </p>
+							</div>
+
+							<div id="billboard49" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I just wanted to express you my satisfaction (I should say my
+							complete satisfaction) with HOMER.  
+							Congratulations for such a useful tool.  </span></p>
+							<p class="testimonial-text"><b>Ricardo Jahns</b><br />
+							Consultant, UNDP Energy and Climate Change Programme for Latin America and the Caribbean</p>
+							</div>
+
+							<div id="billboard50" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I recently used HOMER to assess renewables and diesel solutions
+							for an island in Costa Rica, as my project of a renewables course.
+							I find it is very solid and transparent, once you get the hang of it.
+							Keep up the good work.  </span></p>
+							<p><span class="testimonial-text"><b>Jorge Mario Montero, PE, MS</b><br />
+							Instituto Costarricense de Electricidad</span><br />
+							</p>
+							</div>
+
+							<div id="billboard51" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I recently downloaded HOMER and have found if to be an excellent program. Now I'm using it
+							for a real project, designing small energy systems for remote
+							homes in Sweden. I am very thankful to all of you who have
+							developed the program and made it available.  </span></p>
+							<p class="testimonial-text"><b>Sven Ruin</b><br />
+							&Aring;F-Industriteknik AB<br />
+							Sweden    </p>
+							</div>
+
+							<div id="billboard52" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I discovered HOMER on the net and I was very pleased to use
+							this software. The interface is really clear and it provides
+							many interesting results.  </span></p>
+							<p class="testimonial-text"><b>Fran&ccedil;ois Schaller</b><br />
+							Swiss Federal Institute, 
+							Switzerland    </p>
+							</div>
+
+							<div id="billboard53" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">Thank you very much, I could download HOMER now, it is a really
+							good program, congratulations and thank you again.  </span></p>
+							<p class="testimonial-text">Regards,<br />
+							<b> Silvia Manzanares Fa&uacute;ndez, </b>
+							Spain    </p>
+							</div>
+
+							<div id="billboard54" class="billcontent"  style="visibility: hidden">
+							<p>
+							<span class="testimonial-text">I've found
+							HOMER to be incredibly robust and the best application
+							available for system comparison among the 15 or so programs covered.  </span></p>
+							<p><span class="testimonial-text"><b>Mick Grover</b><br />
+							Sharp Laboratories of America, Inc.<br />
+							Camas, WA</span><br />
+							</p>
+							</div>
+
+							</div>                                        
+                      </td>
+                    </tr>
+                </table>
+                
+                </td>
+              </tr>
+                <tr bgcolor="#FFFFFF">
+                  <td>&nbsp;</td>
+                </tr>
+            </table></td>
+            <td width="35" valign="top"><img src="homer_14.jpg" width="35" height="522" alt="" /></td>
+          </tr>
+        </table> 
+        <!--This ends the 1000 pixel wide main area-->         
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5"><!--This image creates a white border across the bottom, just above the address info--><img src="homer_08.jpg" width="1000" height="24" alt="" /></td>
+      </tr>
+      
+      <tr>
+        <td colspan="5"><table width="1000" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="190"><img src="dot_clear.gif" width="1" height="1" alt="" /><img src="dot_clear.gif" width="190" height="35" alt="" /></td>
+            <td width="790" valign="middle"><span class="body-text-smaller"><strong>HOMER ENERGY</strong> &nbsp;&bull;&nbsp;  720-565-4046  &nbsp;&bull;&nbsp;  <a href="mailto:info@homerenergy.com">info@homerenergy.com</a> &nbsp;&bull;&nbsp; 2334 Broadway, Suite B, Boulder, CO 80304, USA</span></td>
+            <td width="20">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="3"><!--This is a ghetto approach to making a black line across the bottom of the address--><img src="dot_black.gif" width="1000" height="1" alt="" /></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+    </table>
+    </td>
+    <td width="115">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+
+
+
+<div style="display:none">
+<form action="login" method="post" name="hiddenLoginForm">
+<div align="left" >
+<input id="userNameHidden" name="username" type="text" class="nav-top" size="14" width="50">
+<br /> 
+<input id="passwordHidden" name="password" type="password" class="nav-top" size="14" width="50"> 
+</div>
+</form>
+</div>
+
+
+</body>
+
+<!-- InstanceEnd --></html>
