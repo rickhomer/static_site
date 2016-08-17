@@ -862,3 +862,24 @@ p.marg-top {
     height: 100%;
 }
 
+sel {
+	width: 66% !important;
+	height: 30px;
+	padding: 5px;
+	margin: 0;
+	display: inline-block;
+}
+
+.pricing-table  { border:hidden; }
+.pricing-table  th { text-align:right; font-weight:normal; }
+.pricing-table	thead { text-align:center; font-size:24px; }
+.pricing-table	td { text-align:center; padding:5px; }
+.pricing-table	tr:nth-child(even) { background-color: #DCDADA; }
+.pricing-table	tr:nth-child(odd) { background-color: #FFFFFF; }
+.pricing-table	tr.emphasis { background-color: #cce5ff; }
+.pricing-table	.detail { font-size:12px; }
+.pricing-table	th.subhead { text-align:left; padding-left:10px; }
+
+.hidden { visibility: hidden; }
+
+
