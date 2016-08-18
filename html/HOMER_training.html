@@ -387,7 +387,7 @@ $(document).ready(function(){
 	<h2 style="text-align:center;">Fill out the form below to book your training</h2>
     	<fieldset >
         <legend class="small-width">Send us a Message</legend>
-		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm">
+		<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="MyForm" class="form form-horizontal">
             <input type=hidden name="oid" id="oid">
             <input type=hidden name="retURL" value="http://www.homerenergy.com">
             <input type=hidden name="lead_source" value="Website">
@@ -664,7 +664,8 @@ $(document).ready(function(){
 				<option value='Zambia'>Zambia</option>
 				<option value='Zimbabwe'>Zimbabwe</option>
 			</select>
-            <br>
+            <br />
+            <br />
             <label for="phone">Phone</label>
             <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             <br><br>

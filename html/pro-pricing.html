@@ -249,42 +249,22 @@ $(document).ready(function() {
 
 
             <!-- zozo tabs begin -->
-            <p>Please select a licensing option below for details (Trial, Standard, Academic, or Student):</p>
+            <p class="hidden">Please select a licensing option below for details (Standard, Academic, or Student):</p>
 
-            <div id="tabbed-nav" class="tabbed-nav z-tabs-loading" data-role="z-tabs" data-options='{"defaultTab": "trial", "orientation": "vertical", "theme": "silver", "animation": {"duration": 800, "effects": "slideH"}, "deeplinking": true}'>                <ul>
-                    <li data-link="trial"><a>30-Day Trial License</a></li>
+            <div id="tabbed-nav" class="tabbed-nav z-tabs-loading" data-role="z-tabs" data-options='{"defaultTab": "standard", "orientation": "vertical", "theme": "silver", "animation": {"duration": 800, "effects": "slideH"}, "deeplinking": true}'>                
+                <ul>
                     <li data-link="standard"><a>Standard License</a></li>
                     <li data-link="academic"><a>Academic License</a></li>
                     <li data-link="student"><a>Student License</a></li>
                 </ul>
-
+            
                 <!-- right pane begins -->
 
                 <div>
 
-                    <!-- Trial License section begins -->
-                    <div>
-                        <h3>30-Day Free Trial*</h3>
-                        <p>HOMER Pro is available as a fully-functional trial for 30 days at no cost. The trial version includes all add-on modules and a “module manager” that lets you understand the impact of adding or removing modules.</p>
-                        <p>We encourage everyone to use the trial before purchasing.</p>
-                        <p><i>* Requires registering for a HOMER Energy account</i></p>
-                        <p>
-                            <a href="https://users.homerenergy.com/pages/homer_pro">
-                                <button class="mybtn">Download Now</button>
-                            </a>
-                        </p>
-
-
-                    </div>
-
-
-
-                    <!-- Trail License section ends -->
-
-
                     <!-- Standard License section begins -->
 
-                    <div>
+                    <div id="standard">
                         <h3>Standard License</h3>
                         <p>Standard licenses are general use commercial licenses that apply to most users. They are available as <b>single-user</b> or <b>concurrent-user</b> licenses:</p>
 
@@ -300,13 +280,6 @@ $(document).ready(function() {
                         <div class="tab-content">
                             <div class="tab-pane active" id="single-user">
                             <h3>Single-user Standard License</h3>
-                                <p>
-                                    <a href="#standard-single-annual-modal" role="button" class="mybtn text-center" data-toggle="modal">Annual<br>$500-1400/yr</a>
-                                    <a href="#standard-single-permanent-modal" role="button" class="mybtn text-center" data-toggle="modal">Permanent<br>$1500-4,200</a>
-                                    <a href="#standard-single-monthly-modal" role="button" class="mybtn text-center" data-toggle="modal">Monthly<br>$63-175/mo</a>
-                                </p>
-
-                                <h4 class="color">Who should buy?</h4>
                                 <p>Select this license option if you are an end user and you want to operate, install, and administer the software yourself, or if you are purchasing a group of licenses for your organization that will be installed as node-locked licenses for individual users. </p>
                                 <h4 class="color">System requirements:</h4>
                                 <ul class="list-checkmark">
@@ -314,8 +287,14 @@ $(document).ready(function() {
                                     <li>Requires a HOMER Energy user account</li>
                                 </ul>
                                 <h4 class="color">License terms:</h4>
-                                <p>Single-user licenses can be purchased with monthly, annual, or permanent terms.</p>
+                                <p>Single-user licenses can be purchased with annual, permanent, or monthly terms.</p>                              
+                                <p align="center">
+                                    <a  href="#standard-single-annual-modal" role="button" class="mybtn-small text-center width15percent"  data-toggle="modal">Annual<br>$500-1500/yr</a>
+                                    <a href="#standard-single-permanent-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">Permanent<br>$1500-4,500</a>
+                                    <a href="#standard-single-monthly-modal" role="button" class="mybtn-small text-center" data-toggle="modal">Monthly<br>$63-185/mo</a>
+                                <a href="standard_user_prices.html" class="mybtn-small text-center width15percent">Compare <br/>All Prices</a>
                                 <br>
+                                <p align="center"><a href="https://users.homerenergy.com/pages/homer_pro" target="_blank"><img src="images/free_trial.png" width="300"></a></p>
 
                                 <!-- Standard Single-User Modals begin -->
 
@@ -343,12 +322,11 @@ $(document).ready(function() {
                                             <div class="span text-center">
                                                 <div class="row" style="margin-left:auto;margin-right:auto;margin-top:-5px;">
                                                     <h2 align="center">Price:</h2>
-                                                    <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$500-1400/year</span></h1>
+                                                    <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$500-1500/year</span></h1>
                                                     <p>Add-on modules* <span class="color">$60-250</span> each.</p>
                                                     <a href="https://users.homerenergy.com/licenses/build_license?user_type=standard&license_type=single_user&term=annual&product_type=complete">
                                                         <button class="mybtn">
-                                                            <p>Buy Now</p>
-                                                            <p>or Get a Quote</p>
+                                                            <p>Calculate Price</p>
                                                         </button>
                                                     </a>
                                                 </div>
@@ -371,7 +349,7 @@ $(document).ready(function() {
                                         <hr>
                                         <div class="row">
                                             <div class="span9">
-                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat and Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat and Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
 
                                             </div>
                                         </div>
@@ -403,12 +381,11 @@ $(document).ready(function() {
                                             </div>
                                             <div class="span3 text-center" style="margin-left:auto;margin-right:auto;margin-top:-5px;">
                                                 <h2 align="center">Price:</h2>
-                                                <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$1,500-4,200</span></h1>
+                                                <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$1,500-4,500</span></h1>
                                                 <p>Add-on modules* <span class="color">$180-750</span> each.</p>
                                                 <a href="https://users.homerenergy.com/licenses/build_license?user_type=standard&license_type=single_user&term=permanent&product_type=complete">
                                                     <button class="mybtn">
-                                                        <p>Buy Now</p>
-                                                        <p>or Get a Quote</p>
+                                                        <p>Calculate Price</p>
                                                     </button>
                                                 </a>
                                                 <fieldset style="padding:5px; margin-bottom:-5px">
@@ -430,7 +407,7 @@ $(document).ready(function() {
                                         <hr>
                                         <div class="row">
                                             <div class="span9">
-                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
 
                                             </div>
                                         </div>
@@ -465,12 +442,11 @@ $(document).ready(function() {
                                                 <h2 align="center" style="margin-top:-5px;">Price:</h2>
                                                 <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$63/month</span></h1>
                                                 <p>for base software product</p>
-                                                <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$175/month</span></h1>
+                                                <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$185/month</span></h1>
                                                 <p>includes all add-on modules*</p>
                                                 <a href="https://users.homerenergy.com/licenses/build_license?user_type=standard&license_type=single_user&term=monthly&product_type=complete">
                                                     <button class="mybtn">
-                                                        <p>Buy Now</p>
-                                                        <p>or Get a Quote</p>
+                                                        <p>Calculate Price</p>
                                                     </button>
                                                 </a>
                                             </div>
@@ -479,7 +455,7 @@ $(document).ready(function() {
                                         <hr>
                                 <div class="row">
                                     <div class="span9">
-                                        <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                        <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
                                     </div>
                                 </div>
 
@@ -502,10 +478,6 @@ $(document).ready(function() {
 
                             <div class="tab-pane" id="concurrent-user">
                             <h3>Concurrent-user Standard License</h3>
-                                <p>
-                                    <a href="#standard-concurrent-annual-modal" role="button" class="mybtn text-center" style="width:100px; height:20px;" data-toggle="modal">Annual</a>
-                                    <a href="#standard-concurrent-permanent-modal" role="button" class="mybtn text-center" style="width:100px; height:20px;" data-toggle="modal">Permanent</a>
-                                </p>
 
                                 <p>Concurrent licenses, also known as floating licenses, allow a single license to be shared among different users in your organization.</p>
                                 <h4 class="color">Who should buy?</h4>
@@ -520,8 +492,13 @@ $(document).ready(function() {
                                     </ul>
                                 </p>
                                 <p>Pricing is the same for both delivery methods.</p>
-
+                                
+                                <h4 class="color">License terms:</h4>
                                 <p>Available in both annual and permanent license terms</p>
+                                <p align="center">
+                                    <a href="#standard-concurrent-annual-modal" role="button" class="mybtn text-center" style="width:100px; height:20px;" data-toggle="modal">Annual</a>
+                                    <a href="#standard-concurrent-permanent-modal" role="button" class="mybtn text-center" style="width:100px; height:20px;" data-toggle="modal">Permanent</a>
+                                </p>
 
                                 <div class="modal hide fade" id="standard-concurrent-annual-modal">
                                     <div class="modal-header">
@@ -589,9 +566,9 @@ $(document).ready(function() {
                     <!-- STANDARD LICENSE SECTION ENDS -->
 
                     <!-- ACADEMIC LICENSE SECTION BEGINS -->
-                    <div>
+                    <div id="academic">
                         <h3>Academic License</h3>
-                        <p>Academic licenses can be purchased either by faculty or staff members of educational institutions or by those institutions for use by their faculty or staff. They also include student licenses that degree-granting institutionspurchase for use by their students on student computers, or classroom licenses for installation on your own computers for teaching use only.</p>
+                        <p>Academic licenses can be purchased by faculty or staff members of educational institutions or by those institutions for use by their faculty or staff. They also include student licenses that degree-granting institutions purchase for use by their students on student computers, or classroom licenses for installation on your own computers for teaching use only.</p>
                         <ul class="nav nav-tabs">
                            <li><a href="#academic-single" data-toggle="tab"><i class="icon-user"></i>
                 Single-user</a></li>
@@ -607,13 +584,7 @@ $(document).ready(function() {
                             <!-- Academic Single-user license section begins -->
                             <div class="tab-pane active" id="academic-single">
                                 <h3>Single-user Academic License</h3>
-                                <p>
-                                    <a href="#academic-single-annual-modal" role="button" class="mybtn text-center" data-toggle="modal">Annual<br>$250-700/yr</a>
-                                    <a href="#academic-single-permanent-modal" role="button" class="mybtn text-center" data-toggle="modal">Permanent<br>$750-2,100</a>
-                                    <a href="#academic-single-monthly-modal" role="button" class="mybtn text-center" data-toggle="modal">Monthly<br>$32-75/mo</a>
-                                </p>
 
-                                <h4 class="color">Who should buy?</h4>
                                 <p>Select this option if:</p>
                                 <ul class="list-checkmark">
                                     <li>You are a faculty, staff member, or researcher at a degree-granting institution and you want to operate, install, and administer the software yourself, <i>OR</i></li>
@@ -624,6 +595,15 @@ $(document).ready(function() {
                                     <li>Allows installation of a single copy of HOMER Pro on a computer running Windows (Vista or later version) for use by a single individual Windows user account</li>
                                     <li>Requires a HOMER Energy user account</li>
                                 </ul>
+                                
+                                 <p align="center">
+                                    <a href="#academic-single-annual-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">Annual<br>$250-750/yr</a>
+                                    <a href="#academic-single-permanent-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">Permanent<br>$750-2,250</a>
+                                    <a href="#academic-single-monthly-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">Monthly<br>$32-92/mo</a>
+                                    <a href="academic_user_prices.html" class="mybtn-small text-center width15percent">Compare <br/>All Prices</a>
+                                </p>
+                                <p align="center"><a href="https://users.homerenergy.com/pages/homer_pro" target="_blank"><img src="images/free_trial.png" width="300"></a></p>
+                                                                
 
                                 <div class="modal hide fade" id="academic-single-monthly-modal">
                                     <div class="modal-header">
@@ -645,12 +625,11 @@ $(document).ready(function() {
                                                 <h2 align="center" style="margin-top:-5px;">Price:</h2>
                                                 <h1 style="margin-bottom:5px; margin-top:-15px"><span class="color">$32/month</span></h1>
                                                 <p>for base software product</p>
-                                                <h1 style="margin-bottom:5px; margin-top:-10px"><span class="color">$75/month</span></h1>
+                                                <h1 style="margin-bottom:5px; margin-top:-10px"><span class="color">$92/month</span></h1>
                                                 <p>includes all add-on modules*</p>
                                                 <a href="https://users.homerenergy.com/licenses/build_license?user_type=academic&license_type=single_user&term=monthly&product_type=complete">
                                                     <button class="mybtn">
-                                                        <p>Buy Now</p>
-                                                        <p>or Get a Quote</p>
+                                                        <p>Calculate Price</p>
                                                     </button>
                                                 </a>
                                             </div>
@@ -658,7 +637,7 @@ $(document).ready(function() {
                                         <hr>
                                         <div class="row">
                                             <div class="span9">
-                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
 
                                             </div>
                                         </div>
@@ -690,12 +669,11 @@ $(document).ready(function() {
 
                                             <div class="span3 text-center">
                                                 <h2 align="center" style="margin-top:-5px;">Price:</h2>
-                                                <h1 style="margin-bottom:5px; margin-top:-15px"><span class="color">$750-2,100</span></h1>
+                                                <h1 style="margin-bottom:5px; margin-top:-15px"><span class="color">$750-2,250</span></h1>
                                                 <p>Add-on modules* <span class="color"><b>$90-375</b></span> each</p>
                                                 <a href="https://users.homerenergy.com/licenses/build_license?user_type=academic&license_type=single_user&term=permanent&product_type=complete">
                                                     <button class="mybtn" style="margin-top:-5px;">
-                                                        <p>Buy Now</p>
-                                                        <p>or Get a Quote</p>
+                                                        <p>Calculate Price</p>
                                                     </button>
                                                 </a>
                                                 <fieldset style="padding:5px; margin-bottom:-15px;">
@@ -716,7 +694,7 @@ $(document).ready(function() {
                                         <hr style="margin-top:-20px;">
                                         <div class="row">
                                             <div class="span9">
-                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
 
                                             </div>
                                         </div>
@@ -749,12 +727,11 @@ $(document).ready(function() {
                                             </div>
                                             <div class="span4 text-center">
                                                 <h2 align="center" style="margin-top:-5px;">Price:</h2>
-                                                <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$250-700/year</span></h1>
+                                                <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$250-750/year</span></h1>
                                                 <p>Add-on modules* <span class="color">$30-125</span> each</p>
                                                 <a href="https://users.homerenergy.com/licenses/build_license?user_type=academic&license_type=single_user&term=annual&product_type=complete">
                                                     <button class="mybtn">
-                                                        <p>Buy Now</p>
-                                                        <p>or Get a Quote</p>
+                                                        <p>Calculate Price</p>
                                                     </button>
                                                 </a>
                                                 <fieldset style="padding:5px; margin-bottom:-15px;">
@@ -775,7 +752,7 @@ $(document).ready(function() {
                                         <hr style="margin-top:-20px;">
                                         <div class="row">
                                             <div class="span9">
-                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
 
                                             </div>
                                         </div>
@@ -934,12 +911,14 @@ $(document).ready(function() {
                             <li>May not be transferred after activation</li>
                         </ul>
 
-
-                        <p>
-                            <a href="#student-annual-modal" role="button" class="mybtn text-center" data-toggle="modal">Annual<br>$125-350/yr</a>
-                            <a href="#student-6month-modal" role="button" class="mybtn text-center" data-toggle="modal">6-Month<br>$70-150</a>
-                            <a href="#student-monthly-modal" role="button" class="mybtn text-center" data-toggle="modal">Monthly<br>$16-35/mo</a>
+                        <p align="center">
+                            <a href="#student-annual-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">Annual<br>$125-250/yr</a>
+                            <a href="#student-6month-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">6-Month<br>$70-140</a>
+                            <a href="#student-monthly-modal" role="button" class="mybtn-small text-center width15percent" data-toggle="modal">Monthly<br>$15-30/mo</a>
+                            <a href="student_user_prices.html" role="button" class="mybtn-small text-center width15percent">Compare <br /> All Prices </a>
                         </p>
+
+                        <p align="center"><a href="https://users.homerenergy.com/pages/homer_pro" target="_blank"><img src="images/free_trial.png" width="300"></a></p>
 
                         <div class="modal hide fade" id="student-annual-modal">
                             <div class="modal-header">
@@ -959,11 +938,11 @@ $(document).ready(function() {
                                         <h2 align="center" style="margin-top:-5px;">Price:</h2>
                                         <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$125/year</span></h1>
                                         <p>for base software product</p>
-                                        <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$350/year</span></h1>
+                                        <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$250/year</span></h1>
                                         <p>includes all add-on modules*</p>
                                         <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=annual&product_type=complete">
                                             <button class="mybtn">
-                                                <p>Buy Now</p>
+                                                <p>Calculate Price</p>
                                             </button>
                                         </a>
                                     </div>
@@ -971,7 +950,7 @@ $(document).ready(function() {
                                 <hr>
                                         <div class="row">
                                             <div class="span9">
-                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                                <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
 
                                     </div>
                                 </div>
@@ -1000,12 +979,11 @@ $(document).ready(function() {
                                         <h2 align="center" style="margin-top:-5px;">Price:</h2>
                                         <h1 style="margin-bottom:5px; margin-top:-15px;"><span class="color">$70</span></h1>
                                         <p>for base software product</p>
-                                        <h1 style="margin-bottom:5px; margin-top:-5px;"><span class="color">$150</span></h1>
+                                        <h1 style="margin-bottom:5px; margin-top:-5px;"><span class="color">$140</span></h1>
                                         <p>includes all add-on modules*</p>
                                         <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=six-month&product_type=complete">
                                             <button class="mybtn">
-                                                <p>Buy Now
-                                                    <br>or Get Quote</p>
+                                                <p>Calculate Price</p>
                                             </button>
                                         </a>
                                     </div>
@@ -1013,7 +991,7 @@ $(document).ready(function() {
                                 <hr>
                                 <div class="row">
                                     <div class="span9">
-                                        <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                        <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
                                     </div>
                                 </div>
 
@@ -1041,9 +1019,9 @@ $(document).ready(function() {
                                     </div>
                                     <div class="span3 text-center">
                                         <h2 align="center" style="margin-top:-5px;">Price:</h2>
-                                        <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$16/month</span></h1>
+                                        <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$15/month</span></h1>
                                         <p>for base software product</p>
-                                        <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$35/month</span></h1>
+                                        <h1 style="margin-bottom:5px; margin-top:-10px;"><span class="color">$30/month</span></h1>
                                         <p>includes all add-on modules*</p>
                                         <a href="https://users.homerenergy.com/licenses/build_license?user_type=student&license_type=single_user&term=monthly&product_type=complete">
                                             <button class="mybtn">
@@ -1055,7 +1033,7 @@ $(document).ready(function() {
                                 <hr>
                                 <div class="row">
                                     <div class="span9">
-                                        <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, and Multi-year</i></p>
+                                        <p style="margin-top:-10px; font-size:12px; margin-bottom:-10px;"><i>* Add-on modules include: Advanced Load, Advanced Grid, Combined Heat & Power, Run-of-river Hydro, Biomass, Hydrogen, Advanced Storage, Multi-year, and MATLAB Link</i></p>
                                     </div>
                                 </div>
                             </div>
@@ -1072,7 +1050,6 @@ $(document).ready(function() {
 
         </div>
         <!-- end of zozu tabs -->
-
 
 
 
