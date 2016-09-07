@@ -57,18 +57,11 @@ $('#carousel').elastislide({
 });
 </script>
 <!-- InstanceBeginEditable name="head" -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<style>
-	iframe {
-		width: 100%;
-	}
-</style>
-<script>
-	function foo(w, h) {
-		$("iframe").css({width: w, height: h});
-		return true;  // for debug purposes
-	}
+<script src="js/iframeResizer.min.js">
+  var iframes = iFrameResize( [{options}], [css selector] || [iframe] );
 </script>
+
+<style>iframe{width:100%}</style>
 
 <!-- InstanceEndEditable -->
 <!-- InstanceParam name="Marketing" type="boolean" value="false" -->
@@ -251,11 +244,10 @@ $(document).ready(function() {
 <p>HOMER Energy Partners represent those companies that have demonstrated their commitment to the microgrid market through teaming with HOMER Energy. It is a privilege to grow and strengthen our network with these excellent companies. They provide the products and services that must come together to move microgrid projects forward.
 Contact us at <a href="mailto:partners@homerenergy.com" target="_blank">partners@homerenergy.com</a> to find out how your company can become part of this group.</p>
 
-<br />
 
-<div class="wrapper">
   <iframe src="http://users.homerenergy.com/partners" scrolling="no"></iframe>
-</div>
+  <script>iFrameResize({log:true, checkOrigin:false})</script>
+
     <!-- InstanceEndEditable -->
     <!--box ends-->
   </div>
