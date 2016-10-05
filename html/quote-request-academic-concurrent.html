@@ -295,20 +295,32 @@ $(document).ready(function(){
             <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
             <!--  ----------------------------------------------------------------------  -->
             
-            <label for="first_name">First Name<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
-            <br>
-            <label for="last_name">Last Name<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
+            <div class="control-group">
+              <label for="first_name">First Name<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+              </div>
+            </div>    
+            
+            <div class="control-group">
+              <label for="last_name">Last Name<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+               <div class="controls">
             <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
             <br>
-            <label for="email">Email<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+            <div class="control-group">
+              <label for="email">Email<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+               <div class="controls">
+             <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
             <br>
-            <label for="company">Educational Institution<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="company" maxlength="40" name="company" size="20" type="text" />
+            <div class="control-group">
+              <label for="company">Educational Institution<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+               <div class="controls">
+            <input  id="company" maxlength="40" name="company" size="20" type="text" required />
             <br>
-            <label for="country">Country<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <select  id="country" maxlength="40" name="country" size="1" type="text" class="quoteform_select_width"/>
+            <div class="control-group">
+              <label for="country">Country<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+               <div class="controls">
+            <select  id="country" maxlength="40" name="country" size="1" type="text" class="select2" required/>
 				<option value=''></option>
 				<option value='Afghanistan'>Afghanistan</option>
 				<option value='Aland Islands'>Aland Islands</option>
@@ -557,47 +569,74 @@ $(document).ready(function(){
 				<option value='Yemen'>Yemen</option>
 				<option value='Zambia'>Zambia</option>
 				<option value='Zimbabwe'>Zimbabwe</option>
-			</select>			
-            <br>
-            <label for="phone">Phone</label>
-            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
-            <br>
-            <label>Number Of Simultaneous Users<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
-            <br>
-			<label for="00N6100000AvOYT">License Length<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-			<select  id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term" class="select2">
-              <option value="Annual">Annual</option>
-              <option value="Permanent">Permanent</option>
-              <option value="Quote Both">Please Quote Both Options</option>
-            </select>
-			<br><br>
-			Select modules that you wish to add to the base HOMER Pro product
-			<select  id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
-              <option value="Advanced Grid">Advanced Grid</option>
-              <option value="Advanced Load">Advanced Load</option>
-              <option value="Advanced Storage">Advanced Storage</option>
-              <option value="Biomass">Biomass</option>
-              <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
-              <option value="Hydro">Hydro</option>
-              <option value="Hydrogen">Hydrogen</option>
-              <option value="MATLAB">MATLAB</option>
-              <option value="Multi-Year">Multi-Year</option>
-            </select>
-            <br><br>
-            <label for="description">How will you use HOMER Pro?</label>
-            <textarea name="description"></textarea>
-            <br>
+			  </select>	
+              </div>
+            </div> 	
+            
+            <br /> 	
+    
+            <div class="control-group">
+              <label for="phone">Phone</label>
+               <div class="controls">
+                 <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+               </div>
+            </div>   
+            
+            <div class="control-group">
+              <label>Number Of Simultaneous Users<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
+              </div>
+            </div>
+            
+            <div class="control-group">
+          	  <label for="00N6100000AvOYT">License Length<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <select  id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term" class="select2">
+                  <option value="Annual">Annual</option>
+                  <option value="Permanent">Permanent</option>
+                  <option value="Quote Both">Please Quote Both Options</option>
+                </select>
+			  </div>
+            </div>
+            
+<br />
+            
+             <div class="control-group">
+              <label>Select modules </label>
+              <div class="controls">
+                <select  id="00N6100000Aw9ME"  multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
+                  <option value="Advanced Grid">Advanced Grid</option>
+                  <option value="Advanced Load">Advanced Load</option>
+                  <option value="Advanced Storage">Advanced Storage</option>
+                  <option value="Biomass">Biomass</option>
+                  <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
+                  <option value="Hydro">Hydro</option>
+                  <option value="Hydrogen">Hydrogen</option>
+                  <option value="MATLAB">MATLAB</option>
+                  <option value="Multi-Year">Multi-Year</option>
+                </select>
+              </div>
+             </div>  
+             
+            <div class="control-group">
+              <label for="description">How will you use HOMER Pro?</label>
+              <div class="controls">
+                <textarea name="description"></textarea>
+              </div>
+            </div> 
+            
             
              <!-- Captcha//-->
 					<div class="form-group" id="hvm">
 					    <label for="description">Please check this box if not a bot:</label>
 					</div>
             <!-- Captcha //-->
+            
             <br>
-			<img alt="Red-asterisk" src="/img/red_asterisk.gif" /> required
+			<img alt="Red-asterisk" src="img/red_asterisk.gif" /> required
 			<p>
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" class="mybtn">
           </form>
         </div>
       </fieldset>

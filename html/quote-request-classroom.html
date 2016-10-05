@@ -294,21 +294,39 @@ $(document).ready(function(){
             <!--  <input type="hidden" name="debug" value=1>                              --> 
             <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
             <!--  ----------------------------------------------------------------------  -->
+
+            <div class="control-group">
+              <label for="first_name">First Name<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+              </div>
+            </div>
             
-            <label for="first_name">First Name<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
-            <br>
-            <label for="last_name">Last Name<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
-            <br>
-            <label for="email">Email<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
-            <br>
-            <label for="company">Educational Institution<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="company" maxlength="40" name="company" size="20" type="text" />
-            <br>
-            <label for="country">Country<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <select  id="country" maxlength="40" name="country" size="1" type="text" class="quoteform_select_width"/>
+            <div class="control-group">
+              <label for="last_name">Last Name<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+		        <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <label for="email">Email<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+               <div class="controls">
+		         <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+               </div>
+            </div>
+            
+            <div class="control-group">
+              <label for="company">Educational Institution<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="company" maxlength="40" name="company" size="20" type="text" />
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <label for="country">Country<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <select  id="country" maxlength="40" name="country" size="1" type="text" class="quoteform_select_width">
 				<option value=''></option>
 				<option value='Afghanistan'>Afghanistan</option>
 				<option value='Aland Islands'>Aland Islands</option>
@@ -557,23 +575,34 @@ $(document).ready(function(){
 				<option value='Yemen'>Yemen</option>
 				<option value='Zambia'>Zambia</option>
 				<option value='Zimbabwe'>Zimbabwe</option>
-			</select>			
-            <br>
-            <label for="phone">Phone</label>
-            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
-            <br>
-            <label>Number Of Seats (10 or more)<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" min=10 required/>
-            <br>
+			    </select>	
+              </div>
+            </div>		
+            
+            <div class="control-group">
+              <label for="phone">Phone</label>
+              <div class="controls">
+                <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+              </div>
+            </div>
+            
+            <div class="control-group">
+              <label>Number Of Seats (10 or more)<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" min=10 required/>
+              </div>
+            </div>
+         
              <!-- Captcha//-->
 				<div class="form-group" id="hvm">
 					<label for="description">Please check this box if not a bot:</label>
 				</div>
             <!-- Captcha //-->
             <br>
-			<img alt="Red-asterisk" src="/img/red_asterisk.gif" /> required
+            
+			<img alt="Red-asterisk" src="img/red_asterisk.gif" /> required
 			<p>
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" class="mybtn">
           </form>
         </div>
       </fieldset>

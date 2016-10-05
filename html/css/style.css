@@ -779,10 +779,7 @@ textarea {
 	width: 66% !important;
 	height: auto;
 }
-select {
-	width: 100% !important;
-	height: 40px;
-}
+
 input[type="text"], textarea, select {
 	background-color: #fff;
 	border: 1px solid #dadee1;

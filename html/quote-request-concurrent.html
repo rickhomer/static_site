@@ -19,11 +19,7 @@
 <meta name="description" content="HOMER software for microgrid and distributed generation power system design and optimization" />
 <meta name="keywords" content="renewable energy, microgrid, distributed generation, off-grid power systems"/>
 <title>HOMER - Hybrid Renewable Microgrid System Design Software</title>
-<style type="text/css">
-	form input, form select {
-			margin-bottom: 15px !important;
-		}
-</style>
+
 <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
 <!-- InstanceEndEditable -->
 <!--Fav and touch icons-->
@@ -249,7 +245,7 @@ $(document).ready(function() {
     <!-- InstanceBeginEditable name="Main" -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
     <script language="javascript" type="text/javascript">  
-$(document).ready(function(){
+    $(document).ready(function(){
 	document.getElementById('oid').value = '00D61000000ZrBq';
 	
     var $newDiv = jQuery("<div> </div>");
@@ -295,27 +291,46 @@ $(document).ready(function(){
             <!--  <input type="hidden" name="debug" value=1>                              --> 
             <!--  <input type="hidden" name="debugEmail" value="will@homerenergy.com">    --> 
             <!--  ----------------------------------------------------------------------  -->
+            <div class="control-group">
+              <label for="first_name" class="control-label">First Name<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
+              </div>
+            </div>
             
-            <label for="first_name">First Name<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required/>
-            <br>
-            <label for="last_name">Last Name<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
-            <br>
-            <label for="email">Email<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
-            <br>
-            <label for="company">Organization<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="company" maxlength="40" name="company" size="20" type="text" />
-            <br>
-            <label for="country">Country<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <select  id="country" maxlength="40" name="country" size="1" type="text" class="quoteform_select_width"/>
-				<option value=''></option>
-				<option value='Afghanistan'>Afghanistan</option>
-				<option value='Aland Islands'>Aland Islands</option>
-				<option value='Albania'>Albania</option>
-				<option value='Algeria'>Algeria</option>
-				<option value='American Samoa'>American Samoa</option>
+            <div class="control-group">
+              <label for="last_name" class="control-label">Last Name<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/>
+              </div>
+            </div>
+            
+            
+            <div class="control-group">  
+              <label class="control-label" for="email">Email<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="email" maxlength="80" name="email" size="20" type="text" required/>
+              </div>
+            </div>
+            
+            <div class="control-group">  
+              <label class="control-label" for="company">Organization<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="company" maxlength="40" name="company" size="20" type="text" />
+              </div>
+            </div>
+              
+           
+            <div class="control-group">
+              <label class="control-label" for="country">Country<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">  
+                <select  id="country" name="country"  type="text"/>
+				<option value=""></option>
+				<option value="Afghanistan">Afghanistan</option>
+				<option value="Aland Islands">Aland Islands</option>
+				<option value="Albania">Albania</option>
+				<option value="Algeria">Algeria</option>
+				<option value="American Samoa">American Samoa</option>
 				<option value='Andorra'>Andorra</option>
 				<option value='Angola'>Angola</option>
 				<option value='Anguilla'>Anguilla</option>
@@ -339,7 +354,7 @@ $(document).ready(function(){
 				<option value='Bermuda'>Bermuda</option>
 				<option value='Bhutan'>Bhutan</option>
 				<option value='Bolivia'>Bolivia</option>
-				<option value='Bosnia and Herzegowina '>Bosnia and Herzegowina </option>
+				<option value='Bosnia and Herzegovina'>Bosnia and Herzegovina </option>
 				<option value='Botswana'>Botswana</option>
 				<option value='Bouvet Island'>Bouvet Island</option>
 				<option value='Brazil'>Brazil</option>
@@ -359,14 +374,14 @@ $(document).ready(function(){
 				<option value='Chile'>Chile</option>
 				<option value='China'>China</option>
 				<option value='Christmas Island'>Christmas Island</option>
-				<option value='Cocos (Keeling) Islands '>Cocos (Keeling) Islands </option>
+				<option value='Cocos (Keeling) Islands'>Cocos (Keeling) Islands </option>
 				<option value='Colombia'>Colombia</option>
 				<option value='Comoros'>Comoros</option>
 				<option value='Congo'>Congo</option>
 				<option value='Congo, the Democratic Republic'>Congo, the Democratic Republic</option>
 				<option value='Cook Islands'>Cook Islands</option>
 				<option value='Costa Rica'>Costa Rica</option>
-				<option value='Cote d'Ivoire'>Cote d'Ivoire</option>
+				<option value="Cote d'Ivoire">Cote d'Ivoire</option>
 				<option value='Croatia'>Croatia</option>
 				<option value='Cuba'>Cuba</option>
 				<option value='Cyprus'>Cyprus</option>
@@ -382,14 +397,14 @@ $(document).ready(function(){
 				<option value='Eritrea'>Eritrea</option>
 				<option value='Estonia'>Estonia</option>
 				<option value='Ethiopia'>Ethiopia</option>
-				<option value='Falkland Islands (Malvinas) '>Falkland Islands (Malvinas) </option>
+				<option value='Falkland Islands (Malvinas)'>Falkland Islands (Malvinas) </option>
 				<option value='Faroe Islands'>Faroe Islands</option>
 				<option value='Fiji'>Fiji</option>
 				<option value='Finland'>Finland</option>
 				<option value='France'>France</option>
 				<option value='French Guiana'>French Guiana</option>
 				<option value='French Polynesia'>French Polynesia</option>
-				<option value='French Southern Territories '>French Southern Territories </option>
+				<option value='French Southern Territories'>French Southern Territories </option>
 				<option value='Gabon'>Gabon</option>
 				<option value='Gambia'>Gambia</option>
 				<option value='Georgia'>Georgia</option>
@@ -408,7 +423,7 @@ $(document).ready(function(){
 				<option value='Guyana'>Guyana</option>
 				<option value='Haiti'>Haiti</option>
 				<option value='Heard and McDonald Islands'>Heard and McDonald Islands</option>
-				<option value='Holy See (Vatican City'>Holy See (Vatican City</option>
+				<option value='Holy See (Vatican City'>Holy See (Vatican City)</option>
 				<option value='Honduras'>Honduras</option>
 				<option value='Hong Kong'>Hong Kong</option>
 				<option value='Hungary'>Hungary</option>
@@ -428,11 +443,11 @@ $(document).ready(function(){
 				<option value='Kazakhstan'>Kazakhstan</option>
 				<option value='Kenya'>Kenya</option>
 				<option value='Kiribati'>Kiribati</option>
-				<option value='Korea, Democratic People's Republic'>Korea, Democratic People's Republic</option>
-				<option value='Korea, Republic of '>Korea, Republic of </option>
+				<option value="Korea, Democratic People's Republic">Korea, Democratic People's Republic</option>
+				<option value='Korea, Republic of'>Korea, Republic of </option>
 				<option value='Kuwait'>Kuwait</option>
 				<option value='Kyrgyzstan'>Kyrgyzstan</option>
-				<option value='Lao People's Democratic Republic'>Lao People's Democratic Republic</option>
+				<option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
 				<option value='Latvia'>Latvia</option>
 				<option value='Lebanon'>Lebanon</option>
 				<option value='Lesotho'>Lesotho</option>
@@ -551,53 +566,80 @@ $(document).ready(function(){
 				<option value='Vanuatu'>Vanuatu</option>
 				<option value='Venezuela'>Venezuela</option>
 				<option value='Vietnam'>Vietnam</option>
-				<option value='Virgin Islands, British '>Virgin Islands, British </option>
-				<option value='Virgin Islands, U.S. '>Virgin Islands, U.S. </option>
-				<option value='Wallis and Futuna '>Wallis and Futuna </option>
+				<option value='Virgin Islands, British'>Virgin Islands, British </option>
+				<option value='Virgin Islands, U.S.'>Virgin Islands, U.S. </option>
+				<option value='Wallis and Futuna'>Wallis and Futuna </option>
 				<option value='Western Sahara'>Western Sahara</option>
 				<option value='Yemen'>Yemen</option>
 				<option value='Zambia'>Zambia</option>
 				<option value='Zimbabwe'>Zimbabwe</option>
-			</select>			
-            <br>
-            <label for="phone">Phone</label>
-            <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
-            <br>
-            <label>Number Of Simultaneous Users<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
-            <br>
-            <label for="00N6100000AvOYT">License Length<img alt="Red-asterisk" src="/img/red_asterisk.gif" /></label>
-            <select  id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term" class="select2">
-              <option value="Annual">Annual</option>
-              <option value="Permanent">Permanent</option>
-              <option value="Quote Both">Please Quote Both Options</option>
-            </select>
-            <br><br>
-			Select modules that you wish to add to the base HOMER Pro product
-			<select  id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
-              <option value="Advanced Grid">Advanced Grid</option>
-              <option value="Advanced Load">Advanced Load</option>
-              <option value="Advanced Storage">Advanced Storage</option>
-              <option value="Biomass">Biomass</option>
-              <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
-              <option value="Hydro">Hydro</option>
-              <option value="Hydrogen">Hydrogen</option>
-              <option value="MATLAB">MATLAB</option>
-              <option value="Multi-Year">Multi-Year</option>
-            </select>
-            <br><br>
-            <label for="description">How will you use HOMER Pro?</label>
-            <textarea name="description"></textarea>
-            <br>
+			  </select>	
+            </div>
+          </div>
+          <br/>
+            		
+            <div class="control-group">
+              <label class="control-label" for="phone">Phone</label>
+              <div class="controls">
+                <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+              </div>
+            </div>   
+           
+            <div class="control-group">
+              <label class="control-label">Number Of Simultaneous Users<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+              <div class="controls">
+                <input  id="00N6100000AvOTs" maxlength="32" name="00N6100000AvOTs" size="20" type="number" required/>
+              </div>
+            </div>
+            
+            <div class="control-group">
+            	<label class="control-label" for="00N6100000AvOYT">License Length<img alt="Red-asterisk" src="img/red_asterisk.gif" /></label>
+                <div class="controls">
+                    <select  id="00N6100000AvOYT" name="00N6100000AvOYT" title="License Term" class="select2">
+                      <option value="Annual">Annual</option>
+                      <option value="Permanent">Permanent</option>
+                      <option value="Quote Both">Please Quote Both Options</option>
+                    </select>
+                </div>
+            </div>
+            <br />
+            
+            <div class="control-group">
+            	<label class="control-label" style="line-height: 1.4em;">Select modules that you wish to add to the base HOMER Pro product</label>
+            	<div class="controls">
+                    <select  id="00N6100000Aw9ME" multiple="multiple" name="00N6100000Aw9ME" title="Modules" class="select2">
+                      <option value="Advanced Grid">Advanced Grid</option>
+                      <option value="Advanced Load">Advanced Load</option>
+                      <option value="Advanced Storage">Advanced Storage</option>
+                      <option value="Biomass">Biomass</option>
+                      <option value="Combined Heat &amp; Power">Combined Heat &amp; Power</option>
+                      <option value="Hydro">Hydro</option>
+                      <option value="Hydrogen">Hydrogen</option>
+                      <option value="MATLAB">MATLAB</option>
+                      <option value="Multi-Year">Multi-Year</option>
+                    </select>
+                </div>
+            </div>       
+            <br />
+             
+            <div class="control-group">
+            	<label class="control-label" for="description">How will you use HOMER Pro?</label>
+            	<div class="controls">
+            		<textarea name="description"></textarea>
+               </div>
+            </div>        
+            
+            <div class="control-group">
              <!-- Captcha//-->
-					<div class="form-group" id="hvm">
-					    <label for="description">Please check this box if not a bot:</label>
+					<div class="control-label" id="hvm">
+					    <label class="control-label" for="description">Please check this box if not a bot:</label>
 					</div>
             <!-- Captcha //-->
-            <br>
+            </div>
+            
 			<img alt="Red-asterisk" src="/img/red_asterisk.gif" /> required
 			<p>
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" class="mybtn">
           </form>
         </div>
       </fieldset>
