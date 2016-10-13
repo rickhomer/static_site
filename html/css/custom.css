@@ -891,3 +891,12 @@ sel {
 
 .width15percent { width: 15%; }
 
+.question {
+	font-style: italic;
+	font-weight: 600;
+	font-size: 16px;
+	color: #44b1d9 !important;
+}
+
+.answer { margin-left: 40px; }
+
